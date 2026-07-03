@@ -157,7 +157,9 @@ a{color:#7cb2f9;text-decoration:none}a:hover{text-decoration:underline}
 background:rgba(14,15,18,.93);backdrop-filter:blur(6px);border-top:1px solid #2A2C33;
 padding:7px 12px;font:600 12px/1.5 'Pretendard',-apple-system,sans-serif;color:#9DA5B0;
 display:flex;gap:12px;flex-wrap:wrap;justify-content:center;align-items:center">
-<span id="livequotes" style="color:#6B7684">실시간 시세 연결 중…</span></div>
+<span id="livequotes" style="color:#6B7684">실시간 시세 연결 중…</span>
+<button id="reloadbtn" style="background:#24262C;color:#3ad29a;border:1px solid rgba(0,184,118,.4);
+border-radius:9px;padding:3px 11px;font:700 11px 'Pretendard',sans-serif;cursor:pointer">🔃 새로고침</button></div>
 <script>(function(){
 var q=document.getElementById('livequotes');
 var APIS=[
@@ -188,5 +190,10 @@ function poll(){if(API){fetch(API.u,{headers:API.h,cache:'no-store'})
   .then(function(r){if(!r.ok)throw 0;return r.json();}).then(draw)
   .catch(function(){API=null;tryApi(0);});}else{tryApi(0);}}
 poll();setInterval(poll,30000);
+// 🔃 새로고침: 캐시 우회 재로드 — 새로 배포된 브리핑이 있으면 그걸 불러온다
+document.getElementById('reloadbtn').onclick=function(){
+  this.textContent='불러오는 중…';
+  location.href=location.pathname+'?t='+Date.now();
+};
 document.body.style.paddingBottom='52px';
 })();</script></body></html>
