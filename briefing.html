@@ -3,27 +3,26 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>모닝 브리핑 · 2026-07-14</title>
+<title>데일리 브리핑 · 2026-07-14</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
 <style>
 :root{color-scheme:dark;--bg:#0E0F12;--paper:#1A1B20;--soft:#24262C;--line:#2A2C33;
 --ink:#E4E7EC;--ink2:#9DA5B0;--ink3:#6B7684;--rise:#F04452;--fall:#3182F6;--gold:#F59E0B;--green:#00B876;
 --shadow:0 1px 2px rgba(0,0,0,.45),0 6px 18px rgba(0,0,0,.3)}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);
-font-family:'Pretendard',-apple-system,system-ui,sans-serif;font-size:14px;line-height:1.65;
--webkit-font-smoothing:antialiased;letter-spacing:-.01em}
+font-family:'Pretendard',-apple-system,system-ui,sans-serif;font-size:14px;line-height:1.65;letter-spacing:-.01em}
 .wrap{max-width:860px;margin:0 auto;padding:36px 20px 90px}
 h1{font-size:26px;font-weight:800;margin:0 0 4px;letter-spacing:-.02em}
 .sub{color:var(--ink3);font-size:12.5px;margin-bottom:24px}
 .card{background:var(--paper);border-radius:20px;box-shadow:var(--shadow);padding:22px 24px;margin-bottom:16px}
-h2{font-size:16.5px;font-weight:800;margin:0 0 12px;display:flex;align-items:center;gap:8px}
+h2{font-size:16.5px;font-weight:800;margin:0 0 12px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 h3{font-size:14px;font-weight:700;margin:16px 0 6px;color:var(--ink)}
 p{margin:6px 0;color:var(--ink2)}
 b,strong{color:var(--ink)}
-.hero{background:linear-gradient(135deg,#2a0f14,#1A1B20);border:1px solid rgba(240,68,82,.35)}
+.hero{background:linear-gradient(135deg,#26200f,#1A1B20);border:1px solid rgba(245,158,11,.45)}
 .regime{background:linear-gradient(135deg,#241a00,#1A1B20);border:1px solid rgba(245,158,11,.4)}
 .big{font-size:34px;font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
-.dn{color:var(--rise)}.up2{color:var(--fall)}
+.dn{color:var(--fall)}.up{color:var(--rise)}
 table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
 th{color:var(--ink3);font-weight:600;text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);font-size:11.5px}
 td{padding:8px;border-bottom:1px solid var(--soft);color:var(--ink)}
@@ -48,38 +47,66 @@ a{color:#7cb2f9;text-decoration:none}a:hover{text-decoration:underline}
 .kv .k{color:var(--ink3)}.kv .v{font-weight:700;font-variant-numeric:tabular-nums}
 .mind{border-left:3px solid var(--gold);background:var(--soft);border-radius:0 14px 14px 0;padding:12px 16px;margin:10px 0}
 .mind b{color:var(--gold)}
+.mind.red{border-left-color:var(--rise)}
+.mind.red b{color:#ff8a93}
 </style>
 </head>
 <body><div class="wrap">
 
-<h1>🌅 모닝 브리핑 — 국장 (한국시장)</h1>
-<div class="sub">2026-07-14 (화) 07:10 KST 작성 (미 동부 월 18:10) · 대시보드 수집분(7/13 확정) + 실시간 스냅샷 + 뉴스 교차검증 · <b>-8.95% 폭락 다음날</b><br>
-※ 지연 소스: 풋콜비율·시총상위50은 <b>7/10(금) 기준</b>★ — 폭락 당일(7/13) 수치 미반영</div>
+<h1>📋 데일리 브리핑 — 국장 (한국시장)</h1>
+<div class="sub">2026-07-14 (화) 장 마감 후 작성 · 지수·수급은 <b>오늘(7/14) 기준 — 수급은 잠정</b>(확정은 내일) · 풋콜·업종·등락종목수·시총상위는 <b>7/13 기준(★1영업일 지연)</b> · 신용잔고·증시자금은 <b>7/10분</b>(폭락 이틀의 실측은 미게시) · 실시간 줄은 18:30 무렵 스냅샷</div>
 
 <!-- 헤드라인 -->
 <div class="card hero">
-  <h2>⏸ 오늘의 판정: 관망 — 단, 보유 레버 3종은 🔴 정리 집행일</h2>
-  <div class="big dn">KOSPI 6,806.93 <span style="font-size:18px">(-669.01, -8.95%)</span></div>
-  <div style="margin:4px 0 10px"><span class="big dn" style="font-size:22px">KOSDAQ 799.36 (-4.55%)</span> <span class="pill warn">서킷브레이커 (올해 7번째)</span> <span class="pill warn">매도 사이드카</span> <span class="pill">거래대금 코스피 40.1조 (패닉 볼륨)</span></div>
-  <p><b>어제(7/13 월) 무슨 일이 있었나</b> — 뉴스 교차검증 결과, 원인은 3중첩입니다:</p>
+  <h2>⏸ 판정: 관망 유지 — 장중 -5%대(6,448)까지 찍고 +0.73%로 되감은 V자. 외국인이 14일 만에 돌아왔지만, 오늘 밤 CPI(21:30)가 심판이다</h2>
+  <div class="big up">KOSPI 6,856.83 <span style="font-size:18px">(+49.90, +0.73%)</span></div>
+  <div style="margin:4px 0 10px"><span class="big dn" style="font-size:22px">KOSDAQ 783.98 (-1.92%)</span> <span class="pill warn">코스닥 매도 사이드카 12:06 (올해 8번째)</span> <span class="pill">코스피 거래대금 46.7조 (전일 40.1조보다 증가)</span></div>
   <ul>
-    <li><b>① 메모리 반도체 실적 쇼크</b> — SK하이닉스 2분기 영업이익이 컨센서스를 약 8% 하회할 전망 + 2026·2027년 추정치 각 -9%/-11% 하향 → 반도체 투매. 업종 전기전자 <b>-12.22%</b>, 제조 -10.14%. 밤사이 미국도 필라델피아 반도체 <b>-4.28%</b>(06:12 실측) — 글로벌 반도체 조정임</li>
-    <li><b>② 외국인·기관 동반 투매</b> — 코스피 현물 외국인 <b>-1조 6,700억</b> + 기관 <b>-2조 2,300억</b>, 받은 건 개인 <b>+3조 8,900억</b> (KRX 7/13 확정). 외국인 매도 13거래일 연속, 20일 누적 -40.6조</li>
-    <li><b>③ 중동 유가 + CPI 경계</b> — 미·이란 긴장으로 WTI $78(+6.09%, 06:12 실측)까지 급등, 오늘 밤 미 CPI 발표 앞둔 경계감이 투매를 증폭</li>
+    <li><b>① 극단 변동성의 V자</b> — 6,769 출발(-0.56%) → 장중 <b>6,448.86</b>(-5.3%, <a href="https://www.etoday.co.kr/news/view/2603659">이투데이</a>·<a href="https://m.ddaily.co.kr/page/view/2026071416204111828">디지털데일리</a> 교차확인)까지 밀렸다가 오후 되감아 6,856 마감. 장중 고점은 6,979.92(관측 1곳, 잠정). 하루 진폭 8%대 — 모닝브리핑의 "오전 V자 선취매 금지"는 적중했다: 오전에 산 사람은 -5%를 견뎌야 했고, 진짜 V는 정오 사이드카 이후에 왔다</li>
+    <li><b>② 외국인 14일 만의 순매수 전환</b> — 코스피 잠정 외국인 <b class="r">+0.96조</b> · 기관 <b class="r">+3.21조</b> · 개인 <b class="b">-4.14조</b>. 13거래일 연속 매도가 오늘 끊겼다. 어제 3.89조를 받았던 개인이 오늘 반등에 4.14조를 되던졌고, 그걸 외인·기관이 받았다 — <b>모닝브리핑의 "되사면 반등 신뢰↑" 조건이 하루 만에 충족된 손바뀜 역전</b></li>
+    <li><b>③ 단, 코스닥은 반대 방향</b> — 장중 -6%대(13개월 만 750선 하회, <a href="https://www.fnnews.com/news/202607141328397458">파이낸셜뉴스</a>)에서 783.98(-1.92%)로 절반만 회복. 코스닥 외국인은 <b class="b">-0.25조</b> 매도 지속 — 외인 귀환은 아직 <b>코스피(대형 반도체)만의 사건</b>이다. 알테오젠·코오롱티슈진 장중 -15%대 등 바이오 투매(<a href="https://www.newspim.com/news/view/20260714000650">뉴스핌</a>)</li>
+    <li><b>④ 어제 부러진 것들이 오늘 반등의 축</b> — 업종 전기전자 +2.76%·제조 +1.45%(마감 뉴스 기준, 수집 업종 데이터는 7/13★). SK하이닉스 <b class="r">1,919,000 (+3.7%)</b>, 삼성전자 <b class="r">265,000 (+4.1%)</b> — 어제 -15%대였던 반도체가 지수를 끌어올렸다</li>
+    <li><b>⑤ 환율 1,500 안착</b> — 서울환시 마감 <b class="gr">1,494.80원(-2.70원)</b>, 7월 들어 48원 하락(<a href="https://v.daum.net/v/20260714133102352">연합/다음</a>). 외인 복귀의 전제조건(환손실 공포 해소)이 이틀째 유지 — 모닝 체크리스트 "1,500 아래 유지?" 충족</li>
   </ul>
-  <p style="color:var(--ink)">📌 <b>개인이 3.9조를 받았다는 게 오늘의 핵심 구조입니다.</b> 반대매매 강제청산과 저가매수 개인이 뒤엉킨 손바뀜 — 오늘 더 밀리면 어제 산 개인이 2차 마진콜에 걸립니다. <b>오늘 외국인·기관이 되사느냐가 손바뀜의 질을 판정합니다</b> (되사면 반등 신뢰↑, 개인만 사면 데드캣 경계).</p>
 </div>
 
-<!-- ① 국면 판정 -->
+<!-- 국면 판정 -->
 <div class="card regime">
-  <h2>🧭 ① 국면 판정 → 적용 가설 (플레이북)</h2>
-  <p><b>판정: 폭락장 익일 (챕터①) + 이벤트 전야 (챕터④, 오늘 밤 CPI) 중첩.</b> 갭 방향은 08시 SKHY ADR 프리마켓·야간선물로 확인 후 확정.</p>
+  <h2>🧭 국면 판정 → 적용 가설 (플레이북)</h2>
+  <p><b>판정: 폭락장 바닥 확인 시도 (챕터① 진행형) + 이벤트 당일 밤 (챕터④, 21:30 CPI).</b> 어제 "폭락 익일"이었다면 오늘은 "바닥이냐 데드캣이냐"의 첫 판정일 — 외인·기관이 받았다는 점에서 <b>데드캣보다는 바닥 확인 쪽에 한 표</b>가 실렸다. 단 확정은 ①외인 2일째 지속 ②CPI 통과 ③코스닥 동참, 세 가지가 모여야 한다.</p>
   <ul>
-    <li><b>적용 1 — 익일 반등 대기</b>: 저가권 마감 → 익일 양봉 확률 62%. 단 이건 "당일 저점매수"가 아니라 <b>"안 사고 확인 후 움직이기"</b>입니다</li>
-    <li><b>적용 2 — 오전 V자 선취매 금지</b>: 함정률 ~50%. 9:00~10:00 반대매매 물량 소화 전의 반등은 신뢰 낮음</li>
-    <li><b>적용 3 — 이벤트 전 감쇠상품 정리</b>: CPI 전 포지션 축소 원칙 = <b>오늘 레버 3종 정리 계획과 정확히 일치</b> (아래 작전 카드)</li>
-    <li><b>금지</b>: 레버 물타기 홀딩(괴리 붕괴 -8~9%p 실증) · 서킷 재개 방향 베팅 · 공통 원리는 <b>"예측을 줄이고 확인을 늘린다"</b></li>
+    <li><b>플레이북 채점</b> — "저가권 마감 익일 양봉 62%" 가설 <b class="gr">적중</b>(+0.73%). "오전 V자 함정률 ~50%" <b class="gr">적중</b>(오전 매수분은 장중 -5% 구간 통과). 두 가설 모두 이번 사이클에서 실전 검증 +1</li>
+    <li><b>오늘 밤 적용</b> — 이벤트(CPI) 전 포지션 축소 원칙: 레버 3종은 정리됐으나 <b class="r">인버스 100주가 남았다</b>(아래 복기). 이벤트 전야에 방향 베팅을 남기지 않는다는 원칙 위반 상태로 밤을 맞는다</li>
   </ul>
+</div>
+
+<!-- 모닝 시나리오 판정 -->
+<div class="card">
+  <h2>📐 모닝브리핑(07:10) 시나리오 채점</h2>
+  <table>
+    <tr><th>모닝 제시</th><th>오늘 결과</th><th>판정</th></tr>
+    <tr><td>익일 양봉 확률 62% — "기다린 사람"의 것</td><td>KOSPI +0.73% 양봉 마감</td><td class="gr">✔ 적중 (단 경로는 장중 -5.3%의 극단)</td></tr>
+    <tr><td>오전 V자 선취매 금지 (함정률 50%)</td><td>오전 하락 지속 → 정오 사이드카 → 오후 V</td><td class="gr">✔ 적중 — 반등은 10시가 아니라 오후에 왔다</td></tr>
+    <tr><td>외국인 14일 연속이냐 전환이냐</td><td>코스피 +0.96조 (잠정) — 연속 매도 종료</td><td class="gr">✔ 전환 — 단 코스닥은 -0.25조 지속</td></tr>
+    <tr><td>환율 1,500 아래 유지?</td><td>마감 1,494.80 (-2.70원)</td><td class="gr">✔ 안착 2일째</td></tr>
+    <tr><td>6,800(피보 50%) 지지</td><td>종가 6,856 지지 · 장중 6,448 이탈 후 회복</td><td class="g">△ 종가 기준 지지, 장중은 MA120(6,579)까지 뚫었다 회복</td></tr>
+    <tr><td>레버 3종 당일 내 정리</td><td>3종 매도 집행 (0195R0·0195S0·0193T0)</td><td class="g">△ 집행됨 — 단 재매수 회전·14시대 매매·인버스 신규 오버나이트로 변질 (복기 참조)</td></tr>
+    <tr><td>CPI 전 신규 베팅 금지</td><td>장중 인버스·레버 회전 다수 + HMM 100주 신규</td><td class="r">✘ 미준수 — 오전 회전은 수익(강점 영역)이었으나 원칙과는 어긋남</td></tr>
+    <tr><td>동진쎄미켐 익절 트리거 (50,000/51,500)</td><td>종가 43,950 (-1.8%)</td><td>미도달 — 대기 유지</td></tr>
+  </table>
+</div>
+
+<!-- 수급 판정 -->
+<div class="card">
+  <h2>💰 수급 판정 (7/14 잠정) — 손바뀜이 하루 만에 뒤집혔다</h2>
+  <table>
+    <tr><th></th><th class="n">개인</th><th class="n">외국인</th><th class="n">기관</th><th>해석</th></tr>
+    <tr><td>코스피 7/14 <b>잠정</b></td><td class="n b">-4.14조</td><td class="n r">+0.96조</td><td class="n r">+3.21조</td><td>어제 산 개인의 되팔기를 외인·기관이 흡수</td></tr>
+    <tr><td>코스피 7/13 확정</td><td class="n r">+3.89조</td><td class="n b">-1.67조</td><td class="n b">-2.23조</td><td>폭락일 — 개인이 투매를 받은 날</td></tr>
+    <tr><td>코스닥 7/14 <b>잠정</b></td><td class="n">+0.07조</td><td class="n b">-0.25조</td><td class="n">+0.16조</td><td>외인 매도 지속 — 귀환은 코스피만</td></tr>
+  </table>
+  <p><b>손바뀜의 질 판정: 신뢰↑.</b> 모닝브리핑이 걸어둔 기준 — "오늘 외국인·기관이 되사느냐" — 이 그대로 충족됐다. 폭락 다음날 개인→외인·기관으로 물량이 넘어가는 것은 데드캣이 아니라 바닥 다지기에서 나오는 구조다. 단 7/9의 교훈을 반복한다: <b>1일 전환은 가설이고, 귀환 판정은 지속(2일+)과 규모로 한다.</b> 외인 20일 누적은 여전히 <b class="b">-41.2조</b> — 오늘 +0.96조는 그 바다의 한 방울이다. 내일 외인이 이어사면 가설 승격, 다시 팔면 "폭락 후 저가 스캘핑"으로 강등.</p>
+  <p style="font-size:12.5px">※ 마감 뉴스 보도치(개인 -5.6조 등)는 집계 범위(파생 포함 추정)가 달라 수치가 더 크다 — 본 브리핑은 KRX 현물 잠정 기준. 종목별 외인 확정치(7/14분)는 내일 게시.</p>
 </div>
 
 <!-- 리스크 계기판 -->
@@ -87,122 +114,123 @@ a{color:#7cb2f9;text-decoration:none}a:hover{text-decoration:underline}
   <h2>⚠️ 리스크 계기판</h2>
   <table>
     <tr><th>지표</th><th>수치 (기준일)</th><th>해석</th></tr>
-    <tr><td>등락종목수 (7/13)</td><td class="n r">KOSPI 176↑ / 716↓</td><td>KOSDAQ 217↑/1,458↓ — 시장 폭 전면 붕괴, 로테이션 피난처 소멸</td></tr>
-    <tr><td>풋콜비율 (거래량)</td><td class="n g">1.75 <b>(7/10★ 지연)</b></td><td>폭락 <i>전</i> 이미 풋 우위. 폭락 당일치는 미수신 — 공포 극점 여부 판정 불가</td></tr>
-    <tr><td>신용공여 잔고</td><td class="n g">35.6조 (7/10, 5일 -5.87%)</td><td>폭락 <i>전</i>부터 빚투 청산 진행 — <b>어제 -8.95% 반영 전 수치. 오늘 반대매매 2차 물량 경계</b></td></tr>
-    <tr><td>증시 주변자금</td><td class="n r">105.6조 (7/10, 5일 -10.73%)</td><td>매수 대기자금 급속 이탈. 반면 CMA +1.52% — 관망 현금은 쌓이는 중</td></tr>
-    <tr><td>원/달러</td><td class="n gr">1,499.6 (실시간) / 확정 1,507.1 (7/13)</td><td class="gr"><b>1,500 하향 돌파 — 원화 강세 전환.</b> 5일 전 1,539.7 → 당국 개입 추정 매도 + 수출업체 물량</td></tr>
-    <tr><td>외국인 순매수</td><td class="n r">-1.67조 (7/13)</td><td>13거래일 연속 매도, 20일 -40.6조 — <b>오늘 전환 여부가 체크리스트 1번</b></td></tr>
-    <tr><td>뉴스심리지수</td><td class="n g">110.3 (7/12)</td><td>폭락 전 기준으로 아직 낙관권 — <b>항복(capitulation) 미확인.</b> 바닥 신호는 통상 90대</td></tr>
-    <tr><td>WTI 유가</td><td class="n r">$78.00 (06:12 실측, +6.09%)</td><td>경계선 $75 돌파. 단 <b>오늘 밤 CPI는 6월 데이터라 이 급등 미반영</b> (7월분에 반영됨)</td></tr>
-    <tr><td>공매도 상위 (7/13)</td><td class="n">아모레 25.9% · 삼성화재 23.6%</td><td>한국항공우주 21.9% · 이수페타시스 18.4% · 현대로템 17.9%</td></tr>
+    <tr><td>풋콜비율 (거래량)</td><td class="n g">1.52 <b>(7/13★)</b></td><td>폭락 당일 1.75(7/10) → 1.52로 <b>하락 = 콜(반등) 베팅 증가.</b> 오늘 +0.73%로 옵션시장 채점 승 — 7/8 폭락 때와 같은 패턴 재연</td></tr>
+    <tr><td>신용공여 잔고</td><td class="n g">35.6조 (7/10, 5일 -5.87%)</td><td><b>폭락 이틀(7/13~14)의 반대매매 실측은 아직 미게시</b> — 게시되면 바닥 판정의 핵심 증거. 오늘 장중 6,448 급락분에 강제청산이 섞였을 가능성</td></tr>
+    <tr><td>증시 주변자금</td><td class="n r">105.6조 (7/10, 5일 -10.73%)</td><td>대기자금 이탈 지속 · CMA는 +1.52% — 관망 현금화</td></tr>
+    <tr><td>원/달러</td><td class="n gr">1,494.80 마감 (실시간 1,495.2)</td><td class="gr">1,500 아래 2일째 — 외인 복귀의 전제 유지 (ECOS 매매기준율은 1,504.9)</td></tr>
+    <tr><td>미국 (어젯밤)</td><td class="n">나스닥 -1.55% · S&P 7,515 (7/13)</td><td>반도체 중심 조정 지속 — 오늘 밤 CPI + 마이크론·SKHY 반응이 내일 갭 결정</td></tr>
+    <tr><td>국고 3y / 10y</td><td class="n">3.887 / 4.333 (7/14)</td><td>10y +7bp — 금리 상승 지속, 밸류에이션 역풍 살아있음</td></tr>
+    <tr><td>신용스프레드 (BBB-3y)</td><td class="n g">+6.50%p (7/14)</td><td>금융주 트리거 기준 7.0%p — <b>미점등 유지 (0/3)</b>, 회사채BBB 10.39%로 소폭 확대 중이라 계속 주시</td></tr>
+    <tr><td>뉴스심리지수</td><td class="n g">110.3 (7/12)</td><td>폭락 반영 전 — 항복(90대) 미확인 상태 지속</td></tr>
+    <tr><td>등락종목수 (7/13★)</td><td class="n r">KOSPI 176↑/716↓</td><td>오늘분 미수신 — 시장 폭 회복 여부는 내일 확인</td></tr>
   </table>
 </div>
 
-<!-- 금융주 신용 트리거 -->
+<!-- 오늘 매매 복기 -->
 <div class="card">
-  <h2>🏦 금융주 신용 트리거 계기판 (0/3 점등 — 코어 자격 유지)</h2>
+  <h2>🔎 오늘 매매 복기 — 실현 -168.7만: 레버 청산의 청구서를 지불한 날</h2>
+  <p>모닝브리핑 최우선 집행 과제였던 <b>레버 3종 정리는 집행됐다.</b> 그러나 "정리"가 "회전"으로 변질되면서 비용이 붙었다 (최근 24시간 체결 88건 · 라운드트립 28건, 15:40 자동 복기 기준).</p>
   <table>
-    <tr><th>트리거</th><th>현재</th><th>기준</th><th>판정</th></tr>
-    <tr><td>신용스프레드 (BBB-국고3y)</td><td class="n g">+6.50%p (7/13)</td><td>7.0%p</td><td class="g">⚠ 미점등이나 근접 — 회사채BBB 10.31%, 폭락 여파로 이번 주 확대 주시</td></tr>
-    <tr><td>연체율 상승 전환</td><td class="n">데이터 대기</td><td>전환 시</td><td>미점등</td></tr>
-    <tr><td>가계대출 급증 패턴</td><td class="n">데이터 대기</td><td>패턴 발생</td><td>미점등</td></tr>
+    <tr><th>트레이드</th><th class="n">실현손익</th><th>평가</th></tr>
+    <tr><td><b>0195S0 하이닉스롱 700주</b> (10:11 @13,280 전량)</td><td class="n b">-210.9만</td><td><b>5일 버틴 레버의 청구서</b> — 손실의 몸통은 7/9 고가 매수분. 정리 자체는 옳았으나 <b>매도 직전 09:22~24 400주 추가 매수</b>는 "정리하러 가서 물타기"</td></tr>
+    <tr><td><b>0193T0 하이닉스레버</b> (14:01 1,003주 손절 → 14:07~29 재매수·회전)</td><td class="n b">순 -62.6만</td><td>손절 집행은 계획이나 <b>14시대 매매(금지실수)</b> + 직후 457주 재매수 회전(+10.2만) — 10주 잔존은 군더더기</td></tr>
+    <tr><td>0195R0 삼전롱 200주 (09:02 @12,765)</td><td class="n r">+1.9만</td><td><b>모범 집행</b> — 갭업 페이드 전 시초 정리, 계획 그대로</td></tr>
+    <tr><td>0197X0 인버스2X 오전 회전 (1,694주 + 200주)</td><td class="n r">+81.2만</td><td>오전 하락 구간을 정확히 탄 강점 영역(오전 단타) — 단 아래 경고의 씨앗이 됨</td></tr>
+    <tr><td>셀트리온 20주 회전 · 미장 밤분(SNDQ·MUZ 등)</td><td class="n r">+1.6만 · +19.3만</td><td>30분 미만 스캘핑 5건 익절 — 강점 영역 유지</td></tr>
   </table>
-  <p style="font-size:12.5px">※ 2개 점등 시 금융 코어 자격 박탈 규칙. 참고: 장단기(10-3y) +0.45%p로 침체 신호 아님, 미 하이일드 2.69%p 안정 — 글로벌 신용위기 아님.</p>
+  <p class="mind red"><b>🔴 경고 — 0197X0 인버스2X 100주 오버나이트 (평단 14,245 · 종가 11,170 · 평가 -30.7만, -21.6%).</b> 12:21 저점 부근에서 재진입한 물량이 오후 V자에 정통으로 물렸고, 그대로 밤을 넘긴다. <b>인버스 규율 3규칙 정면 위반</b>이다 — 실측 439건에서 인버스 24시간 이상 보유는 34건 -1,509만이었고, 15분 미만은 승률 88%였다. 오늘 오전 +81만을 번 것도, 지금 -31만에 물린 것도 같은 상품이다 — 차이는 보유 시간뿐. 게다가 오늘 밤 CPI로 방향이 갈리는 이벤트 전야다. <b>내일 시초가에서 방향 불문 정리가 원칙이다. 물타기·"반등 나오면" 대기는 금지.</b></p>
+  <p style="font-size:12.5px">※ 자동 복기 플래그: 건당 -50만 초과 2건(0195S0·0193T0) · 14시대 손실 청산 1건 · 8시간 초과 손실 청산 3건 / 강점: 30분 미만 스캘핑 5건 익절. 신규 보유: HMM 100주(@20,050, 게이트 판정 없이 진입 — 내일 수급 확인 후 유지 여부 판단). 삼성전기는 장기보유 지정 유지.</p>
 </div>
 
-<!-- 긍정 신호 -->
+<!-- 과매수 스캐너 -->
 <div class="card">
-  <h2>🟢 반등의 재료 (있는 그대로)</h2>
+  <h2>🔥 과매수(단기과열) 스캐너 — 2,782종목 중 11종목, 검증 통과 0</h2>
+  <table>
+    <tr><th>종목</th><th class="n">종가 / 등락</th><th>급등 재료 (당일 검색)</th><th>주의</th></tr>
+    <tr><td>골프존홀딩스 (121440)</td><td class="n">6,660 / +0.3%</td><td>최대주주 <b>자진 상장폐지 공개매수</b> 진행 중 — 매수가 6,700원, 8/5까지 (<a href="https://www.etnews.com/20260629000290">전자신문</a>·<a href="https://www.mt.co.kr/stock/2026/06/29/2026062910065199225">머니투데이</a>)</td><td class="r">추격 금지 — 주가가 이미 공개매수가(6,700)에 붙어 상승여력이 캡됨</td></tr>
+    <tr><td>인피니트헬스케어 (071200)</td><td class="n">8,920 / +3.4%</td><td>재료 미확인 (수급성 추정) — 의료IT, 폭락장 소형 피난처 성격</td><td>거래량 얇은 소형주 — 과열 구간 신규 진입 아님</td></tr>
+    <tr><td>롯데손해보험 (000400)</td><td class="n">2,350 / +3.3%</td><td>보험 업종 역행 강세 2일째 (7/13 +6.3% <a href="https://www.nspna.com/news/?mode=view&newsid=820393">NSP통신</a>) — 개별 재료 미확인, 방어주 수급 추정</td><td>저가주 변동성 — 스캐너 검증(pass) 미통과</td></tr>
+  </table>
+  <p style="font-size:12.5px">※ 오늘은 검증통과(7/7 게이트) 종목 0 — 폭락 이틀 뒤 과열 신호 자체가 희소한 장. 스캘핑 브래킷 대상 없음.</p>
+</div>
+
+<!-- 오늘 밤 ~ 내일 시나리오 -->
+<div class="card">
+  <h2>🧭 오늘 밤 ~ 내일(7/15 수) 시나리오</h2>
   <ul>
-    <li><b>원화 강세 전환</b> — 1,539(5일 전) → 1,499(실시간). 외국인 이탈의 핵심 동인(환손실 공포)이 약해짐. <b>13일 연속 순매도가 끊길 수 있는 유일한 근거</b></li>
-    <li><b>미국 시장 전체는 안정</b> — S&P500 -0.29%, VIX 17선 (06:12 실측) — 무너진 건 반도체 섹터(-4.28%)뿐. 시스템 위기가 아니라 섹터 조정 + 한국 고유 수급 문제의 중첩</li>
-    <li><b>오늘 밤 CPI는 헤드라인 완화 전망</b> — 컨센서스 전년비 4.2% → 3.9%, 월간 -0.1% (6월 휴전기 유가 하락 반영). 단 <b>코어 2.9%는 끈적 — 헤드라인만 보고 안도 랠리에 올라타지 말 것</b></li>
-    <li><b>플레이북 통계</b> — 폭락 저가권 마감 익일 양봉 62% (2020-03-19 익일 +7.4% 사례). 어제 종가 6,806.93은 피보 50% 되돌림(6,801) 정확히 위</li>
-    <li><b>업종 방어 확인</b> — 폭락일에도 화학 +0.57%·섬유의류 +0.11% 플러스 (역행 강세 후보군)</li>
+    <li><b>1. 오늘 밤 21:30 (미 동부 08:30) — 미 6월 CPI.</b> 컨센서스: 헤드라인 전년비 <b>4.2% → 3.9%</b>(월간 -0.1%, 6월 유가 -10% 반영) · <b>코어 2.9% 유지(끈적)</b> (<a href="https://www.ig.com/uk/trading-strategies/us-cpi-june-2026-preview-what-to-expect-tomorrow-260713">IG</a>·<a href="https://www.kiplinger.com/investing/economy/june-cpi-preview-dont-let-a-negative-headline-fool-you">Kiplinger</a>). 헤드라인 하락은 이미 가격에 상당 부분 반영 — <b>코어가 3.0%로 올라서면 안도 랠리는 취소</b>다. 헤드라인만 보고 야간에 베팅하지 말 것</li>
+    <li><b>2. 22:30 (미 동부 09:30) 미장 개장</b> — 마이크론·SKHY(하이닉스 ADR)의 반응이 내일 국장 반도체 갭을 결정. 어젯밤 나스닥 -1.55%의 연장이냐 CPI 안도냐</li>
+    <li><b>3. 내일 국장 1번 체크: 외인 2일째.</b> 이어사면 "귀환 가설" 승격(코스피 6,856~6,980 상단 시도), 되팔면 오늘은 저가 스캘핑으로 강등(6,800 재시험). <b>가격보다 수급이 먼저다</b></li>
+    <li><b>4. 코스닥 동참 여부</b> — 코스피만 오르는 반등은 반쪽. 코스닥 800 회복 + 외인 순매수 전환이 확인돼야 시장 폭이 산다</li>
+    <li><b>5. 인버스 100주 시초 정리 집행일</b> — 방향 불문, 어제 레버 3종과 같은 원칙. CPI 결과가 갭업이든 갭다운이든 보유 연장 사유가 되지 않는다</li>
+    <li><b>6. 신용잔고 7/11·7/13분 게시 대기</b> — 폭락 이틀의 반대매매 실측. 큰 감소가 확인되면 "강제청산 소진 = 바닥 근거" 강화</li>
   </ul>
 </div>
 
-<!-- 레버 정리 작전 -->
-<div class="card" style="border:1px solid rgba(240,68,82,.4)">
-  <h2>🔴 오늘의 최우선 집행: 레버 3종 정리 (어제 선언한 계획)</h2>
-  <p>대상 (06:11 실계좌 실측): <b>하이닉스레버 0193T0 503주</b>(평단 16,761 / -11.0%) · <b>하이닉스롱 0195S0 300주</b>(평단 13,690 / -8.6%) · <b>삼전롱 0195R0 200주</b>(평단 12,670 / -3.9%) — 합계 평가손 약 -138만.</p>
-  <table>
-    <tr><th>시가 갭 시나리오</th><th>판정</th><th>행동 (알림 기준 — 주문은 준서님)</th></tr>
-    <tr><td><b>갭업 (+1%↑)</b></td><td class="g">탈출 최적</td><td>갭업 페이드 확률 60%+ — <b>시초~9:30 강세에 전량 분할 정리.</b> "더 오를 때까지"가 금지실수 #1</td></tr>
-    <tr><td><b>보합 (±1%)</b></td><td class="g">오전 반등 대기</td><td>10시 이후 반대매매 소화 뒤 반등 시도에서 정리. 미도래 시 14시 전까지는 종료</td></tr>
-    <tr><td><b>갭다운 (-1%↓)</b></td><td class="r">손실 확정 각오</td><td>반등 기다리되 <b>당일 내 정리 원칙 유지</b> — 레버 괴리 붕괴(-8~9%p 실증)는 기다릴수록 커짐. 물타기 절대 금지</td></tr>
-  </table>
-  <p style="font-size:12.5px">※ 갭 방향 판정: 08:00 SKHY ADR 프리마켓 + 야간선물 확인 후 07:40 벨~08:40 벨 사이 알림. 본주(삼성전자·SK하이닉스·삼성전기)는 이 계획과 무관 — 삼성전기는 장기보유 지정 유지.</p>
-</div>
-
-<!-- 오늘의 마음가짐 -->
-<div class="card">
-  <h2>🧭 오늘(7/14 화) 투자, 이런 마음으로</h2>
-  <div class="mind"><b>1. 반대매매를 먼저 보내고 움직인다.</b> -8.95% 다음날 오전(동시호가~10시)은 강제청산 물량의 시간입니다. "싸 보인다"로 사지 않기 — 어제 개인이 받은 3.9조가 오늘 2차 매물이 될 수 있습니다.</div>
-  <div class="mind"><b>2. 오전 V자는 절반이 함정이다.</b> 플레이북 실증 함정률 ~50%. 반등을 사려면 10시 이후, 외국인 순매수 전환을 눈으로 확인한 뒤에. 예측을 줄이고 확인을 늘린다.</div>
-  <div class="mind"><b>3. 오늘 밤 21:30(미 동부 08:30) CPI 전엔 신규 베팅 금지.</b> 헤드라인은 완화(3.9%) 전망이지만 코어가 끈적하면 해석이 갈립니다. 이벤트 전 원칙은 포지션 축소 — 레버 정리가 바로 그것입니다.</div>
-  <div class="mind"><b>4. 반등은 탈출 기회다, 추격 기회가 아니다.</b> 전수 감사에서 레버 버티기가 -3,404만의 주범으로 확인됐습니다. 오늘 반등이 오면 순서는 "레버 정리 → 관망", "추가 매수"가 아닙니다.</div>
-  <div class="mind"><b>5. 환율 창을 주가보다 먼저 본다.</b> 1,500 아래 안착이면 외인 복귀 시나리오 유효, 1,510 재돌파면 반등 신뢰 철회. 수급이 가격보다 우선입니다.</div>
-</div>
-
-<!-- 체크리스트 + 일정 -->
+<!-- 체크리스트 -->
 <div class="grid2">
 <div class="card">
-  <h2>✅ 오늘 장중 체크리스트</h2>
+  <h2>✅ 내일 장중 체크리스트</h2>
   <ul class="chk">
-    <li>08:00 SKHY 프리마켓 — 갭 방향 판정 → 레버 정리 시나리오 확정</li>
-    <li>원/달러 — <b>1,500 아래 유지?</b> (1,510 재돌파 시 경계 복귀)</li>
-    <li>외국인 현물 — <b>14일 연속이냐, 전환이냐</b> (손바뀜의 질 판정)</li>
-    <li>9:00~10:00 반대매매 물량 — 2차 투매 여부</li>
-    <li>6,800(피보 50%) 지지 — 붕괴 시 다음 지지 6,579(MA120)까지 -3.3% 진공</li>
+    <li>시초: 0197X0 인버스 100주 정리 (방향 불문)</li>
+    <li>외국인 현물 — 2일 연속 순매수 여부 (귀환 판정 1번)</li>
+    <li>원/달러 1,500 아래 3일째 유지?</li>
+    <li>코스피 6,800 지지 / 6,980(오늘 장중 고점권) 돌파 시도</li>
+    <li>코스닥 750~784 — 외인 전환·800 회복 여부</li>
+    <li>HMM 100주 — 수급 확인 후 유지/정리 판단</li>
     <li>동진쎄미켐 익절 트리거(50,000/51,500) 대기 유지</li>
-    <li>레버 3종 정리 집행 확인 (당일 내 완료)</li>
+    <li>14시대 매매 금지 — 오늘 또 위반했다 (2일 연속 금지)</li>
   </ul>
 </div>
 <div class="card">
-  <h2>📅 오늘~이번 주 일정 (한국 = 미국 병기)</h2>
-  <div class="kv"><span class="k">07:40 / 08:40</span><span class="v">프리마켓 벨 (자동)</span></div>
-  <div class="kv"><span class="k">09:00</span><span class="v">국장 개장 — 6,800 지지가 첫 신호</span></div>
-  <div class="kv"><span class="k">15:00</span><span class="v">마감 전 벨 (14시대 매매 금지 시간대)</span></div>
-  <div class="kv"><span class="k">15:40</span><span class="v">데일리 복기 자동 실행</span></div>
+  <h2>📅 오늘 밤~내일 일정 (한국 = 미국 병기)</h2>
   <div class="kv"><span class="k g">21:30 (미 동부 08:30)</span><span class="v g">🔥 미 6월 CPI — 이번 주 최대 변수</span></div>
   <div class="kv"><span class="k">22:30 (미 동부 09:30)</span><span class="v">미장 개장 — 마이크론·SKHY 반응</span></div>
-  <div class="kv"><span class="k">18:20</span><span class="v">마감브리핑 (오늘 확정치 반영)</span></div>
+  <div class="kv"><span class="k">07:40 / 08:40</span><span class="v">내일 프리마켓 벨 — CPI 결과·갭 판정</span></div>
+    <div class="kv"><span class="k">09:00</span><span class="v">국장 개장 — 인버스 정리 + 외인 확인</span></div>
+  <div class="kv"><span class="k">15:00</span><span class="v">마감 전 벨 (14시대 매매 금지)</span></div>
+  <div class="kv"><span class="k">18:20</span><span class="v">마감브리핑 (외인 2일째 판정)</span></div>
 </div>
 </div>
 
-<!-- 변경된 것 -->
+<!-- 변경 수치 -->
 <div class="card">
-  <h2>🔄 직전 거래일 → 어제, 변경된 핵심 수치</h2>
+  <h2>📊 전 거래일 대비 변경 수치</h2>
   <table>
-    <tr><th>지표</th><th>이전 (7/10)</th><th>현재 (7/13 확정)</th><th>방향</th></tr>
-    <tr><td>KOSPI</td><td class="n">7,475.94</td><td class="n r">6,806.93</td><td class="r">-8.95% (5일 -15.46% · 20일 -20.35%)</td></tr>
-    <tr><td>KOSDAQ</td><td class="n">837.46</td><td class="n r">799.36</td><td class="r">-4.55%</td></tr>
-    <tr><td>외국인 순매수 (코스피)</td><td class="n">-0.32조</td><td class="n r">-1.67조</td><td class="r">13일 연속, 매도 가속</td></tr>
-    <tr><td>기관 순매수 (코스피)</td><td class="n gr">+1.13조</td><td class="n r">-2.23조</td><td class="r">매수 → 투매 전환 (어제의 결정타)</td></tr>
-    <tr><td>원/달러 (ECOS 확정)</td><td class="n">1,520대</td><td class="n gr">1,507.1 → 실시간 1,499.6</td><td class="gr">원화 강세 전환</td></tr>
-    <tr><td>국고채 10년</td><td class="n">—</td><td class="n">4.263%</td><td class="g">금리 상승 지속</td></tr>
-    <tr><td>뉴스심리지수</td><td class="n">111.3 (7/11)</td><td class="n g">110.3 (7/12)</td><td class="g">폭락 미반영 — 항복 아직</td></tr>
+    <tr><th>지표</th><th class="n">7/13 (월)</th><th class="n">7/14 (화)</th><th>비고</th></tr>
+    <tr><td>KOSPI</td><td class="n">6,806.93 (-8.95%)</td><td class="n r">6,856.83 (+0.73%)</td><td>장중 6,448 → V자 · 5일 -10.44% · 20일 -21.43%</td></tr>
+    <tr><td>KOSDAQ</td><td class="n">799.36 (-4.55%)</td><td class="n b">783.98 (-1.92%)</td><td>장중 750선 하회(13개월 만) 후 회복 · 사이드카 8번째</td></tr>
+    <tr><td>거래대금(코스피)</td><td class="n">40.1조</td><td class="n">46.7조</td><td>손바뀜 볼륨 — 코스닥 6.7조</td></tr>
+    <tr><td>외국인(코스피)</td><td class="n b">-1.67조 (확정)</td><td class="n r">+0.96조 (잠정)</td><td><b>13일 연속 매도 종료</b> — 20일 누적 -41.2조</td></tr>
+    <tr><td>기관(코스피)</td><td class="n b">-2.23조</td><td class="n r">+3.21조 (잠정)</td><td>투매 → 대량 매수 재전환</td></tr>
+    <tr><td>개인(코스피)</td><td class="n r">+3.89조</td><td class="n b">-4.14조 (잠정)</td><td>어제 받은 물량을 하루 만에 되팔기</td></tr>
+    <tr><td>SK하이닉스</td><td class="n">-15.4% (시총상위★)</td><td class="n r">1,919,000 (+3.7%)</td><td>200만 아래 — 애프터 미장 SKHY 주시</td></tr>
+    <tr><td>삼성전자</td><td class="n">—</td><td class="n r">265,000 (+4.1%)</td><td>반등 주도 업종 전기전자 +2.76% (뉴스 기준)</td></tr>
+    <tr><td>원/달러 (서울환시 마감)</td><td class="n">1,497.5</td><td class="n gr">1,494.80 (-2.70)</td><td>1,500 아래 2일째 — 7월 -48원</td></tr>
+    <tr><td>풋콜비율(거래량)</td><td class="n">1.75 (7/10)</td><td class="n g">1.52 (7/13★)</td><td>폭락일 콜 베팅 증가 → 오늘 반등으로 채점 승</td></tr>
+    <tr><td>국고 3y / 10y</td><td class="n">3.778 / 4.263</td><td class="n g">3.887 / 4.333</td><td>금리 상승 지속 — 10y +7bp</td></tr>
+    <tr><td>신용공여잔고</td><td class="n">35.6조 (7/10)</td><td class="n">35.6조 (7/10 최신)</td><td>폭락 이틀 실측 미게시 — 게시 시 바닥 판정 증거</td></tr>
   </table>
-  <p style="margin-top:10px;font-size:12.5px">※ KOSDAQ 이전값은 7/10 종가(799.36 ÷ (1-4.55%) 역산). 시총상위50 등락은 7/10★ 기준이라 폭락일 개별종목 등락은 마감브리핑에서 확정 반영.</p>
 </div>
 
-<!-- 한줄 요약 -->
-<div class="card" style="border:1px solid rgba(245,158,11,.4)">
+<!-- 한 줄 결론 -->
+<div class="card">
   <h2>💡 한 줄 결론</h2>
-  <p style="font-size:15px"><b>"오늘 할 일은 셋뿐 — 레버 3종을 반등에 판다, 외국인과 환율(1,500)을 확인하기 전엔 사지 않는다, CPI(21:30) 전엔 포지션을 키우지 않는다. 익일 양봉 확률 62%는 '기다린 사람'의 것이다."</b></p>
+  <p style="font-size:15px;line-height:1.9">"외국인이 14일 만에 돌아왔고(+0.96조 잠정), 기관이 3.2조를 받쳤고, 어제 3.9조를 받았던 개인은 오늘 4.1조를 되던졌다 — 손바뀜의 방향이 하루 만에 뒤집힌 것이 오늘 +0.73%의 정체다. 장중 6,448까지 찍고 되감은 V자에서 플레이북 두 가설(익일 양봉·오전 V자 함정)은 모두 적중했고, 계좌는 레버 5일 버티기의 청구서 -169만을 지불하며 정리를 마쳤다. 반등의 질은 좋아졌지만 심판은 오늘 밤 CPI다 — 그리고 그 심판대에 인버스 100주를 올려둔 채 밤을 넘기는 것이 오늘 남긴 유일한, 그러나 명백한 규율 위반이다. 내일 시초, 방향 불문 정리."</p>
 </div>
 
 <div class="foot">
-데이터: 대시보드 수집분 (KRX·ECOS·FRED·KOFIA·DART·네이버, 7/13 확정 — 풋콜·시총상위는 7/10★) + 실시간 스냅샷(07시) + 실계좌 06:11 실측 ·
-외부 검증: <a href="https://www.newspim.com/news/view/20260713000993" target="_blank">'검은 월요일' 코스피 9% 급락 (뉴스핌)</a> ·
-<a href="https://www.etoday.co.kr/news/view/2603183" target="_blank">올해 7번째 서킷브레이커·반도체 투매 (이투데이)</a> ·
-<a href="https://www.newspim.com/news/view/20260713000765" target="_blank">외국인·기관 동반 매도, 서킷브레이커 발동 (뉴스핌)</a> ·
-<a href="https://www.ebn.co.kr/news/articleView.html?idxno=1714136" target="_blank">당국 개입 추정 매도에 1530원대 (EBN)</a> ·
-<a href="https://www.ig.com/uk/trading-strategies/us-cpi-june-2026-preview-what-to-expect-tomorrow-260713" target="_blank">미 6월 CPI 프리뷰 (IG)</a> ·
-<a href="https://www.kiplinger.com/investing/economy/june-cpi-preview-dont-let-a-negative-headline-fool-you" target="_blank">헤드라인에 속지 말 것 (Kiplinger)</a><br>
-자동매도 0건 (전 종목 알림 전용 · 킬스위치 manual) · 본 브리핑은 투자 참고 자료이며, 투자 판단과 책임은 본인에게 있습니다. · 생성: Claude (돌격이) · 2026-07-14 07:10
+데이터: 자체 수집(지수 7/14 확정 종가 · 수급 7/14 잠정 · 풋콜·업종·등락종목수·시총상위 7/13★ · 신용잔고·자금 7/10 — 기준일 본문 병기) · 장중 저가 6,448.86은 뉴스 2곳 교차확인, 고가 6,979.92는 1곳 관측(잠정) · 매매 복기는 토스 체결 내역 전수 대조(15:40 자동 복기 + 18:30 실계좌 실측) · 외부 검증:
+<a href="https://www.etoday.co.kr/news/view/2603659">코스피 기관 사자에 6856선 반등 vs 코스닥 매도 사이드카 (이투데이)</a> ·
+<a href="https://m.ddaily.co.kr/page/view/2026071416204111828">레버리지 후폭풍에 중동 리스크까지 — 6440선 밀렸다 반등 (디지털데일리)</a> ·
+<a href="https://www.newspim.com/news/view/20260714000650">코스닥 5% 급락, 매도 사이드카 발동 (뉴스핌)</a> ·
+<a href="https://www.fnnews.com/news/202607141328397458">코스닥 13개월 만에 750선 아래로 — 올해 8번째 사이드카 (파이낸셜뉴스)</a> ·
+<a href="https://v.daum.net/v/20260714133102352">원·달러 환율 상승세 꺾였다 — 7월 들어 48원 하락 (연합뉴스)</a> ·
+<a href="https://www.ig.com/uk/trading-strategies/us-cpi-june-2026-preview-what-to-expect-tomorrow-260713">미 6월 CPI 프리뷰 — 헤드라인 3.9% 전망 (IG)</a> ·
+<a href="https://www.kiplinger.com/investing/economy/june-cpi-preview-dont-let-a-negative-headline-fool-you">헤드라인에 속지 말 것 — 코어 2.9% 끈적 (Kiplinger)</a> ·
+<a href="https://www.etnews.com/20260629000290">골프존홀딩스 자진 상장폐지 공개매수 (전자신문)</a><br>
+직전 브리핑: <a href="2026-07-14_모닝브리핑.html">2026-07-14 모닝브리핑</a> · <a href="2026-07-09_데일리브리핑.html">2026-07-09 데일리브리핑</a><br>
+자동매매 0건 (킬스위치 manual 유지) · 본 브리핑은 투자 참고 자료이며, 투자 판단과 책임은 본인에게 있습니다. · 생성: Claude 돌격이 (Fable 5) · 2026-07-14 (화) 장 마감 후 작성
 </div>
 
 </div>
