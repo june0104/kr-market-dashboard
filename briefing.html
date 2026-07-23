@@ -1,6 +1,9 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"/>
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>모닝 브리핑 · 2026-07-23</title>
+<title>모닝 브리핑 · 2026-07-24 (금)</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
 <style>
 :root{color-scheme:dark;--bg:#0E0F12;--paper:#1A1B20;--soft:#24262C;--line:#2A2C33;
@@ -9,116 +12,324 @@
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);
 font-family:'Pretendard',-apple-system,system-ui,sans-serif;font-size:14px;line-height:1.65;letter-spacing:-.01em}
 .wrap{max-width:860px;margin:0 auto;padding:36px 20px 90px}
-h1{font-size:25px;font-weight:800;margin:0 0 4px}
-.sub{color:var(--ink3);font-size:12.5px;margin-bottom:22px}
-.card{background:var(--paper);border-radius:20px;box-shadow:var(--shadow);padding:20px 24px;margin-bottom:14px}
-h2{font-size:16px;font-weight:800;margin:0 0 10px}
-p{margin:6px 0;color:var(--ink2)} b,strong{color:var(--ink)}
+h1{font-size:26px;font-weight:800;margin:0 0 4px;letter-spacing:-.02em}
+.sub{color:var(--ink3);font-size:12.5px;margin-bottom:24px}
+.card{background:var(--paper);border-radius:20px;box-shadow:var(--shadow);padding:22px 24px;margin-bottom:16px}
+h2{font-size:16.5px;font-weight:800;margin:0 0 12px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+h3{font-size:14px;font-weight:700;margin:16px 0 6px;color:var(--ink)}
+p{margin:6px 0;color:var(--ink2)}
+b,strong{color:var(--ink)}
+.hero{background:linear-gradient(135deg,#241a00,#1A1B20);border:1px solid rgba(245,158,11,.45)}
+.regime{background:linear-gradient(135deg,#241a00,#1A1B20);border:1px solid rgba(245,158,11,.4)}
+.acct{background:linear-gradient(135deg,#101a2a,#1A1B20);border:1px solid rgba(49,130,246,.45)}
+.big{font-size:34px;font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.dn{color:var(--fall)}.up{color:var(--rise)}
 table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
-th{color:var(--ink3);font-weight:600;text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);font-size:11.5px}
-td{padding:7px 8px;border-bottom:1px solid var(--soft)} td.n{text-align:right} tr:last-child td{border:none}
+th{color:var(--ink3);font-weight:600;text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);font-size:11.5px}
+td{padding:8px;border-bottom:1px solid var(--soft);color:var(--ink)}
+td.n{text-align:right}
+tr:last-child td{border:none}
 .r{color:var(--rise);font-weight:700}.b{color:#5EA2F8;font-weight:700}.g{color:var(--gold);font-weight:700}.gr{color:var(--green);font-weight:700}
-ul{margin:6px 0;padding-left:20px;color:var(--ink2)} li{margin:6px 0} li b{color:var(--ink)}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:3px 10px;border-radius:10px;background:var(--soft);color:var(--ink2);margin:2px 4px 2px 0}
+.pill.warn{background:rgba(240,68,82,.13);color:#ff8a93}
+.pill.ok{background:rgba(0,184,118,.13);color:#3ad29a}
+.pill.info{background:rgba(49,130,246,.14);color:#7cb2f9}
+ul{margin:6px 0;padding-left:20px;color:var(--ink2)}
+li{margin:5px 0}
+li b{color:var(--ink)}
 .chk li{list-style:none;position:relative;padding-left:26px}
-.chk li:before{content:'\2610';position:absolute;left:0;color:var(--gold);font-weight:800}
-.mind{border-left:3px solid var(--gold);background:var(--soft);border-radius:0 14px 14px 0;padding:11px 15px;margin:9px 0;color:var(--ink2)}
+.chk li:before{content:'☐';position:absolute;left:0;color:var(--gold);font-weight:800}
+a{color:#7cb2f9;text-decoration:none}a:hover{text-decoration:underline}
+.foot{color:var(--ink3);font-size:11.5px;margin-top:26px;line-height:1.8}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:640px){.grid2{grid-template-columns:1fr}.big{font-size:28px}}
+.kv{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--soft);font-size:13px}
+.kv:last-child{border:none}
+.kv .k{color:var(--ink3)}.kv .v{font-weight:700;font-variant-numeric:tabular-nums}
+.mind{border-left:3px solid var(--gold);background:var(--soft);border-radius:0 14px 14px 0;padding:12px 16px;margin:10px 0}
 .mind b{color:var(--gold)}
-.big{font-size:30px;font-weight:800;font-variant-numeric:tabular-nums}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media(max-width:640px){.grid2{grid-template-columns:1fr}}
-.foot{color:var(--ink3);font-size:11.5px;margin-top:22px;line-height:1.8}
-.hero-dn{background:linear-gradient(135deg,#2a0f14,#1A1B20);border:1px solid rgba(240,68,82,.3)}
-.hero-up{background:linear-gradient(135deg,#0d2818,#1A1B20);border:1px solid rgba(0,184,118,.3)}
-</style></head><body><div class="wrap">
-<h1>🌅 모닝 브리핑 — 국장</h1>
-<div class="sub">2026-07-23 (목) 07:15 생성 · 기준 데이터 2026-07-22 확정 종가 · 풋콜 2026-07-21 기준 · 자동 생성(규칙 기반)</div>
+.mind.red{border-left-color:var(--rise)}
+.mind.red b{color:#ff8a93}
+</style>
+</head>
+<body><div class="wrap">
 
-<div class="card ">
-  <h2>시장 현황</h2>
-  <div class="big r">KOSPI 6,797.70 <span style="font-size:16px">(+0.74%)</span></div>
-  <div style="margin:2px 0 8px"><span class="big b" style="font-size:20px">KOSDAQ 751.09 (-0.30%)</span></div>
-  <p>5일 <b class="b">-0.9%</b> · 20일 <b class="b">-17.1%</b>
-   · 거래대금 28.6조 · 코스닥 5일 <b class="b">-4.2%</b></p>
-  <table><tr><td style='padding:6px 10px'><span style='color:var(--ink3);font-size:11px'>코스피</span><br><b class='r'>6,797.7 (+0.74%)</b></td><td style='padding:6px 10px'><span style='color:var(--ink3);font-size:11px'>코스닥</span><br><b class='b'>751.09 (-0.30%)</b></td><td style='padding:6px 10px'><span style='color:var(--ink3);font-size:11px'>원/달러</span><br><b class='b'>1,478.5 (-0.27%)</b></td><td style='padding:6px 10px'><span style='color:var(--ink3);font-size:11px'>나스닥</span><br><b class='b'>25,690.9 (-0.57%)</b></td><td style='padding:6px 10px'><span style='color:var(--ink3);font-size:11px'>VIX</span><br><b class='b'>16.64 (-2.40%)</b></td></tr></table>
-  <p style="font-size:11.5px;color:var(--ink3)">실시간 줄은 생성 시각 스냅샷 (장전엔 전일종가)</p>
+<h1>🌅 모닝 브리핑 — 국장 (한국시장)</h1>
+<div class="sub">2026-07-24 (금) 07:25 작성 · 지수·수급·업종·등락종목수 <b class="g">7/23 확정</b> · 금리·환율(ECOS) 7/23 · 풋콜·미결제·시총상위 <b>7/22 ★1일 지연</b> · 신용잔고·증시자금·CMA 7/22 (★D+2) · 뉴스심리 7/19 · 소비자·기업심리 2026년 6월 · 미장·유가·ADR·계좌는 <b>7/24 05:00~07:10 스냅샷</b> · 종목 종가·수급은 네이버 확정치</div>
+
+<!-- 헤드라인 -->
+<div class="card hero">
+  <h2>⏸ 판정: 관망 — 어제 국장 +4.40%, 어젯밤 미장 -2.15%. 방향이 정면으로 엇갈린 채 맞는 아침이다. 승격 관문 2/2는 통과했으나 오늘은 <b>급등 익일 + 브렌트 $100 돌파</b>라는 새 리스크가 겹쳤고, MA20(7,545)은 여전히 5.9% 위다</h2>
+  <div class="big up">KOSPI 7,096.89 <span style="font-size:18px">(+299.19, +4.40%)</span></div>
+  <div style="margin:4px 0 10px">
+    <span class="big" style="font-size:22px;color:var(--rise)">KOSDAQ 790.28 (+5.22%)</span>
+    <span class="pill ok">5거래일 만에 7,000선 탈환</span>
+    <span class="pill">거래대금 코스피 26.9조 · 코스닥 5.5조</span>
+    <span class="pill warn">20일 -16.22% · 20일 고점(8,930) 대비 -20.5%</span>
+  </div>
+  <ul>
+    <li><b>① 어제 국장 — 알파벳이 만든 전면 반등.</b> 알파벳 2분기 클라우드 매출 +82%·capex 확대 재확인이 국내 반도체로 직결되며 시초 +3.74% 갭업, 이번엔 <b>페이드 없이 종가로 지켰다</b>. 코스피 상승 <b>827</b>종목 vs 하락 74종목 — 저변까지 전면적이었다 (<a href="https://www.hankyung.com/article/2026072322466">한국경제</a>·<a href="https://www.newspim.com/news/view/20260723001040">뉴스핌 마감시황</a>·<a href="http://news.bizwatch.co.kr/article/market/2026/07/23/0036">비즈워치</a>).</li>
+    <li><b>② 어젯밤 미장 — 같은 알파벳이 반대로 작동했다.</b> 나스닥 <b>25,137.69 (-2.15%)</b>·S&amp;P500 7,408.30 (-1.21%)·다우 51,711.65 (-0.97%)·VIX 18.70 (+12.38%). 알파벳 <b>-7.13%</b>, 테슬라 <b>-14.52%</b> — 하루 만에 '호실적'이 'AI 투자 부담'으로 재해석됐다 (<a href="https://www.newspim.com/news/view/20260724000031">뉴스핌</a>·<a href="https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01754806645517800">이데일리</a>).</li>
+    <li><b>③ 그런데 메모리는 밤에도 올랐다.</b> 마이크론 <b>$990.21 (+3.20%)</b>·샌디스크 $1,610.33 (+0.69%)·SK하이닉스 ADR(SKHY) $169.50 (+2.56%)·SOX 12,343.84 (-0.54%). 지수 -2.15%와 메모리 강세가 갈라진 밤 — <b>오늘 갭은 '전면 갭다운'이 아니라 '갈라진 출발'</b>이 기본 시나리오다.</li>
+    <li><b>④ 새 변수 — 브렌트 $100 돌파.</b> 브렌트 <b>$100.85 (+7.21%)</b>·WTI <b>$92.54 (+6.58%)</b>. 호르무즈 긴장 + 후티 홍해 공격, 트럼프의 이란 책임론 경고가 겹쳤다. 골드만삭스는 차질 지속 시 4분기 브렌트 $120 가능성을 제시 (<a href="https://www.fnnews.com/news/202607240509025758">파이낸셜뉴스</a>). 국장에는 <b>정유·조선 수혜 / 항공·해운·화학 역풍 + 인플레발 금리 역풍</b>의 이중 경로다.</li>
+  </ul>
 </div>
 
-<div class="grid2">
-<div class="card"><h2>⚠️ 경고 신호</h2><ul><li>⚠ 풋콜비율이 <b>2026-07-21</b> 기준 — 이후 심리 변화 미반영</li><li>⚠ 회사채BBB-국고3y 스프레드 <b>+6.49%p</b> — 한계기업 자금경색 수준</li><li>⚠ 신용공여 잔고 5일 <b>-3.5%</b> — 빚투 청산 진행(반대매매 압력)</li></ul></div>
-<div class="card"><h2>🟢 긍정 신호</h2><ul><li>🟢 원/달러 5일새 1,505→1,476 안정 — 외인 수급에 우호적</li><li>🟢 최근 수급일 외국인 <b>+2.62조</b> 순매수</li><li>🟢 미국 안정 — VIX 17.1, 하이일드 2.69%p (글로벌 위기 아님)</li><li>🟢 수출금액지수 243 — 펀더멘털(수출)은 별개로 확인</li></ul></div>
+<!-- 국면 판정 -->
+<div class="card regime">
+  <h2>🧭 국면 판정 → 적용/봉인 가설 (백테스트 2층 원칙)</h2>
+  <p><b>판정: '하락 추세 속 반등' → <span class="g">기술적 반등 국면</span>으로 한 칸 상향. 단 매수 허가는 아니다.</b> 어제 약속한 승격 관문을 실제로 판정한다 — <b>① 외인 4일차 순매수 ✔ 통과</b>(+2.14조, 4일 누적 +5.58조) · <b>② 종가 ≥ 6,820 ✔ 통과</b>(7,096.89). <b>2/2 충족 → 승격.</b> 그러나 승격의 정의는 "관망 해제"가 아니라 <b>"반등을 되돌림이 아닌 국면으로 인정한다"</b>까지다. 비중 확대의 조건인 <b>MA20(7,545.12) 회복은 여전히 -5.9% 미달</b>이다.</p>
+  <p><span class="pill warn">🔒 봉인 유지</span> <b>낙폭과대 리바운드류(역배열 -25% 줍기·연속음봉 물타기)</b> — MA20 미회복이므로 봉인 해제 조건 미충족. 2026 조정 국면에서 이 계열은 5년 백테스트 기준 첫 마이너스 전환 상태다.</p>
+  <p><span class="pill warn">🔓 상시 유효</span> <b>갭업 시초 매수 금지 · 급등 익일 추격 금지.</b> 오늘이 정확히 그 날이다 — 어제 +4.40%. 1년 실측에서 국장 급등 익일은 폐기된 전략(51%)이다.</p>
+  <p><span class="pill info">△ 참조</span> <b>낙폭 되돌림 좌표</b> — 20일 고점 8,930.30 → 저점 6,516.27(7/20) 낙폭 2,414p 기준, 현재 7,096.89는 <b>되돌림 24.1%</b>. 38.2% 되돌림 = <b>7,438</b>, 50% = 7,723. MA20(7,545)이 38.2% 되돌림 바로 위에 놓여 있어 <b>7,438~7,545 구간이 이번 반등의 진짜 관문</b>이다. (참조 전용 — 매수 근거로 쓰지 않는다)</p>
+  <p><span class="pill warn">⚠ 신규</span> <b>브렌트 $100 = 국면 변수 추가.</b> 유가는 그동안 '리스크 격상' 항목이었지만 $100을 종가로 넘긴 이상 <b>물가 → 금리 인하 지연 → 밸류에이션</b> 경로로 지수에 직접 작용한다. 반등 국면 승격과 동시에 새 역풍이 들어온 셈 — 그래서 판정이 ⏸이다.</p>
+  <p><span class="pill warn">🚧 이번 주 기조</span> <b>무매수 기본값 유지</b> (7/23~27 뇌관 통과까지). <b>7/27(월) CXMT 상하이 상장</b>이 남아 있다 — 2차 뇌관은 아직 통과하지 않았다.</p>
 </div>
 
+<!-- 리스크 계기판 -->
 <div class="card">
-  <h2>📊 핵심 계기판</h2>
+  <h2>⚠️ 리스크 계기판 <span class="pill">기준일 병기 · 반도체 앵커 상단 고정</span></h2>
   <table>
-  <tr><th>수급·심리</th><th style="text-align:right">수치</th><th>거시·자금</th><th style="text-align:right">수치</th></tr>
-  <tr><td>외국인(2026-07-22)</td><td class="n r">+2.62조</td>
-      <td>원/달러</td><td class="n">1,475.6</td></tr>
-  <tr><td>외국인 20일 누적</td><td class="n b">-30.0조</td>
-      <td>기준금리 / 국고3y</td><td class="n">2.75 / 3.91</td></tr>
-  <tr><td>기관(2026-07-22)</td><td class="n b">-1.40조</td>
-      <td>장단기(10-3y)</td><td class="n">+0.48%p</td></tr>
-  <tr><td>풋콜비율(2026-07-21)</td><td class="n">0.93</td>
-      <td>신용스프레드(BBB)</td><td class="n">+6.49%p</td></tr>
-  <tr><td>상승/하락 종목</td><td class="n">1294 / 1189</td>
-      <td>신용공여(5일)</td><td class="n">33.6조 (-3.5%)</td></tr>
-  <tr><td>뉴스심리 / 기업심리</td><td class="n">96.6 / 97.7</td>
-      <td>증시 대기자금(5일)</td><td class="n">106.7조 (-2.1%)</td></tr>
-  <tr><td>VIX / 미 하이일드</td><td class="n">17.1 / 2.69</td>
-      <td>수출금액지수</td><td class="n">243.0</td></tr>
+    <tr><th>지표</th><th>수치 (기준일)</th><th>해석 / 판정</th></tr>
+    <tr>
+      <td class="g">★반도체 가격 vs SOX</td>
+      <td>SOX <b>12,343.84 (-0.54%)</b> · 마이크론 <b>$990.21 (+3.20%)</b> · 샌디스크 $1,610.33 (+0.69%) · SKHY $169.50 (+2.56%) <span class="pill">7/23 미 현지 마감</span></td>
+      <td><b>가격(실물) ↑ vs 지수 ↓ = 공포 조정 쪽.</b> 나스닥 -2.15%인 밤에 메모리 3종이 모두 올랐다 — 조정의 성격이 '메모리 사이클 붕괴'가 아니라 <b>'AI 인프라 capex 부담'</b>이라는 뜻. 판정 규칙대로면 <b>현물가 강세 지속 = 조정 국면 매수 우위 유지</b> 쪽이고, <b>2주 연속 하락 신호는 미점등</b>. <b>단 D램 스팟·고정거래가 7월 셋째주 공식 수치는 이번 검색에서 확보 실패</b> — 개별주 프록시(MU·SNDK·SKHY)로 대체 판정했음을 명시한다. <b>★CXMT: 7/27(월) 상하이 상장 확정</b>, 295억 위안(약 43.5억 달러) 조달 (<a href="https://www.newspim.com/news/view/20260714000918">뉴스핌</a>). 모건스탠리는 D램 계약가 YoY 증가율의 <b>4Q26 정점론</b>을 제시 (<a href="https://www.newspim.com/news/view/20260721000549">뉴스핌 CXMT 시리즈</a>)</td>
+    </tr>
+    <tr>
+      <td class="r">유가 / 중동 — <b>격상 2단계</b></td>
+      <td>브렌트 <b>$100.85 (+7.21%)</b> · WTI <b>$92.54 (+6.58%)</b> <span class="pill">7/23</span></td>
+      <td>7/22 $88 돌파로 1차 격상했던 것이 하루 만에 <b>브렌트 세 자릿수</b>로 재격상. 호르무즈 통제 시사 + 후티 홍해 공격이 재료 (<a href="https://www.fnnews.com/news/202607240509025758">파이낸셜뉴스</a>). <b>국장 영향: 정유(S-Oil)·조선·방산 수혜 / 항공·해운·화학·유틸리티 역풍 / 원화 약세 압력</b></td>
+    </tr>
+    <tr>
+      <td>미장 급락 — 실적 시즌 1주차</td>
+      <td>나스닥 -2.15% · VIX <b>18.70 (+12.38%)</b> · 알파벳 -7.13% · 테슬라 -14.52% <span class="pill">7/23</span></td>
+      <td>매그니피센트7 중 먼저 발표한 두 종목이 모두 실망. <b>실적 자체가 아니라 capex 부담이 재료</b>라는 점이 핵심 — 어제 국장이 산 논리(AI 인프라 수혜)와 어젯밤 미장이 판 논리(AI 인프라 부담)가 <b>같은 사실의 앞뒤</b>다</td>
+    </tr>
+    <tr>
+      <td>풋콜비율 (거래량/대금)</td>
+      <td>1.2599 / 1.5614 <span class="pill warn">7/22 ★1일 지연</span></td>
+      <td>7/21 0.929 → 7/22 <b>1.260</b>으로 풋 우위 급확대. <b>단 이는 7/22(페이드 당일) 수치</b> — 어제 +4.40% 반등은 미반영이다. 오늘 수신될 7/23분이 실제 심리 판정치</td>
+    </tr>
+    <tr>
+      <td>신용스프레드 (BBB-국고3y)</td>
+      <td>+6.491%p · 회사채BBB 10.408% <span class="pill">7/23</span></td>
+      <td>금융주 신용 트리거 7.0%p까지 <b>0.51%p</b> — <b>미점등(0/3) 유지</b>, 근접 상태 지속. 한계기업 자금경색 수준은 여전</td>
+    </tr>
+    <tr>
+      <td>금리 / 장단기</td>
+      <td>국고3y 3.917 · 10y 4.392 · 장단기 <b>+0.475%p</b> <span class="pill">7/23</span></td>
+      <td>침체 신호 없음. 미 기대인플레 2.28(7/23) — <b>유가 $100이 여기에 언제 반영되는지가 다음 주 관전 포인트</b></td>
+    </tr>
+    <tr>
+      <td>원/달러</td>
+      <td>ECOS <b>1,480.9</b> (7/23) · 야후 종가 1,474.12 (7/23)</td>
+      <td>유가 급등·달러 강세에도 <b>1,470~1,480원대 유지</b>. 20일 최고 1,554.4 → 현재 1,480.9로 원화 강세 추세는 살아 있고, 이것이 외인 4일 연속 순매수의 토대다. <b>7/23 발표 2분기 GDP 속보 +0.6% QoQ·+3.7% YoY로 예상 상회</b>가 원화 강세 요인 (<a href="https://www.newspim.com/news/view/20260723000089">뉴스핌 모닝리포트</a>)</td>
+    </tr>
+    <tr>
+      <td>뉴스심리지수</td>
+      <td>96.61 <span class="pill warn">7/19 — 4영업일 지연</span></td>
+      <td>5일 연속 하락의 마지막 수치(105.9→103.7→99.6→97.9→96.6). <b>7/20 저점·7/23 급등이 전혀 반영 안 된 값</b> — 다음 발표가 바닥 확인 신호</td>
+    </tr>
+    <tr>
+      <td>신용공여 잔고</td>
+      <td>33.0조 (5일 <b>-4.80%</b>) <span class="pill">7/22 확정</span></td>
+      <td>디레버리징 계속 — 반대매매 연료 소진 중. 급락 재개 시 2차 충격 여력이 줄었다는 뜻(긍정)</td>
+    </tr>
+    <tr>
+      <td>증시 대기자금 / CMA</td>
+      <td>103.9조 (5일 -6.66%) / <b>107.9조 (+3.68%)</b> <span class="pill">7/22</span></td>
+      <td>증시자금은 줄고 CMA는 늘었다 — <b>실탄이 장 밖으로 한 칸 물러난 상태</b>. 어제 급등에도 개인이 -2.21조 순매도한 것과 정합</td>
+    </tr>
+    <tr>
+      <td>공매도 비중 상위</td>
+      <td>HD현대중공업 27.5% · 한미반도체 24.0% · 한국항공우주 23.1% · 한화솔루션 18.4% · 현대모비스 17.8% <span class="pill">최신 수집분</span></td>
+      <td>반등 연장 시 숏커버 후보군. <b>단 '공매도 비중 높음'은 매수 근거가 아니라 변동성 경고</b>로만 읽는다</td>
+    </tr>
   </table>
 </div>
 
-
+<!-- 긍정 신호 -->
 <div class="card">
-  <h2>🧭 오늘의 시나리오 레벨 (전 거래일 기준 자동 산출)</h2>
+  <h2>🟢 긍정 신호 — 어제가 진짜였던 근거</h2>
+  <ul>
+    <li><b>외국인 4거래일 연속 순매수, 코스피 누적 +5.58조</b> (7/20 +0.52 → 7/21 +0.30 → 7/22 +2.62 → 7/23 +2.14조). 시장 합산 기준으로는 4일간 약 7조 (<a href="https://www.edaily.co.kr/News/Read?newsId=04877366645517472&mediaCodeNo=257">이데일리</a>). <b>수급 우선 원칙상 '허가'는 나와 있다</b></li>
+    <li><b>외인 보유율이 실제로 올랐다</b> — 삼성전자 46.71% → <b>46.73%</b>, SK하이닉스 52.50% → <b>52.59%</b> (네이버 확정). 파생·차익이 아니라 현물 순증이다</li>
+    <li><b>기관도 매도를 멈췄다</b> — 7/22 -1.40조 → 7/23 <b>+0.10조</b>. 외인 단독 매수에서 외인+기관 구도로 한 칸 개선</li>
+    <li><b>저변이 전면적</b> — 코스피 827↑/74↓ (상승 비율 88%), 코스닥 1,433↑/251↓. 특정 대형주만 끌어올린 지수가 아니다</li>
+    <li><b>업종이 전부 플러스</b> (7/23) — 건설 +10.47% · IT서비스 +7.77% · 금속 +7.16% · 화학 +6.35% · 전기·가스 +5.46%, 최하위 제약도 +1.32%. <b>반도체가 아니라 경기민감·소외주가 상단</b>이라는 게 특징 (건설 급등의 당일 개별 재료는 확인하지 못함 — <b>잠정</b>)</li>
+    <li><b>실물 지표는 별개로 양호</b> — 2분기 GDP 속보 +0.6% QoQ·+3.7% YoY 예상 상회, 수출금액지수 243.0 (2026-06)</li>
+  </ul>
+</div>
+
+<!-- 수급 -->
+<div class="card">
+  <h2>💰 수급 판정 (손바뀜의 질) — 외인이 사고 개인이 던진 4일</h2>
   <table>
-  <tr><th></th><th style="text-align:right">종가(등락)</th><th style="text-align:right">최후 방어선</th>
-      <th style="text-align:right">1차 지지</th><th style="text-align:right">1차 저항</th>
-      <th style="text-align:right">MA20 / MA60</th></tr>
-  <tr><td><b>KOSPI</b></td><td class='n r'>6,797.70 (+0.7%)</td><td class='n'>6,429.03</td><td class='n'>6,747.95</td><td class='n'>7,166.00</td><td class='n'>7,613.82 / 7,760.43</td></tr><tr><td><b>삼성전자</b></td><td class='n r'>260,500 (+0.6%)</td><td class='n'>243,000</td><td class='n'>259,000</td><td class='n'>276,000</td><td class='n'>293,775 / 294,183</td></tr><tr><td><b>SK하이닉스</b></td><td class='n b'>1,830,000 (-0.3%)</td><td class='n'>1,732,000</td><td class='n'>1,830,000</td><td class='n'>2,006,000</td><td class='n'>2,235,900 / 2,066,033</td></tr>
+    <tr><th>기준일</th><th class="n">개인</th><th class="n">외국인</th><th class="n">기관</th><th>해석</th></tr>
+    <tr><td>코스피 7/23 확정</td><td class="n b">-2.21조</td><td class="n r">+2.14조</td><td class="n r">+0.10조</td><td>외인 4일차 · 기관 매도 중단 · 개인 역대급 매도</td></tr>
+    <tr><td>코스피 7/22</td><td class="n b">-1.22조</td><td class="n r">+2.62조</td><td class="n b">-1.40조</td><td>외인 3일차, 기관은 갭에 차익실현</td></tr>
+    <tr><td>코스피 7/21</td><td class="n b">-1.64조</td><td class="n r">+0.30조</td><td class="n r">+1.37조</td><td>기관 되사기의 날</td></tr>
+    <tr><td>코스피 7/20</td><td class="n r">+0.35조</td><td class="n r">+0.52조</td><td class="n b">-0.92조</td><td>외인 전환 1일차</td></tr>
   </table>
-  <div class="mind"><b>상승 시</b> — 1차 저항 돌파+안착 확인 후 눌림 진입(추격 금지), 목표 MA20 회복. 재이탈 시 즉시 정리.</div>
-  <div class="mind"><b>횡보 시</b> — 1차 지지~1차 저항 박스 전제, 하단 분할 매수 / 상단 부분 매도만. 방향 베팅 금지.</div>
-  <div class="mind"><b>하락 시</b> — 1차 지지 이탈은 경고, <b>최후 방어선(최근 이틀 저가) 이탈 시 기계적 손절</b>. 저점 매수는 지지 확인 후에만.</div>
-</div>
-
-<div class="card">
-  <h2>🎯 진입 후보 스크리너 — 시총상위 100 중 조건 전부 통과 3종목 (기준 2026-07-22)</h2>
+  <h3>종목별 확정 (네이버 dealTrendInfos · 7/23)</h3>
   <table>
-  <tr><th>종목</th><th style="text-align:right">종가(등락)</th><th style="text-align:right">상대강도(20일)</th>
-      <th style="text-align:right">RSI</th><th style="text-align:right">수급</th>
-      <th style="text-align:right">진입존(눌림)</th><th style="text-align:right">손절</th>
-      <th style="text-align:right">목표</th><th style="text-align:right">손익비</th></tr>
-  <tr><td><b>S-Oil</b> <span style='color:var(--ink3);font-size:11px'>KOSPI</span></td><td class='n r'>141,700 (+0.1%)</td><td class='n'>+56.7%p</td><td class='n'>66</td><td class='n'>외+기-</td><td class='n'>136,740~141,700</td><td class='n'>136,125</td><td class='n'>153,036</td><td class='n'>2.0</td></tr><tr><td><b>SK텔레콤</b> <span style='color:var(--ink3);font-size:11px'>KOSPI</span></td><td class='n r'>94,100 (+10.6%)</td><td class='n'>+21.8%p</td><td class='n'>55</td><td class='n'>외-기+</td><td class='n'>90,806~94,100</td><td class='n'>80,190</td><td class='n'>110,300</td><td class='n'>1.2</td></tr><tr><td><b>HD현대</b> <span style='color:var(--ink3);font-size:11px'>KOSPI</span></td><td class='n r'>212,000 (+7.1%)</td><td class='n'>+17.6%p</td><td class='n'>49</td><td class='n'>외-기+</td><td class='n'>204,580~212,000</td><td class='n'>189,684</td><td class='n'>282,500</td><td class='n'>3.2</td></tr>
+    <tr><th>종목</th><th class="n">외국인</th><th class="n">기관</th><th class="n">개인</th><th class="n">외인 보유율</th></tr>
+    <tr><td>삼성전자 <span class="pill">270,000 (+3.65%)</span></td><td class="n r">+129.9만주</td><td class="n b">-12.1만주</td><td class="n b">-118.2만주</td><td class="n">46.73% (+0.02%p)</td></tr>
+    <tr><td>SK하이닉스 <span class="pill">1,919,000 (+4.86%)</span></td><td class="n r">+69.0만주</td><td class="n b">-14.8만주</td><td class="n b">-53.0만주</td><td class="n">52.59% (+0.09%p)</td></tr>
   </table>
-  <p style="font-size:11.5px;color:var(--ink3)">조건: 전일 상승 마감(일중 상단 55%↑) · 20일선 -2% 이내 · RSI 40~68 ·
-  30일 고점 대비 -25% 이내 · 시장 대비 상대강도 양수 · 거래대금 300억↑ · 기관/외인 동반 매도 제외.
-  진입존은 눌림 분할 매수 기준, 손절은 최근 이틀 저가 -1% — 갭상승 추격은 금지.</p>
+  <p><b>손바뀜의 질 판정 —</b> 7/20 저점 이후 <b>판 쪽은 개인, 받은 쪽은 외국인</b>이고 그 구도가 4일 내내 바뀌지 않았다. 어제는 기관까지 매도를 멈췄다. 이 조합(외인 지속 매수 + 개인 지속 매도)은 데드캣 패턴이 아니라 <b>주체 교체가 실제로 일어난 반등</b>에 가깝다. <b>다만 외인 20일 누적은 여전히 -23.2조</b> — 4일 +5.58조는 그 4분의 1도 되돌리지 못했다. 되사기의 초입이지 완료가 아니다.</p>
 </div>
 
+<!-- 오늘 갭 -->
 <div class="card">
-  <h2>🔄 업종·종목 흐름 (기준 2026-07-22)</h2>
-  <p><b>업종 상위:</b> 통신 <b class='r'>+5.1%</b> · 건설 <b class='r'>+4.6%</b> · 운송장비·부품 <b class='r'>+3.0%</b> · 기계·장비 <b class='r'>+2.2%</b></p>
-  <p><b>업종 하위:</b> 음식료·담배 <b class='b'>-0.6%</b> · 제약 <b class='b'>-1.2%</b> · 섬유·의류 <b class='b'>-1.3%</b> · 의료·정밀기기 <b class='b'>-6.5%</b></p>
-  <p><b>시총상위 강세:</b> 레인보우로보틱스 <b class='r'>+9.7%</b> · 파두 <b class='r'>+8.4%</b> · 삼성물산 <b class='r'>+8.2%</b> · 삼성전자우 <b class='r'>+7.0%</b> · 로보티즈 <b class='r'>+7.0%</b></p>
-  <p><b>시총상위 약세:</b> 디앤디파마텍 <b class='b'>-5.1%</b> · 케어젠 <b class='b'>-5.8%</b> · 보로노이 <b class='b'>-6.5%</b> · 삼천당제약 <b class='b'>-29.8%</b> · 코오롱티슈진 <b class='b'>-29.9%</b></p>
-  <p><b>공매도 비중 상위:</b> POSCO홀딩스 25% · 피에스케이 15% · LG에너지솔루션 18% · 한국항공우주 21% · 삼양식품 23%</p>
+  <h2>🎚️ 오늘(7/24 금) 갭 판독 · 시나리오 레벨</h2>
+  <h3>갭 압력 판독 <span class="pill warn">잠정 — 산출 근거 병기</span></h3>
+  <p><b>SK하이닉스 ADR(SKHY) 기준 ≈ -2%대 갭다운 압력.</b> 산출: 7/22 기준 환산비(하이닉스 1,830,000원 ÷ 환율 1,475.63 = $1,240.1, SKHY $165.27 → 비율 7.503)를 7/23 종가에 적용하면 이론가 <b>$173.5</b>, 실제 SKHY 종가는 <b>$169.50</b> → <b>-2.3% 디스카운트</b>. 즉 <b>어젯밤 미장은 어제 국장의 +4.86%를 다 인정해 주지 않았다.</b> 다만 SKHY는 상장 초기 종목으로 프리미엄/디스카운트 변동이 큰 편이라 <b>방향(갭다운)은 신뢰, 폭은 참고</b>로만 쓴다. 마이크론 +3.20%는 반대 방향 지지 요인이라 <b>메모리는 지수보다 강하게 출발할 가능성</b>이 있다.</p>
+  <p><b>종합 시나리오</b> — 지수는 미장 급락·유가 급등을 받아 <b>갭다운 출발</b>, 반도체는 상대적으로 버티는 <b>갈라진 출발</b>이 기본값. 09시 전에 SKHY 시간외·NQ선물 방향을 한 번 더 확인한다.</p>
+  <table>
+    <tr><th>종목</th><th class="n">7/23 종가</th><th class="n">1차 지지</th><th class="n">최후 방어선</th><th class="n">1차 저항</th><th>핵심 판정선</th></tr>
+    <tr>
+      <td>KOSPI</td><td class="n">7,096.89</td><td class="n">7,000 (심리·회복선)</td><td class="n">6,516 (7/20 저점 종가)</td><td class="n">7,166</td>
+      <td><b>7,000 종가 사수 여부</b>가 어제 반등의 진위 판정. 2차 지지 6,798(7/22 종가=갭 시작점) — 여기까지 되밀리면 어제 갭은 전부 메워진 것. 상단 진짜 관문은 <b>7,438(38.2% 되돌림)~7,545(MA20)</b> = 봉인 해제선</td>
+    </tr>
+    <tr>
+      <td>삼성전자</td><td class="n">270,000</td><td class="n">260,500 (7/22 종가)</td><td class="n">249,000</td><td class="n">276,000</td>
+      <td>276,000 = 7/22 시가이자 고가. <b>이 선의 종가 안착</b>이 다음 관문 — 터치가 아니라 종가로만 판정</td>
+    </tr>
+    <tr>
+      <td>SK하이닉스</td><td class="n">1,919,000</td><td class="n">1,830,000 (7/22 종가=저가)</td><td class="n">1,768,000</td><td class="n">2,000,000</td>
+      <td><b>2,000,000 = 7/22에 실측으로 확인된 벽</b>(고가 2,006,000 터치 후 -8.8% 반락). 다시 닿으면 그때는 매수 자리가 아니라 <b>익절·관찰 자리</b></td>
+    </tr>
+  </table>
+  <p><b>상승 시</b> — 갭다운 후 되메움은 강세 신호이나, <b>급등 익일 추격은 상시 금지</b>. 7,166 돌파+안착을 종가로 확인한 뒤에야 다음 단계다.<br>
+  <b>횡보 시</b> — 7,000~7,166 박스 전제. 방향 베팅 금지, 보유 종목 관리만.<br>
+  <b>하락 시</b> — 7,000 이탈은 경고, <b>6,798(갭 시작점) 이탈은 어제 반등의 무효 신호</b>. 최후 방어선 6,516 이탈 시 기계적 대응.</p>
 </div>
 
+<!-- 마음가짐 -->
 <div class="card">
   <h2>🧭 오늘의 마음가짐</h2>
-  <div class='mind'>1. <b>보합권.</b> 방향 베팅보다 종목 장세 — 수급이 붙는 업종/종목 위주로 짧게.</div><div class='mind'>2. <b>하락 추세 한복판.</b> 20일 -10% 이상 — 반등은 일단 '되돌림'으로 간주, 비중 확대는 추세 전환(20일선 회복+수급 전환) 확인 후.</div><div class='mind'>3. <b>현금도 포지션.</b> 분할매수 1/3씩, 진입 전에 손절선부터.</div>
+  <div class="mind red">
+    <b>1. 급등 익일이다 — 갭 추격이 오늘 가장 비싼 실수다.</b> 어제 +4.40%를 온전히 못 누렸다는 아쉬움은 오늘 시초 매수의 명분이 되기 딱 좋다. 그런데 1년 실측에서 <b>국장 급등 익일 추격은 이미 폐기된 전략(승률 51%)</b>이고, 어제 미장은 -2.15%로 마감했다. 09시는 사는 시간이 아니라 <b>익절의 시간</b>이다. 갭다운으로 열리더라도 그건 "싸졌다"가 아니라 "밤사이 조건이 바뀌었다"는 뜻이다.
+  </div>
+  <div class="mind red">
+    <b>2. 오늘 첫 행동은 매매가 아니라 규칙 정리다.</b> 계좌에 <b>SKHZ(SK하이닉스 1x 인버스 ETF) 50주가 오버나이트로 남아 있고</b>, <b>MUZ 200주 @$11.20 지정가 매수 대기주문이 PENDING</b> 상태다(7/24 05:56 등록). 7/23 04:30에 준서님이 직접 선언한 <b>"인버스·레버 ETF는 일중 전술 한정, 스윙·오버나이트 금지"</b>와 상시 규칙 <b>"거래소 대기주문 금지"</b> 둘 다에 걸린다. 규칙을 만든 그 주에 같은 상품군으로 다시 밤을 넘겼다는 사실이 금액보다 중요하다. <b>처리 여부를 정하는 것이 09시 전 1순위.</b>
+  </div>
+  <div class="mind">
+    <b>3. 이번 주 기조는 무매수가 기본값 — 아직 7/27이 남았다.</b> 승격 관문 2/2를 통과했어도 <b>7/27(월) CXMT 상장</b>은 통과하지 않은 뇌관이다. 여기에 브렌트 $100이라는 새 변수가 어젯밤 추가됐다. 이번 주 매수는 예외 자리에만 — <b>현금도 포지션</b>이고, 오늘은 그 포지션이 유리한 날일 가능성이 높다.
+  </div>
+  <div class="mind">
+    <b>4. 유가는 오늘 종목을 갈라놓는다.</b> 브렌트 $100은 지수에는 역풍이지만 섹터에는 <b>방향키</b>다. 수혜(정유·조선·방산) vs 역풍(항공·해운·화학·유틸리티)이 오늘 장중에 갈릴 가능성이 크다. <b>단 이것도 관찰 대상이지 진입 신호가 아니다</b> — 유가 급등 첫날 종목은 이미 갭으로 반영된 상태로 열린다.
+  </div>
+  <div class="mind">
+    <b>5. 어제 지킨 것 하나는 기록해 둔다.</b> 7/23 14:00~15:00 신규 진입 <b>0건</b>(14:10·14:33은 익절 매도)이었다. 실측 -2,477만이 나왔던 시간대의 규율이 <b>1일차로 복구</b>됐다. 오늘 2일차를 이어가는 것이 이번 주 가장 값싼 이득이다.
+  </div>
 </div>
 
-<div class="grid2">
-<div class="card"><h2>✅ 개장 전 체크</h2><ul class="chk"><li>원/달러 개장가 방향 (전일 대비)</li><li>삼성전자·SK하이닉스 수급 (지수 방향키)</li><li>당국 시장안정 조치/구두개입 뉴스</li></ul></div>
-<div class="card"><h2>📋 주주환원·이벤트 공시</h2><ul><li>20260722 <b>툴젠</b> — [기재정정]주요사항보고서(유상증자결정)</li><li>20260722 <b>유디엠텍</b> — 단일판매ㆍ공급계약체결              </li><li>20260722 <b>디알젬</b> — 단일판매ㆍ공급계약체결              </li><li>20260722 <b>알에프텍</b> — [기재정정]증권신고서(합병)</li><li>20260722 <b>인산가</b> — 주요사항보고서(유상증자결정)</li><li>20260722 <b>알에프텍</b> — [첨부정정]증권신고서(합병)</li><li>20260722 <b>파이온엑스</b> — [기재정정]주요사항보고서(전환사채권발행결정)</li><li>20260722 <b>뉴인텍</b> — 증권발행결과(자율공시)              (제3자배정 유상증자)</li></ul></div>
+<!-- 체크리스트 / 일정 -->
+<div class="card">
+  <h2>✅ 개장 전 체크 · 📅 일정</h2>
+  <div class="grid2">
+    <div>
+      <h3>개장 전 체크 (08:30~09:00)</h3>
+      <ul class="chk">
+        <li><b>SKHZ 50주 · MUZ 대기주문 처리 결정</b> — 인버스 오버나이트 금지 규칙 적용 여부 (1순위)</li>
+        <li>SKHY 시간외 · NQ선물 방향 재확인 — 갭 폭 최종 판독</li>
+        <li>원/달러 개장 방향 — 유가 $100(약세 압력) vs GDP 서프라이즈(강세 요인) 중 어느 쪽이 이기는지</li>
+        <li>외국인 <b>5일차 순매수 지속 여부</b> — 끊기면 반등 국면 판정 재검토</li>
+        <li>09:05 이전 ETF 주문 금지 (괴리 미해소 구간)</li>
+        <li>유가 수혜/역풍 섹터 갭 확인 — 정유·조선 vs 항공·해운·화학</li>
+        <li>7,000선 지지 여부 — 종가로만 판정, 장중 이탈은 판정 아님</li>
+      </ul>
+    </div>
+    <div>
+      <h3>일정</h3>
+      <ul>
+        <li><b>오늘 7/24 (금)</b> — 미 무역법 <b>301조 관세 조사 시한</b>. 한국 목표는 합산 세율 15% 상한 유지 (<a href="https://www.g-enews.com/article/Global-Biz/2026/06/2026062214490268002bd56fbc3c_1">글로벌이코노믹</a>)</li>
+        <li><b>7/27 (월) ★2차 뇌관</b> — <b>CXMT 상하이 증권거래소 상장</b>. 295억 위안(약 43.5억 달러) 조달, 2020년 SMIC 이후 중국 A주 최대 반도체 공모 (<a href="https://www.newspim.com/news/view/20260714000918">뉴스핌</a>)</li>
+        <li><b>7/28~29 (화·수)</b> — FOMC. 유가 $100이 성명 문구에 어떻게 반영되는지가 관전 포인트</li>
+        <li><b>7/29 (수) 09:00</b> — <b>SK하이닉스 2분기 실적 발표 + 컨콜.</b> 컨센서스 매출 83.9조·영업이익 <b>64.2조</b>(영업이익률 76.5%) (<a href="https://www.ggilbo.com/news/articleView.html?idxno=1170233">금강일보</a>). <span class="pill warn">주의</span> 일부 주간전망 기사가 <b>7/24</b>로 표기한 사례가 있어 확인했으나, 발표일을 명시한 두 건 모두 <b>7/29</b> — <b>오늘 발표 가능성은 낮다</b>고 판단(잠정). 오늘 실적을 전제로 포지션을 잡지 말 것</li>
+        <li>삼성전자 2분기 잠정실적은 7/7 발표 완료 — 확정실적·부문별 수치는 7월 말</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
-<div class="foot">데이터: KRX·ECOS·FRED·KOFIA·DART·네이버·수출입은행 (자동 수집) · 규칙 기반 자동 브리핑 —
-더 깊은 분석이 필요하면 Claude 에게 "오늘 데이터로 브리핑 다시 해줘"라고 요청하세요.<br>
-본 자료는 투자 참고용이며 투자 판단과 책임은 본인에게 있습니다.</div>
+<!-- 어제 대비 변경 수치 -->
+<div class="card">
+  <h2>🔄 어제 대비 변경 수치</h2>
+  <table>
+    <tr><th>항목</th><th class="n">직전</th><th class="n">최신</th><th>변화</th></tr>
+    <tr><td>KOSPI</td><td class="n">6,797.70 (7/22)</td><td class="n">7,096.89 (7/23)</td><td class="r">+299.19 (+4.40%) — 7,000선 탈환</td></tr>
+    <tr><td>KOSDAQ</td><td class="n">751.09</td><td class="n">790.28</td><td class="r">+5.22%</td></tr>
+    <tr><td>코스피 거래대금</td><td class="n">28.6조</td><td class="n">26.9조</td><td class="b">-1.7조 — 급등일인데 대금은 줄었다(참고)</td></tr>
+    <tr><td>외국인 (코스피)</td><td class="n">+2.62조</td><td class="n">+2.14조</td><td class="r">4일 연속 순매수 (누적 +5.58조)</td></tr>
+    <tr><td>기관 (코스피)</td><td class="n">-1.40조</td><td class="n">+0.10조</td><td class="r">매도 중단 → 소폭 순매수 전환</td></tr>
+    <tr><td>개인 (코스피)</td><td class="n">-1.22조</td><td class="n">-2.21조</td><td class="b">매도 확대</td></tr>
+    <tr><td>삼성전자</td><td class="n">260,500</td><td class="n">270,000</td><td class="r">+3.65%</td></tr>
+    <tr><td>SK하이닉스</td><td class="n">1,830,000</td><td class="n">1,919,000</td><td class="r">+4.86%</td></tr>
+    <tr><td>나스닥</td><td class="n">25,690.90 (7/22)</td><td class="n">25,137.69 (7/23)</td><td class="b">-2.15%</td></tr>
+    <tr><td>VIX</td><td class="n">16.64</td><td class="n">18.70</td><td class="r">+12.38% — 공포 재유입</td></tr>
+    <tr><td>SOX</td><td class="n">12,410.67</td><td class="n">12,343.84</td><td class="b">-0.54% — 지수 대비 선방</td></tr>
+    <tr><td>WTI</td><td class="n">$86.83</td><td class="n">$92.54</td><td class="r">+6.58% (브렌트 $100.85, +7.21%)</td></tr>
+    <tr><td>원/달러 (ECOS)</td><td class="n">1,475.6</td><td class="n">1,480.9</td><td class="r">+5.3원 — 유가발 약세 압력</td></tr>
+    <tr><td>국고 3y / 10y</td><td class="n">3.913 / 4.394</td><td class="n">3.917 / 4.392</td><td>보합 — 장단기 +0.475%p</td></tr>
+    <tr><td>신용공여 잔고</td><td class="n">33.3조 (7/20)</td><td class="n">33.0조 (7/22)</td><td class="b">5일 -4.80% — 디레버리징 지속</td></tr>
+    <tr><td>풋콜 (거래량)</td><td class="n">0.929 (7/21)</td><td class="n">1.260 (7/22 ★)</td><td class="b">풋 우위 재확대 — 단 7/23 반등 미반영</td></tr>
+  </table>
+</div>
+
+<!-- 계좌 -->
+<div class="card acct">
+  <h2>📇 계좌 실측 <span class="pill">2026-07-24 07:10 toss holdings</span></h2>
+  <p>평가 <b>27,977,100원</b> · 평가손익 <b class="b">-1,878,127 (-5.77%)</b> · 일간 <b class="r">+1,853,970 (+5.47%)</b> — 7/22 실측(-302.2만 / -9.28%) 대비 <b>손실폭 약 124만 축소</b>.</p>
+  <table>
+    <tr><th>종목</th><th class="n">수량</th><th class="n">평단</th><th class="n">손익률</th><th>메모</th></tr>
+    <tr><td>삼성전기 (009150)</td><td class="n">8</td><td class="n">1,678,091</td><td class="n b">-12.22%</td><td>장기보유 지정 — 단기 손절 코칭 제외. 7/23 +7.66%</td></tr>
+    <tr><td>삼성전자 (005930)</td><td class="n">20</td><td class="n">273,000</td><td class="n">0.00%</td><td>장기보유 지정 — 7/23 +3.65%로 평단 회복</td></tr>
+    <tr><td>기업은행 (024110)</td><td class="n">200</td><td class="n">21,575</td><td class="n b">-2.43%</td><td>금융 신용 트리거 0/3 — 코어 유지</td></tr>
+    <tr><td>NHN (181710)</td><td class="n">101</td><td class="n">39,516</td><td class="n b">-1.68%</td><td>7/23 신규 (11:17 · 12:30)</td></tr>
+    <tr><td>갤럭시아머니트리 (094480)</td><td class="n">303</td><td class="n">5,295</td><td class="n b">-2.74%</td><td>⚠ 7/23 12:15~12:28 <b>7회전 분할매수</b> — 점심 공백 + VWAP 위 추격 + 물타기 중첩</td></tr>
+    <tr><td>케이사인 (192250)</td><td class="n">100</td><td class="n">7,620</td><td class="n b">-0.52%</td><td>7/23 12:38 신규</td></tr>
+    <tr><td>현대백화점 (069960)</td><td class="n">2</td><td class="n">148,950</td><td class="n b">-5.74%</td><td>관찰용</td></tr>
+    <tr><td>샌디스크 (SNDK)</td><td class="n">1</td><td class="n">$1,645</td><td class="n b">-2.15%</td><td>관찰용 1주 — 어젯밤 +0.69%</td></tr>
+    <tr><td>오라클 (ORCL)</td><td class="n">1</td><td class="n">$123.90</td><td class="n b">-1.63%</td><td>관찰용 1주</td></tr>
+    <tr><td>테슬라 (TSLA)</td><td class="n">1</td><td class="n">$345.89</td><td class="n b">-6.50%</td><td>7/23 21:25 프리마켓 매수 → 실적 반응 -14.52% 직격 (관찰용 1주)</td></tr>
+    <tr><td class="g">SKHZ (SK하이닉스 1x 인버스 ETF)</td><td class="n">50</td><td class="n">$11.75</td><td class="n">+0.34%</td><td class="g">⚠ <b>오버나이트 보유 — 규칙 위반 상태</b> (7/23 종가 $11.90)</td></tr>
+  </table>
+  <p><b>미체결 대기주문 1건</b> — <b class="g">MUZ(마이크론 2x 인버스) 200주 · 지정가 $11.20 매수 · PENDING</b> (7/24 05:56 등록, 주문금액 $2,240). MUZ 7/23 종가 $11.56 — <b>체결 사거리 안</b>이다.</p>
+  <p><b>⚠ 코칭 3줄</b> — <b>①</b> <b>SKHZ 50주 오버나이트</b>: 7/23 04:30 선언·06:05 발효한 "인버스·레버 ETF는 일중 전술 한정, 스윙·오버나이트 금지"의 첫 위반입니다. 금액(약 87만원)은 작지만 <b>규칙을 세운 주에 같은 상품군으로 밤을 넘겼다</b>는 사실이 기록됩니다. <b>②</b> <b>MUZ 200주 대기주문</b>: 세 규칙에 동시에 걸립니다 — 거래소 대기주문 금지(로컬 브래킷으로만), 인버스 스윙 금지, 그리고 마이크론이 <b>$990.21로 오히려 1,000선 재도전 중</b>이라는 사실(숏 방향 역행). MUZ 700주로 300만원+ 수업료를 치르고 사흘 만에 같은 자리에 돌아왔습니다. <b>③</b> 갤럭시아머니트리 12시대 7회전은 금액이 작아 손익은 미미하지만, <b>점심 공백·VWAP 추격·물타기가 한 종목에 겹친 패턴</b>은 기록해 둡니다. <span class="pill">킬스위치 manual — 자동 주문 0건 유지</span></p>
+</div>
+
+<!-- 한 줄 결론 -->
+<div class="card hero">
+  <h2>🎯 한 줄 결론</h2>
+  <p style="font-size:15px"><b>⏸ 관망.</b> 어제 승격 관문 2/2를 통과해 국면은 '기술적 반등'으로 한 칸 올랐지만, 오늘은 <b>급등 익일 + 미장 -2.15% + 브렌트 $100 돌파</b>가 겹친 날이다. 메모리가 밤에도 오른 덕에 전면 갭다운은 아니겠지만, 갈라진 출발에서 이기려면 방향을 맞혀야 하고 그건 어제 우리가 실패한 바로 그 일이다. <b>오늘 할 일은 사는 게 아니라, 7,000선 종가 사수를 확인하고 남아 있는 인버스 두 건(SKHZ 50주 · MUZ 대기주문)을 규칙대로 정리하는 것이다.</b> 7/27 CXMT까지는 현금이 포지션이다.</p>
+</div>
+
+<div class="foot">
+  <b>데이터 기준일</b> — 지수·수급·업종·등락종목수 2026-07-23 확정 · 금리/환율(ECOS) 07-23 · 풋콜/미결제/시총상위 07-22(★1일 지연) · 신용잔고/증시자금/CMA 07-22(★D+2) · 뉴스심리 07-19 · 소비자/기업심리 2026-06 · 미장·유가·ADR 2026-07-23 미 현지 마감(한국시간 07-24 05:00) · 계좌 2026-07-24 07:10 toss holdings 실측.<br>
+  <b>수집 소스</b> — KRX · ECOS(한국은행) · FRED · KOFIA · DART · 네이버금융 · 한국수출입은행 (refresh.py 자동 수집), 미장 시세는 Yahoo Finance 일봉 종가.<br>
+  <b>교차검증 출처</b> —
+  <a href="https://www.hankyung.com/article/2026072322466">한국경제(7/23 마감)</a> ·
+  <a href="https://www.newspim.com/news/view/20260723001040">뉴스핌 마감시황</a> ·
+  <a href="http://news.bizwatch.co.kr/article/market/2026/07/23/0036">비즈워치</a> ·
+  <a href="https://www.mt.co.kr/stock/2026/07/23/2026072315460428512">머니투데이</a> ·
+  <a href="https://www.edaily.co.kr/News/Read?newsId=04877366645517472&mediaCodeNo=257">이데일리(외인 4일 순매수)</a> ·
+  <a href="https://www.newspim.com/news/view/20260724000031">뉴스핌(미 증시 7/23)</a> ·
+  <a href="https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01754806645517800">이데일리(나스닥 급락)</a> ·
+  <a href="https://www.fnnews.com/news/202607240509025758">파이낸셜뉴스(브렌트 $100)</a> ·
+  <a href="https://www.newspim.com/news/view/20260723000089">뉴스핌 모닝리포트(환율·GDP)</a> ·
+  <a href="https://www.newspim.com/news/view/20260714000918">뉴스핌(CXMT 7/27 상장)</a> ·
+  <a href="https://www.newspim.com/news/view/20260721000549">뉴스핌(CXMT·D램 가격 전망)</a> ·
+  <a href="https://www.ggilbo.com/news/articleView.html?idxno=1170233">금강일보(하이닉스 실적일)</a> ·
+  <a href="https://www.g-enews.com/article/Global-Biz/2026/06/2026062214490268002bd56fbc3c_1">글로벌이코노믹(301조 관세 7/24 시한)</a> ·
+  <a href="https://www.investing.com/news/company-news/sk-hynix-etfs--2x-long-skhx--1x-short-skhz-from-leverage-shares-by-themes-arrive-as-adrs-begin-trading-4786539">Investing.com(SKHZ = 1x Short SK Hynix)</a><br>
+  <b>미확보 항목</b> — D램 스팟·고정거래가 2026년 7월 셋째주 공식 수치(트렌드포스/카운터포인트)는 이번 검색에서 확보하지 못해 개별주 프록시로 대체 판정했습니다. 장중 저가·고가는 수집 파일에 없어 기재하지 않았습니다.<br>
+  본 자료는 투자 참고용이며 <b>투자 판단과 책임은 본인에게 있습니다</b>.
+</div>
+
 </div>
 <div id="livebar" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;
 background:rgba(14,15,18,.93);backdrop-filter:blur(6px);border-top:1px solid #2A2C33;
