@@ -292,7 +292,8 @@ KOSDAQ 외인 <b class="b">-2,645억</b> · 기관 -384억 · 개인 <b class="r
 </div>
 
 <div class="card acct">
-<h2>💼 6절 · 계좌 실측 <span class="pill info">토스 API 11:00</span></h2>
+<h2>💼 6절 · 계좌 실측 <span class="pill info">토스 API 11:00</span> <span class="pill warn">⚠️ 아래 [11:11 정정] 먼저 보십시오</span></h2>
+<p class="note" style="margin-top:0"><b>이 절의 "국장 보유 0종"은 11:00 조회 기준이며 이미 사실이 아닙니다.</b> 11:11 재조회 기준 국장 보유는 <b>4종(손절선 없음)</b> 입니다 — 바로 아래 정정 카드를 보십시오.</p>
 <div class="grid2">
 <div class="kv"><div class="lab">국장</div><div class="val">보유 0종목</div><div class="note" style="margin-top:4px">오늘 아침 전량 청산 · 실현 <b class="r">+10,999원</b>(세전)</div></div>
 <div class="kv"><div class="lab">미장 매입 → 평가</div><div class="val dn">$2,427.22 → $1,905.69</div><div class="note" style="margin-top:4px"><b class="b">-$521.53 (-21.48%)</b> · 10종목</div></div>
@@ -305,6 +306,29 @@ KOSDAQ 외인 <b class="b">-2,645억</b> · 기관 -384억 · 개인 <b class="r
 이 브리핑의 체결·보유 수치는 로그가 아니라 <b>토스 API 직접 조회</b>로 복원한 것입니다. <b>로그만 봤다면 전량 청산 사실 자체를 모른 채 "보유 4종 손절선 관리 중"이라고 썼을 것</b>입니다.<br><br>
 <b>미수리 3건</b>: 브리핑 판정↔자동매수 워처 미연동 · 동전주 회전 상한 없음(밤사이 130건 체결로 재발) · penny_복기 자동화 고장(3일째). <b>어제 "API가 체결이력을 안 준다"고 보고한 건 제 오진</b>이었고 <code>orders(status='CLOSED')</code>로 조회됩니다 — 정정합니다.
 </div>
+</div>
+
+<div class="card danger">
+<h2>🔴 [11:11 정정] 국장 보유는 0종이 아닙니다 — 4종 신규, 손절선 없음</h2>
+<p>위 6절은 <b>11:00 계좌 조회</b> 기준으로 "국장 보유 0종목 · 장중 손절·익절 관리 대상 없음"이라고 적었습니다. <b>11:11 재조회 결과 국장 보유는 4종</b>입니다. 6절 작성 직전·직후에 매수가 이어졌고, <b>그중 2건은 11:00 조회 시점에 이미 체결돼 있었습니다</b>(코닉오토메이션 10:55:33 · 코디 10:59:50) — 조회 시점의 보유 반영이 늦었거나 조회가 체결보다 앞섰던 것으로, <b>"보유 0종"은 그 시점에도 이미 사실이 아니었습니다.</b></p>
+<table>
+<tr><th>종목</th><th class="n">수량</th><th class="n">평단</th><th class="n">현재(11:11)</th><th class="n">손익률</th><th class="n">체결시각</th></tr>
+<tr><td>카카오페이 (377300)</td><td class="n">10</td><td class="n">45,450</td><td class="n">45,400</td><td class="n"><b class="b">-0.11%</b></td><td class="n">11:0x</td></tr>
+<tr><td>코닉오토메이션 (391710)</td><td class="n">400</td><td class="n">1,338</td><td class="n">1,341</td><td class="n"><b class="r">+0.23%</b></td><td class="n">10:55:33</td></tr>
+<tr><td>코디 (080530)</td><td class="n">100</td><td class="n">2,700</td><td class="n">2,675</td><td class="n"><b class="b">-0.92%</b></td><td class="n">10:59:50</td></tr>
+<tr><td>HLB제넥스 (187420)</td><td class="n">100</td><td class="n">1,891</td><td class="n">1,888</td><td class="n"><b class="b">-0.15%</b></td><td class="n">11:00:33</td></tr>
+<tr><td colspan="2"><b>국장 합계</b></td><td class="n"><b>1,448,759</b></td><td class="n"><b>1,446,700</b></td><td class="n"><b class="b">-0.14%</b></td><td class="n">—</td></tr>
+</table>
+
+<div class="mind red">
+<b>지금 상태에서 가장 중요한 사실 — 4종 전부 손절선이 없습니다.</b><br>
+규칙은 <b>진입 즉시 손절 알림 등록</b>입니다(익절은 8/10부터 수동 전환). 그런데 어제 트리거는 보유 소멸로 전부 무효화됐고(워처가 10:42에 484810 트리거를 [자동취소]로 정리), <b>새로 담은 4종에는 아직 아무 트리거도 걸려 있지 않습니다.</b> <b>내일 밤 CPI</b>를 앞두고 <b>손절선 없는 신규 4종</b>을 들고 가는 상태입니다.
+</div>
+
+<p><b>그리고 이 4종은 오늘 브리핑이 추천한 종목이 아닙니다.</b> 오늘 판정은 <b>급등 익일 추격 금지 · 코스닥 시험 중 매수 보류 · CPI 전 포지션 확대 금지</b>였는데, <b>20분 안에 4종이 신규 편입</b>됐습니다. 자동매수 플래그는 전부 OFF(<code>trading_mode=manual</code>)이므로 수동 매매로 보이며, <b>여기서 사실만 적고 판단은 준서님 몫으로 둡니다</b> — 다만 <b>브리핑의 자제 판정과 실제 계좌가 따로 놀고 있다</b>는 점은 어제 SK하이닉스 건과 같은 구조라 그대로 기록합니다.</p>
+
+<p><b>➡️ 지시 주시면 즉시 하겠습니다</b> — ① 4종 손절선 계산·등록(구조 레벨보다 0.3×ATR 깊게, 1.5~4% 범위) ② 4종 개별 데이터 점검(거래대금·수급·시총 300억 필터·고점 대비 낙폭) 후 보유 근거 정리. <b>①은 CPI 전에 끝내는 게 좋습니다.</b></p>
+<p class="note">※ 코디(2,675원)·HLB제넥스(1,888원)·코닉오토메이션(1,341원)은 저가 소형주 구간이라 <b>시총 300억 미만 필터·거래대금 조건 확인이 필요합니다.</b> 이번 조회에서는 시총·거래대금을 확인하지 못해 <b>여기서는 보유 사실만 적고 평가는 하지 않았습니다.</b></p>
 </div>
 
 <div class="card">
