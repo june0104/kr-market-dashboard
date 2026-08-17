@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>데일리 브리핑 2026-08-17 (월) · 국장 휴장</title>
+<title>데일리 브리핑 2026-08-17 (월) · 국장 휴장 + 미장 확정판</title>
 <style>
 :root{
   --bg:#0f1116; --card:#191c22; --card2:#1f232b; --line:#2a2f3a;
@@ -51,313 +51,328 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
   border-radius:0 10px 10px 0;font-size:13.6px;color:var(--tx2)}
 .note.w{border-left-color:var(--warn)}
 .note.r{border-left-color:var(--up)}
+.note.g{border-left-color:var(--ok)}
 ul{margin:9px 0;padding-left:21px} li{margin:5px 0}
 .foot{margin-top:44px;padding-top:15px;border-top:1px solid var(--line);font-size:12px;color:var(--tx3)}
 code{background:var(--card2);padding:1.5px 5px;border-radius:5px;font-size:12.5px;color:var(--tx2)}
 .halt{background:linear-gradient(135deg,rgba(107,114,128,.16),rgba(49,130,246,.06));
   border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:14px 0;text-align:center}
 .halt .t{font-size:22px;font-weight:800;letter-spacing:-.5px;margin-bottom:5px}
+a{color:var(--info)}
 </style>
 </head>
 <body>
 <div class="wrap">
 
 <h1>📕 데일리 브리핑 — 2026년 8월 17일 (월)</h1>
-<div class="sub">국장 <b class="warn">휴장</b> · 광복절 대체공휴일 · 작성 20:45 KST · 다음 개장 8/18(화)</div>
+<div class="sub">국장 <b class="warn">휴장</b>(광복절 대체공휴일) · <b>미장 확정판</b> · 작성 <b>2026-08-18 07:30 KST</b> · 다음 개장 8/18(화) 09:00</div>
 
 <div class="stamp">
 <b>재현성 스탬프</b><br>
-실행일시(KST) 2026-08-17 20:45 · 작성 20:52<br>
-데이터 캐시 <b>150개 파일</b> (KRX 6 · FRED 14 · KOFIA 8 · 네이버금융 80 · DART 42) ·
-mtime 2026-06-21 14:15 ~ <b>2026-08-17 20:22</b> (refresh 당일 완료)<br>
+실행일시(KST) <b>2026-08-18 07:24</b> · 작성 07:30<br>
+데이터 캐시 <b>150개 파일</b> (KRX 6 · FRED 14 · KOFIA 8 · DART 42 · 네이버금융 80) ·
+mtime 2026-06-21 14:15 ~ <b>2026-08-18 07:07</b><br>
 엔진 <code>D:\claude 작업\brief_extract.py</code> sha1=<b>e3338e35</b> ·
-<code>etf_gap_forecast.py</code> sha1=<b>8e7d2fb9</b> ·
 <code>refresh.py</code> sha1=<b>46bb4f12</b> ·
-<code>국장휴장.py</code> sha1=<b>88b61bb1</b><br>
-git commit <b>aff4aed</b> (2026-08-17)<br>
-<b class="warn">기준일 경고</b> — 지수·수급·풋콜·업종·공매도 = <b>20260814</b>(마지막 거래일, 오늘이 아님) ·
-시총상위50 = <b>20260813</b>(★1영업일 추가 지연) · 해외시세 = 8/17 20:45 실측 스냅샷
+<code>국장휴장.py</code> sha1=<b>88b61bb1</b> ·
+<code>etf_gap_forecast.py</code> sha1=<b>8e7d2fb9</b><br>
+git commit <b>b9fa6d7</b> (2026-08-18)<br>
+<b class="warn">기준일</b> — 국내 지수·수급·풋콜·업종·공매도 = <b>20260814</b>(직전 거래일) ·
+시총상위50 = 20260813 ★ · KOFIA 20260813 ★ · 뉴스심리 20260809 ★ ·
+<b>미국 지수·SOX·개별주 = 8/17 정규장 확정(야후 일봉)</b> · 계좌 = <b>8/18 07:18 토스 API 실측</b>
+</div>
+
+<div class="note g">
+<b>이 문서는 8/17 20:45판을 대체합니다.</b>
+어제 20:45에 쓴 8/17 데일리브리핑은 <b>미국 정규장이 열리기 전(22:30 개장)</b> 에 작성돼서,
+미장 부분이 전부 <b>프리마켓 기준 예측</b>이었습니다.
+데일리 브리핑은 원래 <b>미장까지 끝난 뒤라야 쓸 수 있는 문서</b>이므로,
+8/17 정규장 결과가 확정된 지금 <b>같은 날짜로 다시 씁니다</b>. 예측은 아래 2절에서 결과와 나란히 채점했습니다.
 </div>
 
 <div class="halt">
-  <div class="t">오늘 국내 증시는 <span class="warn">열리지 않았습니다</span></div>
+  <div class="t">8/17 국내 증시는 <span class="warn">열리지 않았습니다</span></div>
   <div class="mut">광복절(8/15 토) 대체공휴일 → 코스피·코스닥·코넥스·채권시장 전체 휴장<br>
-  <b>마감 브리핑이 아니라 휴장일 브리핑입니다.</b> 국장 수치는 8/14(금) 확정치에서 한 칸도 움직이지 않았습니다.</div>
+  국장 수치는 <b>8/14(금) 확정치에서 한 칸도 움직이지 않았습니다.</b> 이 문서의 본론은 <b>밤사이 미국</b>입니다.</div>
 </div>
 
-<h2>📌 오늘의 요지 <span class="pill warn">국장 정지</span> <span class="pill up">미장 선물 반등</span> <span class="pill gold">8/18 갭업 우위</span></h2>
+<h2>📌 하루 요지 <span class="pill warn">국장 정지</span> <span class="pill dn">미 3대 지수 하락</span> <span class="pill up">SOX +1.64%</span></h2>
 
 <div class="big">
-<b>사흘 쉬는 동안 밖에서는 세 가지가 움직였습니다.</b>
-<ol style="margin:10px 0 0;padding-left:20px">
-<li><b>미국은 쉬어갔습니다</b> — 8/14(금) 정규장은 나스닥 <span class="dn">-0.28%</span>·S&amp;P <span class="dn">-0.17%</span>·다우 <span class="dn">-0.20%</span>로 소폭 하락 마감했습니다. 다만 <b>S&amp;P·나스닥은 4주 연속 주간 상승</b>을 기록한 뒤의 숨고르기였습니다.</li>
-<li><b>오늘 프리마켓은 다시 위를 봅니다</b> — 나스닥100 선물 <span class="up">+0.53%</span>, S&amp;P 선물 <span class="up">+0.14%</span>, 다우 선물만 <span class="dn">-0.1%</span>. <b>마이크론·샌디스크 등 메모리·반도체가 프리마켓을 끌고 있습니다</b>. 국장 반도체에 우호적인 그림입니다.</li>
-<li><b>원화가 더 강해졌습니다</b> — 8/14 1,414.9원 → 지금 <b class="ok">1,411.3원</b>(-0.39%). 20일 최고 1,484.3원에서 <b>-4.9%</b>. 외국인 4일 연속 순매수의 배경이 아직 살아 있습니다.</li>
-</ol>
-<div style="margin-top:12px;padding-top:11px;border-top:1px solid rgba(245,166,35,.25)">
-<b class="gold">단, 국장이 안고 들어가는 짐은 그대로입니다.</b> MA20 이격 <b class="up">+7.96%</b>(과열)과
-신용공여잔고 <b class="up">30.9조(5일 +7.41%)</b>는 8/14에 찍힌 채 사흘간 식지 않았습니다.
-쉬는 동안 가격은 멈췄지만 <b>과열도 식지 않았습니다</b> — 8/18은 과열 상태 그대로 재개됩니다.
+<b style="font-size:17px">지수는 유가와 금리에 밀렸고, 메모리만 따로 올랐습니다</b>
+<div class="mut" style="margin-top:9px">
+8/17 미국 정규장은 <b>다우 −0.51% · S&amp;P −0.52% · 나스닥 −0.32%</b> 로 3대 지수가 모두 내렸습니다.
+원인은 실적이 아니라 <b>바깥 변수 두 개</b>였습니다 —
+<b>미·이란 양해각서 만료</b>로 브렌트유가 <b>$90</b>을 넘었고(트럼프 대통령이 오만에 대한 군사행동을 언급),
+<b>미 30년물 국채금리가 5.31%</b> 로 <b>2007년 6월 이후 최고</b>를 찍었습니다(국가부채 $40조 접근 우려).<br><br>
+그 와중에 <b>필라델피아 반도체지수(SOX)는 +1.64%</b> 올랐습니다.
+그리고 그 상승분은 <b>메모리·스토리지·장비에서만</b> 나왔습니다.
+<b>AI 로직(엔비디아·브로드컴·AMD)은 따라 오르지 않았습니다.</b>
 </div>
 </div>
 
-<h2>🇰🇷 국장 상태 — 8/14(금) 확정치에서 동결 <span class="pill info">기준일 20260814</span></h2>
-
+<h2>🇰🇷 국장 상태 — 8/14(금) 확정치에서 동결 <span class="pill">기준일 20260814</span></h2>
 <div class="grid">
-  <div class="kpi"><div class="lab">KOSPI (8/14 확정)</div><div class="val up">6,977.94</div><div class="chg up">+164.60 (+2.42%)</div></div>
-  <div class="kpi"><div class="lab">KOSDAQ (8/14 확정)</div><div class="val up">864.65</div><div class="chg up">+3.28 (+0.38%)</div></div>
-  <div class="kpi"><div class="lab">주간 (8/7→8/14)</div><div class="val up">+11.49%</div><div class="chg mut">KOSDAQ +8.24%</div></div>
-  <div class="kpi"><div class="lab">코스피 거래대금</div><div class="val">27.20조</div><div class="chg dn">전일 34.83조 · -21.9%</div></div>
-  <div class="kpi"><div class="lab">외국인 (8/14)</div><div class="val up">+3.04조</div><div class="chg up">4일 누적 +8.04조</div></div>
-  <div class="kpi"><div class="lab">원/달러 (실시간)</div><div class="val ok">1,411.3</div><div class="chg ok">-0.39% · 원화 강세</div></div>
+  <div class="kpi"><div class="lab">KOSPI (8/14 확정)</div><div class="val">6,977.94</div><div class="chg up">+164.60 (+2.42%)</div></div>
+  <div class="kpi"><div class="lab">KOSDAQ (8/14 확정)</div><div class="val">864.65</div><div class="chg up">+3.28 (+0.38%)</div></div>
+  <div class="kpi"><div class="lab">주간 (8/7→8/14)</div><div class="val up">+11.49%</div><div class="chg">KOSDAQ +8.24%</div></div>
+  <div class="kpi"><div class="lab">코스피 거래대금</div><div class="val">27.20조</div><div class="chg">전일 34.83조 · −21.9%</div></div>
+  <div class="kpi"><div class="lab">외국인 (8/14)</div><div class="val ok">+3.04조</div><div class="chg">4일 누적 +8.04조</div></div>
+  <div class="kpi"><div class="lab">MA20 이격</div><div class="val up">+7.96%</div><div class="chg">MA20 6,463.32 · 사흘째 안 식음</div></div>
 </div>
-
 <div class="note">
-<b>휴장일에 이 표를 다시 싣는 이유</b> — 8/18 개장은 <b>이 숫자에서 이어서</b> 시작합니다.
-사흘 전 브리핑을 다시 찾아보지 않아도 되도록 출발점을 고정해 둡니다.
+<b>휴장은 이격을 식혀주지 않습니다.</b> MA20 이격 +7.96%, 신용공여 잔고 30.9조(5일 +7.41%),
+뉴스심리 5일 연속 하락 — 세 가지 모두 <b>8/14에 찍힌 채 사흘간 그대로</b> 있었고, 8/18은 이 상태에서 재개됩니다.
+<b>코스닥 MA20 이격은 +11.53%</b>(MA20 775.29)로 코스피보다 3.6%p 더 벌어져 있습니다.
 </div>
 
-<h2>🚦 리스크 계기판 <span class="pill info">전 항목 8/14 확정 · 사흘째 동결</span></h2>
-
+<h2>🌍 ① 밤사이 미국 — 확정 결과 <span class="pill info">8/17 정규장 종가</span></h2>
 <table>
-<thead><tr><th>항목</th><th class="n">수치</th><th>판정</th><th>메모</th></tr></thead>
-<tbody>
-<tr><td>KOSPI MA20 이격</td><td class="n up">+7.96%</td><td>🔴 과열</td>
-<td>MA20 6,463.32. 사흘 연속 벌어진 채로 멈춤. <b>휴장은 이격을 식혀주지 않습니다</b> — 8/18에 이 상태 그대로 재개</td></tr>
-<tr><td>신용공여잔고</td><td class="n up">30.9조</td><td>🔴 급증</td>
-<td>5일 <b>+7.41%</b> (기준일 20260813 ★). 빚으로 산 물량이 급등 구간에 쌓였습니다 — 조정 시 반대매매 압력</td></tr>
-<tr><td>외국인 순매수</td><td class="n up">+3.04조</td><td>🟢 4일 연속</td>
-<td>8/11 +0.05 · 8/12 +2.84 · 8/13 +2.11 · 8/14 +3.04조. <b>연휴 앞 마지막 날에 가장 크게 샀습니다</b></td></tr>
-<tr><td>기관</td><td class="n dn">-1.03조</td><td>🟡 매도 전환</td>
-<td>8/13 +0.68조 → 순매도. 외인·기관 동반 매수 조합이 깨진 첫날</td></tr>
-<tr><td>시장 폭 (코스피)</td><td class="n">674 / 204</td><td>🟢 반전</td>
-<td>상승 비율 74.7%. 8/13 333/533에서 완전히 뒤집힘</td></tr>
-<tr><td>시장 폭 (코스닥)</td><td class="n">895 / 741</td><td>🟡 넓지만 약함</td>
-<td>폭은 넓은데 지수는 +0.38%뿐 — <b>폭에 힘이 안 실렸습니다</b></td></tr>
-<tr><td>풋콜비율 (거래량)</td><td class="n">1.130</td><td>🟡 중립</td>
-<td>대금 기준 1.265. 극단적 낙관/공포 어느 쪽도 아님</td></tr>
-<tr><td>신용스프레드 (BBB-3y)</td><td class="n">+6.50%p</td><td>🟢 안정</td>
-<td>회사채BBB 10.298% · 국고3년 3.796%. <b>금융주 트리거 7.0%p 미달</b> — 아직 안 켜졌습니다</td></tr>
-<tr><td>장단기 (10-3y)</td><td class="n">+0.52%p</td><td>🟢 정상</td>
-<td>국고10년 4.313%. 역전 아님</td></tr>
-<tr><td>뉴스심리지수</td><td class="n dn">107.94</td><td>🟡 4일째 하락</td>
-<td>114.08 → 113.53 → 112.43 → 110.26 → 107.94 (기준일 20260809 ★). <b>지수는 오르는데 심리는 식는 중</b></td></tr>
-<tr><td>증시자금</td><td class="n dn">100.1조</td><td>🟡 유출</td>
-<td>5일 -3.85% (20260813 ★). CMA 103.0조 -0.18% · 펀드순자산 1,680.7조 +2.24%</td></tr>
-<tr><td>VIX</td><td class="n">14.91</td><td>🟢 낮음</td>
-<td>+4.63% (8/17 실측). 절대수준은 여전히 안정 구간</td></tr>
-</tbody>
+<tr><th>지표</th><th class="n">8/14 종가</th><th class="n">8/17 종가</th><th class="n">등락</th><th>국장 함의</th></tr>
+<tr><td><b>다우</b></td><td class="n">53,732.41</td><td class="n">53,459.78</td><td class="n dn">−272.63 (−0.51%)</td><td>블루칩 약세 지속</td></tr>
+<tr><td><b>S&amp;P 500</b></td><td class="n">7,785.76</td><td class="n">7,745.06</td><td class="n dn">−40.70 (−0.52%)</td><td>3주 연속 주간 상승 뒤 조정</td></tr>
+<tr><td><b>나스닥 종합</b></td><td class="n">26,729.16</td><td class="n">26,644.91</td><td class="n dn">−84.25 (−0.32%)</td><td>3대 지수 중 가장 덜 빠짐</td></tr>
+<tr><td><b>필라델피아 반도체(SOX)</b></td><td class="n">12,417.05</td><td class="n up"><b>12,621.00</b></td><td class="n up"><b>+203.95 (+1.64%)</b></td>
+<td><b class="ok">🟢 국장 반도체 나침반 = 위</b>. 3거래일 만에 방향 되돌림</td></tr>
+<tr><td><b>VIX</b></td><td class="n">14.25</td><td class="n">15.19</td><td class="n up">+6.60%</td><td>🟡 지수 하락과 <b>동반 상승</b> — 8/14(하락인데 VIX도 하락)와 성격이 다릅니다</td></tr>
+<tr><td><b>WTI</b></td><td class="n">82.40</td><td class="n up">84.88</td><td class="n up">+3.01%</td><td>🔴 <b>브렌트 $90 돌파</b>. 정유·조선 우호 / 항공·운송 부담</td></tr>
+<tr><td><b>미 30년물</b></td><td class="n">—</td><td class="n up"><b>5.31%</b></td><td class="n up">2007년 6월 이후 최고</td><td>🔴 성장주 멀티플에 역풍. 10년물도 4.72%(+0.60%)</td></tr>
+<tr><td><b>금 (선물)</b></td><td class="n">4,380.40</td><td class="n up">4,473.10</td><td class="n up">+2.12%</td><td>🟡 이틀 연속 급등. 금과 장기금리 동반 상승은 서로 어긋나는 조합</td></tr>
+<tr><td><b>원/달러</b></td><td class="n">1,416.85</td><td class="n">1,416.38</td><td class="n">−0.03%</td><td>사실상 보합 · 20일 최고 1,484.3 대비 −4.6% · DXY 99.58</td></tr>
+</table>
+
+<h3>반도체 내부가 갈렸습니다 — 이게 어젯밤의 핵심입니다</h3>
+<table>
+<tr><th>올라간 쪽 <span class="mut3">메모리·스토리지·장비</span></th><th class="n">8/17</th><th>안 올라간 쪽 <span class="mut3">AI 로직</span></th><th class="n">8/17</th></tr>
+<tr><td><b>샌디스크</b> <span class="mut3">SNDK</span></td><td class="n up">+8.88%</td><td><b>엔비디아</b> <span class="mut3">NVDA</span></td><td class="n dn">−0.07%</td></tr>
+<tr><td><b>어플라이드 머티리얼즈</b> <span class="mut3">AMAT</span></td><td class="n up">+5.55%</td><td><b>브로드컴</b> <span class="mut3">AVGO</span></td><td class="n dn">−0.14%</td></tr>
+<tr><td><b>마벨 테크놀로지</b> <span class="mut3">MRVL</span></td><td class="n up">+5.54%</td><td><b>AMD</b></td><td class="n dn">−1.63%</td></tr>
+<tr><td><b>웨스턴 디지털</b> <span class="mut3">WDC</span></td><td class="n up">+5.35%</td><td class="mut3">—</td><td class="n">—</td></tr>
+<tr><td><b>마이크론</b> <span class="mut3">MU · $1,011.75</span></td><td class="n up">+4.13%</td><td class="mut3">TSMC(참고)</td><td class="n up">+1.08%</td></tr>
+<tr><td><b>램 리서치</b> <span class="mut3">LRCX · 보유</span></td><td class="n up">+3.45%</td><td class="mut3">—</td><td class="n">—</td></tr>
+<tr><td><b>ASML</b></td><td class="n up">+2.12%</td><td class="mut3">—</td><td class="n">—</td></tr>
+</table>
+<div class="note g">
+<b>마이크론이 종가 $1,011.75 로 7월 이후 처음 $1,000선을 넘었습니다.</b>
+반도체 ETF(SOXX)도 +1.58%로 지수를 크게 앞섰습니다.
+로이터·야후가 짚은 촉매는 <b>AI 수요 지표</b>였습니다 — AI 기업 앤스로픽의 2분기 매출이 <b>14배 늘어 $115억</b>으로 보고되면서
+데이터센터 메모리 수요 기대가 다시 붙었습니다.
+<b>국장 전이 경로는 삼성전자·SK하이닉스와 반도체 소부장이지, AI 로직 밸류체인이 아닙니다.</b>
+<b class="warn">SOX +1.64%만 보고 "반도체 강세"로 뭉뚱그리면 8/18에 종목 선택이 틀어집니다.</b>
+</div>
+
+<h3>메모리 가격 계기판 <span class="mut3">— 실물과 주식의 방향</span></h3>
+<div class="card tight">
+<b>가격(실물)</b> — DDR4 8Gb PC용 <b>고정거래가 $21</b>(전월 대비 +5%, <b>2016년 6월 이후 최고</b>),
+현물 <b>$36.10</b> 으로 고정가를 <b>71.9%</b> 웃돕니다. 현물은 통상 고정가를 몇 달 선행합니다.
+트렌드포스는 SK하이닉스 M15X 가동(2026 하반기)부터 부분적 공급 정상화를 봅니다.
+<b class="warn">단 이 고정가는 6월분 집계라 두 달 묵은 값입니다 — 신선도를 낮게 보십시오.</b><br>
+<b>SOX(주식 심리)</b> — 12,621.00 <b class="up">+1.64%</b>.<br>
+<b>판정</b> — <b>가격↑ + SOX↑ = 방향 일치</b>. 공포 조정도 위험한 낙관도 아닙니다. CXMT(창신메모리) 신규 뉴스 없음.
+</div>
+
+<h2>🎯 ② 어제 예측 채점 <span class="pill warn">빗나간 것도 그대로 적습니다</span></h2>
+<table>
+<tr><th style="width:34%">8/17 20:45에 적은 예측</th><th style="width:38%">실제 결과 (8/17 정규장 확정)</th><th>채점</th></tr>
+
+<tr><td>"프리마켓 기조 — <b>NQ선물 +0.53% · S&amp;P +0.14% · 다우 −0.1%</b>.
+<b>성장주(반도체·AI) 우위 / 블루칩 열위</b>의 뚜렷한 분기"</td>
+<td><b>3대 지수 전부 하락</b>했습니다 — 나스닥 −0.32% · S&amp;P −0.52% · 다우 −0.51%.
+프리마켓의 상승 기조는 정규장에서 유지되지 못했습니다.
+다만 <b>상대 순위는 맞았습니다</b>(나스닥이 가장 덜 빠짐)</td>
+<td><span class="pill warn">🔶 절반</span><br><span class="mut3">방향 틀림<br>순위 맞음</span></td></tr>
+
+<tr><td>"주도 섹터 — <b>메모리·스토리지</b>. 마이크론·샌디스크가 프리마켓 랠리를 주도.
+갭 예측 엔진 측정치로 <b>MU +2.3%</b>"</td>
+<td><b>MU +4.13%($1,011.75) · SNDK +8.88% · WDC +5.35%</b>.
+프리마켓 랠리가 정규장까지 이어졌고 <b>예측보다 강했습니다</b>. SOX +1.64%</td>
+<td><span class="pill ok">✅ 적중</span><br><span class="mut3">예측보다 강함</span></td></tr>
+
+<tr><td>"<b>금 +1.83%와 미 10년물 4.70%가 같은 날 동시에 오른 점은 서로 어긋나는 신호</b> —
+방향 확신을 낮춰 잡는 편이 맞습니다"</td>
+<td>금 <b>+2.12%</b>($4,473.10) · 10년물 <b>4.72%</b> · 30년물 <b>5.31%</b>(2007년 이후 최고).
+둘 다 계속 올랐고, <b>지수는 그 조합에 밀려 하락했습니다</b></td>
+<td><span class="pill ok">✅ 경계 적중</span><br><span class="mut3">확신을 낮춘 게 옳았음</span></td></tr>
+
+<tr><td>"이번 주 최대 변수 = <b>리테일 실적</b>(홈디포·타깃·로우스·월마트).
+소비 둔화 여부가 확인되는 주간"</td>
+<td>아직 미발표(8/18 홈디포부터). <b>다만 하락 원인은 리테일이 아니라 유가·금리였습니다</b> —
+어제 리스크 목록에 <b>유가와 장기금리가 빠져 있었습니다</b></td>
+<td><span class="pill warn">⚠️ 누락</span><br><span class="mut3">주목 대상을 잘못 골랐음</span></td></tr>
+
+<tr><td>"8/18 갭 예측 — <b>SK하이닉스 +0.3% · 삼성전자 +0.3%</b>
+(<b>SOX −0.3%</b> · MU +2.3% · NQ선물 +0.5% 가중)"</td>
+<td><b>전제가 무효화됐습니다.</b> 실제 SOX는 <b>+1.64%</b> 로 전제와 <b>1.9%p</b> 어긋났고, MU도 +4.13%로 예측(+2.3%)을 넘었습니다.
+<b>이 수치는 8/18에 그대로 쓰면 안 됩니다</b></td>
+<td><span class="pill up">❌ 무효</span><br><span class="mut3">재산출 필요</span></td></tr>
+
+<tr><td>"국장이 쉬는 동안 재개 시 <b>갭을 만들 만한 충격 이벤트는 없었습니다</b>.
+8/18은 8/14의 연장선에서 출발합니다"</td>
+<td><b>절반만 맞았습니다.</b> 지수를 뒤엎을 충격은 없었지만,
+<b>브렌트 $90 돌파와 30년물 2007년 이후 최고</b>는 어제 20:45 시점에 예상하지 못한 신규 변수입니다.
+"연장선에서 출발"은 유효하되 <b>업종별로 갭이 갈릴 근거</b>가 새로 생겼습니다</td>
+<td><span class="pill warn">🔶 절반</span></td></tr>
+
+<tr><td>"미국 9종목 오버나잇 보유 상태는 <b>8/11 지시한 미장 보유 시간창(17시~자정, 최대 03시)과 어긋나 있습니다</b>"</td>
+<td><b>어긋남이 해소되지 않았습니다.</b> 밤사이 101건을 회전한 뒤에도 <b>17종목을 그대로 안고</b> 아침을 맞았습니다.
+마지막 체결이 <b>03:36</b> 으로 시간창 상한(03:00)을 <b>36분 넘겼습니다</b></td>
+<td><span class="pill up">❌ 미해소</span><br><span class="mut3">오히려 악화</span></td></tr>
 </table>
 
 <div class="note w">
-<b>계기판에서 가장 눈에 걸리는 조합</b> — <b>MA20 이격 +7.96%</b>(과열) + <b>신용잔고 5일 +7.41%</b>(빚투 급증) +
-<b>뉴스심리 4일 연속 하락</b>. 가격은 가장 높은데, 그 가격을 떠받치는 자금은 빌린 돈이고,
-분위기는 이미 꺾이는 중이라는 세 가지가 겹쳐 있습니다. 셋 다 8/14에 찍힌 값이고 휴장 사흘간 갱신되지 않았습니다.
+<b>솔직한 채점 — 잘 맞춘 것 하나, 놓친 것 하나가 분명합니다.</b><br>
+<b>맞춘 것</b>: 메모리·스토리지 주도를 정확히 지목했고(MU·SNDK), 금·금리 동반 상승을 "어긋난 신호"로 읽어 확신을 낮춘 판단도 옳았습니다.<br>
+<b>놓친 것</b>: <b>어제 리스크 목록에 유가와 장기금리가 없었습니다.</b> 정작 8/17 하락을 만든 건 그 둘이었습니다.
+리테일 실적을 "이번 주 최대 변수"로 올렸는데, 시장은 발표도 전에 다른 이유로 내렸습니다.
+<b>지정학(이란)과 미 재정(30년물)을 상시 계기판에 올려두지 않은 것이 이번 주의 구조적 빈틈</b>이고, 8/18 모닝브리핑 계기판에 두 행을 신설했습니다.
 </div>
 
-<h2>🌍 휴장 사흘, 밖에서 벌어진 일 <span class="pill up">이번 브리핑의 본론</span></h2>
-
-<table>
-<thead><tr><th>지표</th><th class="n">8/14 국장 마감 시점</th><th class="n">지금 (8/17 20:45)</th><th>변화 · 국장 함의</th></tr></thead>
-<tbody>
-<tr><td>나스닥 종합</td><td class="n">26,804 (8/13)</td><td class="n">26,729.16 <span class="dn">(-0.28%)</span></td>
-<td>8/14 소폭 하락 마감. <b>4주 연속 주간 상승</b> 뒤 숨고르기</td></tr>
-<tr><td>S&amp;P 500</td><td class="n">7,799 (8/13)</td><td class="n">7,785.76 <span class="dn">(-0.17%)</span></td><td>동일 — 되돌림이 아니라 정체</td></tr>
-<tr><td>다우</td><td class="n">53,840 (8/13)</td><td class="n">53,732.41 <span class="dn">(-0.20%)</span></td><td>블루칩 약세, 성장주 우위 구도</td></tr>
-<tr><td><b>나스닥100 선물</b></td><td class="n">—</td><td class="n up"><b>30,301.75 (+0.53%)</b></td>
-<td>🟢 <b>국장 반도체 나침반 = 위</b>. 프리마켓 리스크온</td></tr>
-<tr><td>S&amp;P 선물</td><td class="n">—</td><td class="n up">7,816.25 (+0.14%)</td><td>완만한 상승</td></tr>
-<tr><td>필라델피아 반도체(SOX)</td><td class="n">12,456 (8/13)</td><td class="n">12,417.05 <span class="dn">(-0.31%)</span></td>
-<td>8/14 소폭 하락. <b>단, 오늘 프리마켓에서 마이크론·샌디스크 랠리</b> — 메모리가 앞장</td></tr>
-<tr><td>원/달러</td><td class="n">1,414.9</td><td class="n ok">1,411.3 (-0.39%)</td>
-<td>🟢 <b>원화 강세 지속</b>. 외국인 순매수 배경 유지 · 20일 최고 1,484.3 대비 -4.9%</td></tr>
-<tr><td>VIX</td><td class="n">14.63 (8/13)</td><td class="n">14.91 <span class="up">(+4.63%)</span></td>
-<td>🟡 소폭 상승했으나 절대수준은 낮음</td></tr>
-<tr><td>금 (선물)</td><td class="n">—</td><td class="n up"><b>4,460.50 (+1.83%)</b></td>
-<td>🟡 <b>오늘 가장 크게 움직인 자산</b>. 안전자산 수요 · 주식과 동반 상승은 통상 실질금리 하락 기대</td></tr>
-<tr><td>WTI</td><td class="n">84.77 (8/11)</td><td class="n dn">82.56</td><td>유가 완만한 하락 — 정유·조선 부담, 항공 우호</td></tr>
-<tr><td>미 10년물</td><td class="n">—</td><td class="n up">4.70% (+1.19%)</td><td>🟡 금리 반등 — 성장주엔 역풍 요인</td></tr>
-</tbody>
-</table>
-
-<div class="note">
-<b>사흘을 한 줄로</b> — <b>"미국은 옆으로 갔고, 원화는 더 강해졌고, 오늘 아침 반도체가 다시 움직이기 시작했습니다."</b>
-국장이 쉬는 동안 재개 시 갭을 만들 만한 <b>충격 이벤트는 없었습니다</b>. 8/18은 8/14의 연장선에서 출발합니다.
-</div>
-
-<h2>🔍 8/14 마감 브리핑 판정 복기 <span class="pill info">사흘 뒤 채점</span></h2>
-
-<table>
-<thead><tr><th>8/14에 적은 판정</th><th>지금 상태</th><th>채점</th></tr></thead>
-<tbody>
-<tr><td>"외인 +3.04조 4일 연속 — <b>짐 싸고 나가는 그림이 아니다</b>"</td>
-<td>휴장 사흘간 원화 <b>추가 강세</b>(1,414.9→1,411.3), 미 선물 반등. 이탈 신호 없음</td>
-<td class="ok">✅ 유지</td></tr>
-<tr><td>"MA20 이격 +7.96% — 🔴 과열 심화"</td>
-<td>휴장으로 <b>가격도 이격도 정지</b>. 시간으로 식히지 못한 채 재개</td>
-<td class="warn">⏸ 미해소</td></tr>
-<tr><td>"오전 고점이 그날의 고점인 날이 나흘째 — <b>갭에서 산 사람이 나흘 연속 손해</b>"</td>
-<td>검증 불가 — 거래일이 없었음. <b>8/18 개장이 5일째 시험</b></td>
-<td class="mut">⏳ 이월</td></tr>
-<tr><td>"기관 매도 전환 — 외인·기관 동반 매수가 깨진 첫날"</td>
-<td>후속 데이터 없음. 8/18 수급이 첫 확인점</td>
-<td class="mut">⏳ 이월</td></tr>
-<tr><td>"과매수 스캐너 2,779종목 중 <b>통과 0종목</b>"</td>
-<td>휴장으로 재스캔 없음. 도장 0개 상태 유지</td>
-<td class="mut">⏸ 동결</td></tr>
-<tr><td>"미국은 오늘 밤·8/17 <b>두 거래일을 더 간다</b>"</td>
-<td>8/14 정규장 소폭 하락 종료 · 8/17 정규장은 <b>오늘 22:30 개장 예정</b>(아직 안 열림)</td>
-<td class="ok">✅ 진행 중</td></tr>
-</tbody>
-</table>
-
-<div class="note w">
-<b>솔직한 채점</b> — 사흘 만의 복기에서 <b>뒤집힌 판정은 없습니다</b>. 다만 <b>확인된 것도 별로 없습니다</b>.
-거래일이 없었으니 "갭에서 산 사람이 손해"·"기관 매도 전환" 같은 <b>일중 행태 판정은 전부 8/18로 이월</b>됐습니다.
-휴장일 브리핑이 할 수 있는 일은 채점이 아니라 <b>출발점 고정</b>입니다.
-</div>
-
-<h2>👛 계좌 실측 <span class="pill info">20:45 토스 API</span> <span class="pill warn">KR 가격 = 8/14 종가 동결</span></h2>
-
+<h2>👛 ③ 밤사이 계좌·체결 <span class="pill info">8/18 07:18 토스 API 실측</span></h2>
 <div class="grid">
-  <div class="kpi"><div class="lab">국내 평가</div><div class="val">277.2만</div><div class="chg dn">매입 280.5만 · -3.34만</div></div>
-  <div class="kpi"><div class="lab">해외 평가</div><div class="val">$2,400</div><div class="chg dn">매입 $3,032 · -$632</div></div>
-  <div class="kpi"><div class="lab">전체 수익률</div><div class="val dn">-13.15%</div><div class="chg mut">비용 반영 후 -12.52%</div></div>
-  <div class="kpi"><div class="lab">보유 종목</div><div class="val">11</div><div class="chg mut">국내 2 · 미국 9</div></div>
+  <div class="kpi"><div class="lab">국내 평가</div><div class="val">277.15만</div><div class="chg dn">매입 280.49만 · −3.34만</div></div>
+  <div class="kpi"><div class="lab">해외 평가</div><div class="val">$2,408.02</div><div class="chg dn">매입 $3,033.90 · −$625.88</div></div>
+  <div class="kpi"><div class="lab">전체 수익률</div><div class="val dn">−13.02%</div><div class="chg">비용 반영 후 −13.22%</div></div>
+  <div class="kpi"><div class="lab">보유 종목</div><div class="val">19</div><div class="chg warn">어제 11 → <b>19</b> (미국 9 → 17)</div></div>
 </div>
-
-<h3>국내 2종목 <span class="pill">가격 갱신 없음 — 8/14 종가</span></h3>
-<table>
-<thead><tr><th>종목</th><th class="n">수량</th><th class="n">현재가</th><th class="n">평단</th><th class="n">평가금</th><th class="n">손익</th></tr></thead>
-<tbody>
-<tr><td>카카오페이 <span class="mut3">377300</span></td><td class="n">60</td><td class="n">45,100</td><td class="n">45,658</td><td class="n">2,706,000</td><td class="n dn">-33,500 (-1.22%)</td></tr>
-<tr><td>파두 <span class="mut3">440110</span></td><td class="n">1</td><td class="n">65,500</td><td class="n">65,400</td><td class="n">65,500</td><td class="n up">+100 (+0.15%)</td></tr>
-</tbody>
-</table>
 
 <div class="note r">
-<b>⚠️ 오독 주의 — 토스가 보여주는 국내 "당일 손익 +26,500원"은 오늘 번 돈이 아닙니다.</b>
-국장이 휴장이라 <b>8/14(금) 당일 변동분이 그대로 남아 있는 값</b>입니다
-(카카오페이 +24,000 / 파두 +2,500). 오늘 국내 계좌에서 실제로 발생한 손익은 <b>0원</b>입니다.
-</div>
-
-<h3>미국 9종목 <span class="pill up">프리마켓 진행 중</span> <span class="pill dn">슬리브 -20.8%</span></h3>
-<table>
-<thead><tr><th>종목</th><th class="n">수량</th><th class="n">현재가</th><th class="n">평단</th><th class="n">평가금</th><th class="n">누적손익</th><th class="n">당일(프리)</th></tr></thead>
-<tbody>
-<tr><td>다크아이리스 <span class="mut3">DKI</span></td><td class="n">220</td><td class="n">3.97</td><td class="n">5.5652</td><td class="n">$873.40</td><td class="n dn">-28.66%</td><td class="n dn">-2.33%</td></tr>
-<tr><td>서지페이스 <span class="mut3">SURG</span></td><td class="n">2,001</td><td class="n">0.2691</td><td class="n">0.3516</td><td class="n">$538.47</td><td class="n dn">-23.47%</td><td class="n dn">-3.66%</td></tr>
-<tr><td>슈퍼리그엔터 <span class="mut3">SLE</span></td><td class="n">101</td><td class="n">2.82</td><td class="n">2.9908</td><td class="n">$284.82</td><td class="n dn">-5.71%</td><td class="n up">+18.38%</td></tr>
-<tr><td>시너지CHC <span class="mut3">SNYR</span></td><td class="n">2,402</td><td class="n">0.0930</td><td class="n">0.1116</td><td class="n">$223.39</td><td class="n dn">-16.65%</td><td class="n dn">-6.00%</td></tr>
-<tr><td>마이사이즈 <span class="mut3">MYSZ</span></td><td class="n">60</td><td class="n">3.62</td><td class="n">4.2936</td><td class="n">$217.20</td><td class="n dn">-15.68%</td><td class="n up">+15.13%</td></tr>
-<tr><td>9F(ADR) <span class="mut3">JFU</span></td><td class="n">81</td><td class="n">1.75</td><td class="n">1.8096</td><td class="n">$141.75</td><td class="n dn">-3.29%</td><td class="n dn"><b>-26.52%</b></td></tr>
-<tr><td>트루골프 <span class="mut3">TRUG</span></td><td class="n">41</td><td class="n">1.49</td><td class="n">1.5707</td><td class="n">$61.09</td><td class="n dn">-5.13%</td><td class="n up"><b>+33.13%</b></td></tr>
-<tr><td>IP스트래티지 <span class="mut3">IPST</span></td><td class="n">10</td><td class="n">5.86</td><td class="n">6.39</td><td class="n">$58.60</td><td class="n dn">-8.29%</td><td class="n up"><b>+57.27%</b></td></tr>
-<tr><td>프레이토스 <span class="mut3">CRGO</span></td><td class="n">1</td><td class="n">1.52</td><td class="n">1.64</td><td class="n">$1.52</td><td class="n dn">-7.31%</td><td class="n up">+10.36%</td></tr>
-</tbody>
+<b>🔴 밤사이 101건이 체결됐습니다 — 사실부터 순서대로</b>
+<table style="margin-top:9px">
+<tr><th>항목</th><th class="n">값</th><th>비고</th></tr>
+<tr><td>기록 구간</td><td class="n">8/17 13:31:47 ~ <b>8/18 03:36:09</b></td><td><b class="warn">마지막 체결이 시간창 상한(03:00)을 36분 초과</b></td></tr>
+<tr><td>체결 건수</td><td class="n"><b>101건</b></td><td>매수 54 · 매도 47</td></tr>
+<tr><td>종목 수</td><td class="n">29종목</td><td>IPST 18회 · JFU 18회 · SLE 8회 · SNYR 5회 반복</td></tr>
+<tr><td>회전금액</td><td class="n"><b>$6,731.76</b></td><td>매수 $3,890.55 · 매도 $2,841.20. <b>슬리브 평가액 $2,408의 2.8배</b></td></tr>
+<tr><td>과매매 경고</td><td class="n"><b>31건</b></td><td>일지 <code>notes</code>에 정상 기록 (예: "오늘 이 종목 4번째 거래 — 과매매 구간")</td></tr>
+<tr><td>실현 익절(추정)</td><td class="n ok">33건 <b>+$89.65</b></td><td>JFU +22.4~33.8% 반복 · IPST +15.5/+16.9% · OSRH +21.9% · WFF +21.1% · SLE +11.3%</td></tr>
+<tr><td>실현 손절(추정)</td><td class="n dn">4건 <b>−$41.65</b></td><td>WFF −17.5% · SKYE −15.0% · SNYR −4.5% · IPST −3.9%</td></tr>
+<tr><td>실현 소계(추정)</td><td class="n ok">+$48.00</td><td rowspan="3"><b class="warn">이 수치는 일지의 % 주석에서 역산한 추정</b>이며 증권사 확정 실현손익이 아닙니다</td></tr>
+<tr><td>왕복 수수료</td><td class="n dn">−$13.46</td></tr>
+<tr><td><b>순 실현(추정)</b></td><td class="n ok"><b>+$34.54</b></td></tr>
 </table>
-
-<div class="note w">
-<b>프리마켓 변동폭이 비정상적으로 큽니다</b> — IPST <span class="up">+57%</span> · TRUG <span class="up">+33%</span> ·
-SLE <span class="up">+18%</span> · MYSZ <span class="up">+15%</span> / JFU <span class="dn">-27%</span>.
-전부 저유동성 동전주이고, <b>프리마켓 호가는 얇습니다</b>. 이 수치는 정규장(22:30) 개장 시 상당폭 되돌려질 수 있습니다 —
-지금 평가금액을 실현 가능한 값으로 읽지 않는 편이 안전합니다.
-<br><br>
-<b>상태 서술</b> — 미국 9종목 슬리브는 누적 <b class="dn">-$632 (-20.8%)</b>이고,
-DKI(-28.7%)·SURG(-23.5%)·SNYR(-16.7%)·MYSZ(-15.7%) 4종목이 손실의 대부분을 차지합니다.
-<b>8/11 지시했던 "미장 보유 시간창(17시~자정, 최대 03시)"과 현재 9종목 오버나잇 보유 상태는 어긋나 있습니다.</b>
+<b>해석 — 많이 벌었다기보다, 많이 돌렸습니다.</b>
+익절 33건을 실현했는데 순 실현 추정은 <b>+$34.54</b>(슬리브의 <b>+1.4%</b>)이고,
+슬리브 미실현은 <b>−$632 → −$625.88</b> 로 사실상 제자리입니다.
+<b>회전금액의 0.20%인 $13.46이 수수료로만 나갔고, 이는 순 실현 추정치의 28%에 해당합니다.</b>
+8/17 모닝브리핑이 "회전이 늘수록 수수료와 휩쏘가 쌓인다"고 적은 그 패턴이 하룻밤 더 반복됐습니다.
 </div>
-
-<h2>🌙 오늘 밤 · 8/18(화) 개장 시나리오</h2>
-
-<h3>오늘 밤 미장 (22:30 개장)</h3>
-<ul>
-<li><b>프리마켓 기조</b> — 나스닥100 선물 <span class="up">+0.53%</span> · S&amp;P <span class="up">+0.14%</span> · 다우 <span class="dn">-0.1%</span>.
-<b>성장주(반도체·AI) 우위 / 블루칩 열위</b>의 뚜렷한 분기</li>
-<li><b>주도 섹터</b> — 메모리·스토리지. <b>마이크론(MU) · 샌디스크(SNDK)</b>가 프리마켓 랠리를 주도.
-갭 예측 엔진 측정치로 <b>MU +2.3%</b></li>
-<li><b>이번 주 최대 변수 = 리테일 실적</b> — 홈디포(HD)·타깃(TGT)·로우스(LOW)·<b>월마트(WMT)</b>가 이번 주 발표.
-소비 둔화 여부가 확인되는 주간이고, 결과는 <b>국장 소비재·유통주로 다음 날 전이</b>됩니다</li>
-<li><b>금 +1.83%</b>와 <b>미 10년물 4.70%(+1.19%)</b>가 같은 날 동시에 오른 점은 서로 어긋나는 신호입니다 — 방향 확신을 낮춰 잡는 편이 맞습니다</li>
-</ul>
-
-<h3>8/18(화) 국장 갭 예측 <span class="pill info">1차 · 선물 기준 · 아침 07:35 갱신 예정</span></h3>
-<table>
-<thead><tr><th>대상</th><th class="n">8/14 종가</th><th class="n">예상 갭</th><th>근거</th></tr></thead>
-<tbody>
-<tr><td><b>SK하이닉스</b></td><td class="n">1,645,000 <span class="up">(+3.26%)</span></td><td class="n up">+0.3%</td>
-<td>SKHY ADR +0.4% · MU +2.3% · SOX -0.3% · NQ선물 +0.5%</td></tr>
-<tr><td><b>삼성전자</b></td><td class="n">274,500 <span class="up">(+2.43%)</span></td><td class="n up">+0.3%</td><td>동일 지표 가중</td></tr>
-<tr><td>하닉롱ETF</td><td class="n">8,320</td><td class="n up">+0.2%</td><td>괴리 +0.3%p 정상화 반영</td></tr>
-<tr><td>하닉인버스</td><td class="n">8,075</td><td class="n dn">-1.6%</td><td>괴리 +1.1%p 정상화 반영</td></tr>
-<tr><td>삼전롱ETF</td><td class="n">12,290</td><td class="n up">+0.1%</td><td>괴리 +0.4%p 정상화 반영</td></tr>
-<tr><td>삼전인버스</td><td class="n">9,160</td><td class="n up">+0.2%</td><td>괴리 -0.7%p 정상화 반영</td></tr>
-<tr><td>하닉레버K</td><td class="n">9,780</td><td class="n up">+0.8%</td><td>괴리 -0.3%p 정상화 반영</td></tr>
-</tbody>
-</table>
 
 <div class="note r">
-<b>⚠️ 09:00~09:03은 괴리 폭발 구간입니다 — 09:05 이전 ETF 주문 금지.</b>
-그리고 이 갭 예측은 <b>선물 기준 1차 산출</b>이라 오늘 밤 정규장 결과에 따라 바뀝니다.
-확정판은 <b>8/18 07:35 아침 갱신분</b>입니다. 참고용이며 매매 근거가 아닙니다.
+<b class="warn">⚠️ 판정불가 — 주문 주체를 이 자리에서 특정할 수 없습니다</b>
+<div style="margin-top:7px">
+자동매매 차단 장치는 <b>전부 켜져 있는 상태</b>로 확인됩니다:
+<code>trading_mode=manual</code> · <code>auto_scan_buy=False</code> · <code>auto_star4=False</code> ·
+<code>auto_star4_kr=False</code> · <code>penny_KILL.flag</code>(2026-08-11 05:19 생성, 현존).
+<b>그럼에도 101건이 체결됐습니다.</b><br><br>
+<b>지금 확인 가능한 것</b> — 무엇이 언제 얼마에 체결됐는지(<code>매매일지.jsonl</code>).<br>
+<b>확인 불가능한 것</b> — <b>누가 주문했는지.</b> 매매일지는 체결 내역만 기록하고 주문 주체를 남기지 않습니다.
+토스 <code>orders()</code> 조회는 당일분이 비어 있어(8/18 신규 주문 없음) 역추적도 되지 않았습니다.<br><br>
+따라서 <b>이것이 준서님 수동 주문인지, 살아남은 자동 경로인지 구분할 수 없습니다.</b>
+<code>CLAUDE.md</code> 5장의 <b>[정상 / 이상 / 판정불가] 3상태 원칙</b>에 따라
+<b>어떤 조치도 취하지 않고 보고만 합니다</b> — 워처를 끄거나 되살리는 처방이 원래 문제보다 나빠지는 지점이 늘 여기였습니다
+(선례: 8/5 로그침묵 · 8/10 CPU정체 · 8/17 조회실패·락경합).
+<b>8/18 확인이 필요한 최우선 항목입니다.</b>
+</div>
 </div>
 
-<h3>8/18(화) 체크리스트</h3>
-<ul>
-<li><b>① 외국인 5일째 순매수가 이어지는가</b> — 4일 누적 +8.04조. <b>연휴 앞에 가장 크게 산 자금</b>이 연휴 뒤에도 남는지가 첫 확인점</li>
-<li><b>② 시가 고점 패턴이 5일째 반복되는가</b> — 나흘 연속 "오전 고점 = 그날 고점"이었습니다.
-사흘 쉬고도 같으면 <b>갭 매수는 계속 불리</b>합니다</li>
-<li><b>③ MA20 이격 +7.96%가 어느 쪽으로 풀리는가</b> — 지수가 더 오르며 벌어지는지, 옆으로 가며 MA가 따라붙는지</li>
-<li><b>④ 기관이 매도를 이어가는가</b> — 8/14 -1.03조로 전환했습니다. 이틀 연속이면 외인 단독 부양 구도</li>
-<li><b>⑤ 신용잔고 30.9조가 더 늘어나는가</b> — 5일 +7.41%. 추가 급증은 조정 시 낙폭을 키우는 연료</li>
-<li><b>⑥ 코스닥 개인 단독 매수가 8일째 가는가</b> — 실측상 성적이 가장 나빴던 수급 조합입니다</li>
-</ul>
+<div class="note g">
+<b>정정 — "매매일지 워처 유실"은 해소됐습니다.</b>
+8/17 모닝브리핑 체크리스트에 <b>"8/15 01:43 이후 기록이 없습니다 — SURG 매도·TRUG 매수·WETO 청산이 로그에 빠졌습니다"</b> 라고 적었는데,
+지금 <code>매매일지.jsonl</code>에는 <b>8/17 13:31 ~ 8/18 03:36 구간 101건이 정상 기록</b>돼 있고 과매매 경고도 <code>notes</code>에 정상적으로 붙습니다.
+<b>다만 "과매매 경고가 로그에만 남고 폰으로 안 갔다"는 배관 문제는 별개이고, 이번 확인 범위에 넣지 못했습니다 — 미확인으로 남깁니다.</b>
+</div>
 
-<h3>다가오는 일정</h3>
-<ul>
-<li><b>8/18~21</b> — 미 리테일 실적 주간 (홈디포·타깃·로우스·월마트)</li>
-<li><b>8/27~29</b> — <b>잭슨홀 심포지엄</b>. 주제 "Financial Innovation: Implications for Payments and Policy".
-<b>케빈 워시 신임 연준 의장의 첫 기조연설이 8/28(금) 오전(ET)</b>으로 예정돼 있습니다 —
-새 의장의 첫 잭슨홀은 통상 정책 방향 전환 신호로 읽히므로, <b>8월 마지막 주 최대 이벤트</b>입니다</li>
-</ul>
+<h3>보유 종목 변화 <span class="mut3">— 미국 9종목 → 17종목</span></h3>
+<table>
+<tr><th>구분</th><th>종목</th></tr>
+<tr><td><b class="dn">빠진 것 (6)</b></td><td>슈퍼리그엔터(SLE) · 시너지CHC(SNYR) · 9F(JFU) · 트루골프(TRUG) · IP스트래티지(IPST) · 프레이토스(CRGO)</td></tr>
+<tr><td><b class="ok">새로 들어온 것 (14)</b></td><td><b>램 리서치(LRCX)</b> · <b>퀄컴(QCOM)</b> · 텐센트 뮤직(TME) · 리퍼블릭 파워(RPGL) · 클라우드어스트럭처(CLOD) ·
+아그로즈(AGRO) · 앱셀레라(ABCL) · 프로퓨사(PFSA) · 보르 드릴링(BORR) · 버진 갤럭틱(SPCE) · TJGC 그룹 · 리토 에코(RETO) · 유클라우드링크(UCL) · WF 홀딩(WFF)</td></tr>
+<tr><td><b>유지 (3)</b></td><td>다크아이리스(DKI) 220주 · 서지페이스(SURG) 2,001주 · 마이 사이즈(MYSZ) 60주</td></tr>
+</table>
+<div class="note">
+<b>성격이 바뀐 부분이 하나 있습니다</b> — 새로 들어온 종목에 <b>램 리서치·퀄컴</b> 같은 대형 반도체가 섞였습니다.
+동전주 위주 슬리브에 정상 유동성 종목이 들어온 것이고, <b>램 리서치는 마침 8/17에 +3.45%</b> 오른 장비주입니다.
+반면 손실 상위는 그대로입니다 — <b>WF 홀딩 −72.54%</b>(평단 8.05 → 2.21) · 유클라우드링크 −38.84% · 다크아이리스 −30.46% · 마이 사이즈 −25.46% · 아그로즈 −23.56%.
+</div>
+
+<h3>국내 2종목 <span class="mut3">— 휴장이라 손익 변화 0원</span></h3>
+<table>
+<tr><th>종목</th><th class="n">수량</th><th class="n">현재가</th><th class="n">평단</th><th class="n">평가금</th><th class="n">손익</th></tr>
+<tr><td><b>카카오페이</b> <span class="mut3">377300</span></td><td class="n">60</td><td class="n">45,100</td><td class="n">45,658</td><td class="n">2,706,000</td><td class="n dn">−33,500 (−1.22%)</td></tr>
+<tr><td><b>파두</b> <span class="mut3">440110</span></td><td class="n">1</td><td class="n">65,500</td><td class="n">65,400</td><td class="n">65,500</td><td class="n up">+100 (+0.15%)</td></tr>
+</table>
+<div class="note w">
+<b>⚠️ 오독 주의</b> — 토스의 국내 "당일 손익 <b>+26,500원</b>"은 8/17에 번 돈이 아닙니다.
+휴장이라 <b>8/14(금) 당일 변동분이 그대로 남아 있는 값</b>입니다(카카오페이 +24,000 / 파두 +2,500).
+<b>8/17 국내 계좌에서 실제로 발생한 손익은 0원입니다.</b>
+</div>
+
+<h2>🌅 ④ 8/18(화) 국장 함의</h2>
+<div class="big">
+<b style="font-size:16.5px">과열은 그대로 안고, 갭은 위아래로 갈려서 열립니다</b>
+<div class="mut" style="margin-top:10px">
+8/18 시초가는 미국 <b>이틀치(8/14 + 8/17)</b> 를 갭 하나로 받습니다.
+그 이틀치를 합치면 <b>나스닥 −0.59% · S&amp;P −0.69%</b> 인데 <b>SOX는 +1.32%</b>(12,417.05 → 12,621.00)입니다 —
+<b>지수는 아래, 반도체는 위</b>로 방향이 갈려 있고, 반도체 안에서도 <b>메모리·장비만</b> 올랐습니다.
+따라서 업종을 한 덩어리로 보면 오늘 틀립니다.<br><br>
+국장이 안고 들어가는 짐은 사흘 전 그대로입니다 —
+<b>MA20 이격 +7.96%</b>(코스닥 +11.53%)와 <b>신용잔고 5일 +7.41%</b>, <b>뉴스심리 5일 연속 하락</b>.
+게다가 <b>지수가 +2.42% 오른 8/14분 신용잔고가 오늘 8/13분과 함께 이틀치로 붙습니다</b>.
+여기에 어젯밤 새로 생긴 <b>브렌트 $90</b>과 <b>미 30년물 5.31%</b> 가 더해졌습니다.<br><br>
+<b>확인해야 할 첫 두 가지</b>는 ①외국인이 <b>5일째</b> 사는지(4일 누적 +8.04조, 외인보유율 삼전 +0.26%p·하닉 +0.29%p 실제 상승),
+②<b>기관이 돌아오는지</b>(8/14 −1.03조로 전환, 삼전·하닉에서도 동반 매도)입니다.
+그리고 <b>8/11~8/14 나흘 연속 "오전 고점 = 그날 고점"</b> 이 아직 깨지지 않았습니다 —
+<b>오늘 오전이 5일째 시험</b>이고, 급등익일 추격 금지와 갭업 시초 매수 금지는 국면과 무관하게 그대로입니다.
+</div>
+</div>
 
 <h2>🩺 파이프라인 자가점검</h2>
 <table>
-<thead><tr><th>항목</th><th>상태</th><th>비고</th></tr></thead>
-<tbody>
-<tr><td>refresh.py 당일 실행</td><td class="ok">🟢 OK</td><td>캐시 150개 · 최종 mtime <b>8/17 20:22</b></td></tr>
-<tr><td>지수·수급 기준일</td><td class="ok">🟢 정상</td><td>20260814 = <b>마지막 거래일</b>. 휴장이므로 갱신 없음이 정상</td></tr>
-<tr><td>시총상위50</td><td class="warn">🟡 WARN</td><td>20260813 — 지수보다 <b>1영업일 추가 지연 ★</b>. 본문 해당 표에 기준일 병기함</td></tr>
-<tr><td>국장휴장 게이트</td><td class="ok">🟢 OK</td><td><code>국장휴장.py</code> 판정 = 휴장(수동 지정) · <b>떠 있는 국장 워처 없음</b> · 다음 개장 8/18(화)</td></tr>
-<tr><td>주말정지 게이트</td><td class="ok">🟢 OK</td><td>월 07:50 해제 완료 → "가동 구간" 정상 판정</td></tr>
-<tr><td>워처 프로세스</td><td class="ok">🟢 OK</td><td>python/pythonw <b>32개</b> 가동 (미장·브릿지·서버 계열)</td></tr>
-<tr><td>토스 API</td><td class="ok">🟢 OK</td><td>계좌·보유 조회 정상 (20:45 실측) · IP 허용목록 유효</td></tr>
-<tr><td>미장세션 판정</td><td class="ok">🟢 OK</td><td>프리마켓 (ET 07:45) · 정규장 22:30 개장 예정</td></tr>
-<tr><td>ECOS 뉴스심리</td><td class="warn">🟡 지연</td><td>기준일 20260809 — <b>8영업일 지연 ★</b>. 본문에 병기함</td></tr>
-<tr><td>KOFIA 자금</td><td class="warn">🟡 지연</td><td>기준일 20260813 ★ (신용잔고·증시자금·CMA·펀드)</td></tr>
-</tbody>
+<tr><th>항목</th><th>상태</th><th>비고</th></tr>
+<tr><td>refresh.py 당일 실행</td><td><span class="pill ok">🟢 OK</span></td><td>캐시 150개 · 최종 mtime 8/18 07:07</td></tr>
+<tr><td>국장휴장 게이트</td><td><span class="pill ok">🟢 OK</span></td><td>8/17 = 휴장(수동 지정) 정확 판정 · 8/18 = 개장. <b>특일정보 API는 None 반환 → fail-open 경로</b></td></tr>
+<tr><td>주말정지 게이트</td><td><span class="pill ok">🟢 OK</span></td><td>월 07:50 해제 후 "가동 구간" 정상</td></tr>
+<tr><td>워처 프로세스</td><td><span class="pill ok">🟢 OK</span></td><td>python/pythonw 32개 · 동전주루프 스캔 07:21까지 정상 기록</td></tr>
+<tr><td>매매일지 워처</td><td><span class="pill ok">🟢 해소</span></td><td>101건 + 과매매 경고 31건 정상 기록 (8/17 지적 사항 해소)</td></tr>
+<tr><td>토스 API</td><td><span class="pill ok">🟢 OK</span></td><td>계좌·보유 조회 정상(07:18) · IP 허용목록 유효</td></tr>
+<tr><td><b>킬스위치 vs 실제 체결</b></td><td><span class="pill up">🔴 판정불가</span></td><td>차단 4종 전부 정지 상태인데 101건 체결. <b>조치 없이 보고만</b></td></tr>
+<tr><td><b>미장 보유 시간창</b></td><td><span class="pill up">🔴 위반</span></td><td>상한 03:00 대비 <b>마지막 체결 03:36</b> · 17종목 오버나잇 보유</td></tr>
+<tr><td>과매매 경고 폰 전송</td><td><span class="pill warn">🟡 미확인</span></td><td>일지 기록은 정상. 폰 전송 여부는 이번에 확인하지 못함</td></tr>
+<tr><td>brief_extract 신선도 라벨</td><td><span class="pill warn">🟡 WARN</span></td><td>"지수 2영업일 전" 오표기 — <code>biz_lag()</code> 공휴일 미반영(코드 자체 docstring에 명시된 한계). 실제 1거래일 전</td></tr>
 </table>
 
 <h2>🎯 한 줄 결론</h2>
 <div class="big">
-<b>오늘은 국장이 쉬었고, 밖에서도 판을 뒤엎을 일은 없었습니다 — 그래서 8/18은 8/14의 과열을 식히지 못한 채 그대로 이어받습니다.</b>
-<div style="margin-top:11px;color:var(--tx2);font-size:14px">
-우호적인 것: 원화 추가 강세(1,411.3) · 나스닥 선물 +0.53% · 프리마켓 메모리·반도체 랠리 · 외인 4일 누적 +8.04조.<br>
-부담인 것: MA20 이격 +7.96%(사흘째 안 식음) · 신용잔고 5일 +7.41% · 뉴스심리 4일 연속 하락 · 기관 매도 전환.<br>
-<b>갭은 위로 열릴 가능성이 우세하나(하이닉스·삼전 각 +0.3% 예상), 나흘 연속 "오전 고점 = 그날 고점"이었다는 사실이
-아직 깨지지 않았습니다.</b> 8/18 오전의 첫 시험이 그것입니다.
+<b style="font-size:16.5px">국장이 쉬는 동안, 미국은 유가·금리에 밀려 내렸지만 우리가 볼 칸(메모리)만 따로 올랐습니다.</b>
+<div class="mut" style="margin-top:10px">
+어제 예측 중 <b>메모리 주도는 맞췄고</b>(MU +4.13% · SNDK +8.88%), <b>지수 방향은 틀렸으며</b>(성장주 우위 예상 → 전 지수 하락),
+<b>유가와 장기금리를 리스크 목록에서 빠뜨린 것</b>이 이번 주의 구조적 빈틈이었습니다. 그래서 8/18 계기판에 두 행을 새로 켰습니다.<br>
+계좌에서는 밤사이 <b>101건 · 회전 $6,731.76</b> 이 돌았고 순 실현 추정은 <b>+$34.54</b>, 슬리브 미실현은 제자리입니다.
+그리고 <b>킬스위치가 전부 켜진 상태에서 이 체결이 났다는 사실은 판정불가로 남겨 두고, 아무 조치도 하지 않았습니다.</b>
 </div>
 </div>
 
 <div class="foot">
-<b>출처</b> — KRX 시장데이터(지수·수급·공매도·풋콜, 기준일 20260814) · ECOS 한국은행(금리·환율·심리) ·
-FRED(미국 거시) · KOFIA(자금, 20260813) · DART 전자공시 · 네이버 금융 · yfinance 실시간 스냅샷(8/17 20:45) ·
-토스 OpenAPI(계좌 20:45) · <code>etf_gap_forecast.py</code>(갭 예측 20:46) ·
-Bloomberg / Yahoo Finance / TheStreet(미 프리마켓) · 국제뉴스·금강일보·CBC뉴스(휴장 확인) ·
-Kansas City Fed / Regards of Wallstreet(잭슨홀 일정).<br><br>
-<b>고지</b> — 본 브리핑은 <b>휴장일 기록</b>이며 국내 시장 수치는 8/14(금) 확정치입니다. ★ 표시 항목은 기준일이 더 지연된 소스입니다.
-갭 예측·시나리오는 참고용이며 <b>매매 근거가 아닙니다</b>. 계좌 수치는 20:45 토스 API 실측이나,
-미국 종목은 <b>프리마켓 호가 기준</b>이라 정규장 개장 시 변동됩니다. 실제 주문·매매는 실행하지 않았습니다.
+<b>출처</b> —
+KRX 시장데이터(지수·수급·공매도·풋콜, 기준일 20260814) · ECOS 한국은행 · FRED · KOFIA(20260813) · DART 전자공시 ·
+<a href="https://m.stock.naver.com/">네이버 금융 종목별 수급(20260814)</a> ·
+yfinance 일봉(미 지수·SOX·개별주 8/17 정규장 확정) ·
+토스 OpenAPI(계좌 8/18 07:18 실측) ·
+<a href="https://finance.yahoo.com/markets/live/stock-market-today-monday-august-17-dow-sp-500-nasdaq-094421171.html">Yahoo Finance — 8/17 마감(유가·30년물·마이크론·앤스로픽)</a> ·
+<a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-17-2026">TheStreet — 8/17 마감</a> ·
+<a href="https://www.mt.co.kr/world/2026/08/17/2026081519540436569">머니투데이 — 이번 주 미 증시 일정</a> ·
+<a href="https://www.e-focus.co.kr/news/articleView.html?idxno=3002499">이포커스 — DDR4 고정거래가·현물가</a> ·
+<a href="https://korea.counterpointresearch.com/memory-price-tracker-january-2026/">카운터포인트 메모리 가격 트래커</a> ·
+<code>매매일지.jsonl</code>(체결 101건) · <code>알림설정.json</code>·<code>penny_KILL.flag</code>(킬스위치 상태) · <code>국장휴장.py</code>.
+<br><br>
+<b>고지</b> — 본 문서는 <b>8/17(월) 휴장일 기록 + 미장 확정판</b>이며, 어제 20:45에 작성된 예측 기반 판을 대체합니다.
+국내 시장 수치는 8/14(금) 확정치입니다. ★ 표시 항목은 기준일이 더 지연된 소스입니다.
+<b>실현손익은 매매일지의 % 주석에서 역산한 추정치</b>이며 증권사 확정 수치가 아닙니다.
+장중 저가·고가는 수집 파일에 없어 싣지 않았습니다.
+<b>본 브리핑 작성 과정에서 실제 주문·매매는 실행하지 않았습니다.</b>
+<br><br>
+<b>투자 판단과 책임은 본인에게 있습니다.</b>
 </div>
 
 </div>
