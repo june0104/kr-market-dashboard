@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>모닝 브리핑 · 2026-08-25 (화) · 아침에 -4.3%였던 지수가 지금 -0.6%입니다</title>
+<title>마감 브리핑 · 2026-08-25 (화) · 저가 −4.30%에서 종가 +0.68%로 마쳤습니다</title>
 <style>
 :root{--bg:#0E0F12;--card:#17181D;--card2:#1D1F25;--bd:#2A2C33;--tx:#E4E7EC;--sub:#9DA5B0;--dim:#6B7684;
 --up:#F04452;--dn:#5EA2F8;--gr:#00B876;--ye:#F59E0B;--pu:#8B7BF7}
@@ -46,568 +46,780 @@ ul{padding-left:19px;margin:9px 0}li{margin:5px 0}
 hr{border:0;border-top:1px solid var(--bd);margin:30px 0}
 .small{font-size:12.5px;line-height:1.75}
 code{background:#22242A;padding:1px 6px;border-radius:5px;font-size:12.5px;color:#B9C0CB}
-a{color:#7FB3F5}
-.mind{background:var(--card2);border:1px solid var(--bd);border-left:3px solid var(--pu);
-border-radius:0 12px 12px 0;padding:13px 16px;margin:11px 0}
-.mind .no{color:var(--pu);font-weight:800;font-size:12.5px;letter-spacing:.4px}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media(max-width:760px){.two{grid-template-columns:1fr}}
+a{color:#8FB6F0}
 .verdict{font-size:22px;font-weight:800;letter-spacing:-.5px;line-height:1.5}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.two{grid-template-columns:1fr}}
 </style>
 </head><body><div class="wrap">
 
-<h1>🌅 모닝 브리핑 — 아침에 −4.3%였던 지수가, 지금 −0.6%입니다</h1>
+<h1>📕 마감 브리핑 — 저가 −4.30%에서 종가 +0.68%로 마쳤습니다</h1>
 
 <div class="meta">
-<b class="k">데이터 기준일 · 신선도</b> — 2026-08-25 (화) 13:20 작성 · <b class="k">장중 발행 (정규장 개시 4시간 20분 경과 · 마감 2시간 10분 전)</b><br>
-국장 지수·거래대금·등락종목수·수급·프로그램·개별종목·업종 = <b class="k">8/25 13:05~13:16 장중 실측</b>(네이버, 확정 아님) ·
-공매도 = <b class="k">8/24 확정</b>(KRX 원본 기준일 컬럼 확인) ·
-★ KOFIA 신용잔고·예탁금·미수금 = <b class="k">8/21</b> (8/24분 미도착) ·
-★ 시총상위50 수집 = <b class="k">8/21</b> (수신 정지) ·
-ECOS 금리·환율 = 8/24 · 뉴스심리 = 8/23 ·
-미 지수·SOX·금리·개별종목 = <b class="k">8/24 미 정규장 확정</b> ·
-DART = 8/24~8/25 접수분 직접 조회(코스피 168건 · 코스닥 229건 전수) · 계좌 = 13:10 토스 API 실측
+<b class="k">데이터 기준일 · 신선도</b> — 2026-08-25 (화) 20:17~20:40 작성 · 정규장 마감 후 발행 (기한 21:00 준수)<br>
+국장 지수 시·고·저·종가 / 거래대금 / 등락종목수 / 수급 / 프로그램 = <b class="k">8/25 정규장 확정</b> (네이버 index integration 실측) ·
+종목별 종가·수급 = 8/25 확정 (dealTrendInfos) · 업종 = 8/25 확정 79업종 ·
+DART = 8/25 접수분 전수 357건 (코스피 Y + 코스닥 K) ·
+ECOS 금리·환율 = 8/25 · 뉴스심리 = 8/23 · 소비자심리 = 2026년 8월 ·<br>
+★ <b class="k">공매도 = 8/24 확정</b> (당일분은 내일 공표) ·
+★ <b class="k">KOFIA 신용잔고·예탁금·미수금 = 8/21</b> (8/24·8/25분 미도착, 2거래일째) ·
+★ <b class="k">레버리지 괴리율 = 8/24 확정</b> (D+1~2 지연) ·
+★ <b class="k">과매수 스캐너 = asof 8/24</b> (파일 생성은 8/25 14:48이나 데이터 기준일은 8/24) ·
+★ <b class="k">미 지수·SOX·개별종목 = 8/24 확정</b> (오늘 밤 22:30 개장 전) ·
+계좌 = 20:20 토스 API 실측
 </div>
 
 <div class="stamp">
-<b class="k">재현성 스탬프</b> — 실행일시(KST) 2026-08-25 13:05~13:20 ·
-수집 캐시 108개(DART·FRED·KOFIA·KRX·가치지표·국민연금·네이버금융·배당 8개 폴더), mtime 범위 2026-06-21 13:50 ~ 2026-08-25 13:07 ·
-대시보드\dashboard.html 생성 2026-08-25 13:07:38 ·
+<b>재현성 스탬프</b> — 실행일시(KST) 2026-08-25 20:17~20:40 ·
+수집 캐시 226개(DART·FRED·KOFIA·KRX·가치지표·국민연금·네이버금융·배당 8개 폴더),
+mtime 범위 2026-06-21 13:50 ~ 2026-08-25 20:16 ·
+대시보드\dashboard.html 생성 2026-08-25 20:16:50 ·
 엔진 D:\claude 작업\brief_extract.py sha1=e3338e35 · refresh.py sha1=46bb4f12 ·
-naver_market.py sha1=f7dfd7e3 · toss_api.py sha1=09a6c97c · 삼성전자_레벨판.py sha1=5288bbb2 ·
-git commit cb041cf ·
-지수 MA5·MA20·MA60은 네이버 m.stock 지수 일봉 60봉(2026.05.28~08.25 장중)으로 자체계산 ·
-시장 전체 수급은 네이버 investorDealTrendDay(장중 누적, 억원 → 조원 환산) ·
-<b class="k">개별 거래대금·집중도는 KRX 기준 sise_quant 사용</b> — m.stock 당일 봉은 시간외/NXT 물량이 섞인다
-(오늘도 재현: 삼전 m.stock 23.85M vs KRX 14.44M) [8/21·8/24 기발견 규칙 적용] ·
-삼성전자 레벨은 data.go.kr KRX 확정시세 200봉(최신봉 8/24) ·
-휴장 판정 국장휴장.py = <b class="k">개장</b>(공휴일 API 조회 불가 → fail-open) · 주말정지.py = <b class="k">해제</b>
+naver_market.py sha1=f7dfd7e3 · toss_api.py sha1=09a6c97c · leverage_gorae.py sha1=8ed17443 ·
+git commit 2d3f836 ·
+지수 MA5·MA20·MA60은 네이버 m.stock 지수 일봉 80봉 자체계산(<b>오늘 봉 포함</b>) ·
+기타법인은 4주체 합계 0 역산 (8/24 값으로 검산 통과: +1조6,375억 재현) ·
+거래대금 집중도는 KRX 기준 sise_quant(페이지 중복행 제거 후 산출) ·
+휴장 판정 국장휴장.py = 개장(공휴일 API 403 → fail-open) · 주말정지.py = 해제<br>
+<b>스탬프가 다른 리포트끼리의 숫자 비교는 무효입니다.</b>
 </div>
+
+<h2>⚠️ 먼저 — 오늘 아침 제 판정 하나가 뒤집혔습니다</h2>
 
 <div class="card warn">
-<h3 style="margin-top:0">⏱ 먼저 — 이 브리핑은 07:00 기한을 못 지켰습니다</h3>
-<p>모닝 브리핑의 발행 기한은 <code>07:00</code>입니다. 지금은 <b class="k">13:20</b>이고 장은 이미 4시간 20분 돌았습니다.
-그래서 이건 <b class="k">개장 전 예보가 아니라 전반전 중계 + 후반전 예보</b>입니다.
-값은 전부 장중 실측이고 <b class="ye">확정치가 아닙니다</b> — 마감 브리핑에서 확정치로 다시 채점합니다.</p>
-<p class="small dim">늦은 것 자체가 오늘 판정에 영향을 줍니다. 07:00에 썼다면 "개장 −2%대 출발 예상"까지가 최선이었을 텐데,
-지금은 <b class="k">−4.3%까지 밀렸다가 되돌린 사실을 이미 알고</b> 쓰고 있습니다. 그만큼 유리한 위치에서 쓴 글이라는 걸 감안해 주세요.</p>
-</div>
+<p><b class="k">현대건설 급등의 원인을 제가 못 짚었습니다.</b></p>
+<p class="small">오늘 13:20 모닝 브리핑에서 저는 현대건설 +14.49%를 두고
+"8/24 DART 해명공시는 6개월 주기 재공시일 뿐 새 재료가 아니다 —
++14.49%가 그 한 문구를 읽은 결과인지 원전 테마 전체가 움직인 결과인지 <b class="k">이 데이터로는 구분되지 않는다</b>"고 썼습니다.
+재공시 분석 자체는 맞았습니다. 틀린 건 <b class="k">"구분되지 않는다"</b>입니다 —
+구분해 줄 재료가 이미 나와 있었고 제가 찾지 못했습니다.</p>
 
-<h2>📋 어제 마감 브리핑 체크리스트 — 7항목 자가채점</h2>
+<p class="small">실제 재료는 <b class="k">8/24 한국경제 단독 「美 "웨스팅하우스 지분 인수"…한국에 제안」</b>이었습니다.
+미국 정부가 한국(한국전력·산업통상부) 측에 웨스팅하우스(WEC) 지분 <b class="k">공동 인수</b>를 제안했고,
+한국이 WEC 주주가 되면 그동안 한국 원전 수출의 최대 걸림돌이던 <b class="k">지식재산권 분쟁이 해소</b>됩니다.
+배경은 미국이 AI 인프라 전력용으로 <b class="k">2030년까지 미국 내 원전 10기 착공</b>을 추진하면서
+한국의 자본력과 시공 능력을 끌어들이려는 것으로 보도됐습니다.</p>
 
-<table>
-<tr><th style="width:23%">항목 (8/24 20:17 작성)</th><th style="width:9%">채점</th><th>13:16 실측</th></tr>
-<tr><td><b class="k">① 삼성전자 3중 지지대</b><br><span class="small dim">120일선 252,071 · 피보0.618 247,485 · 20일선 245,650</span></td>
-<td><b class="dn">❌ 관통</b></td>
-<td>장중 저가 <b class="dn">245,000</b> — <b class="k">셋 다 뚫었습니다.</b> 8/19 저점 246,500(피보 0.618과 0.40% 차이로 검증됐던 그 바닥)도 −1,500원 이탈.
-다만 <b class="k">종가로는 아직 잃지 않았습니다</b> — 현재 253,500(−1.36%)으로 120일선(254,296) 바로 아래까지 복귀.
-어제 쓴 "245,650을 <u>종가로</u> 잃으면 8/19 반등 전체가 되돌려진다"는 문장이 <b class="ye">오늘 15:30에 판정됩니다</b></td></tr>
-<tr><td><b class="k">② 기타법인 4거래일째 1조↑</b></td><td><b class="gr">✅ 적중</b></td>
-<td>13:10 누적 <b class="gr">+1조1,000억</b>. 8/20 +1.1조 · 8/21 +1.1조 · 8/24 +1.6조 · 오늘 +1.1조 = <b class="k">4거래일 연속 1조 이상</b>.
-"SK하이닉스 자사주 40조가 11/19까지 상주 매수한다"는 가설이 <b class="k">일회성 반증을 통과</b>했습니다.
-<span class="small dim">단 종목별 기타법인 분해는 여전히 불가 — 삼성 계열 몫이 섞여 있을 수 있습니다</span></td></tr>
-<tr><td><b class="k">③ 코스닥 822.96 / 791.41</b></td><td><b class="ye">△ 절반</b></td>
-<td>저가 <b class="dn">781.89</b>로 MA20 방어선(791.41)을 <b class="k">장중 이탈했다가 회복</b>. 현재 815.96(+0.32%)으로 MA5 회복선(819.28)엔 <b class="ye">0.41% 미달</b>.
-거래대금 3.33조(13:10) — 어제 종일 4.49조 대비 <b class="k">페이스는 더 빠릅니다</b></td></tr>
-<tr><td><b class="k">④ KOSPI MA5 6,760.70 복귀</b></td><td><b class="dn">❌ 미달</b></td>
-<td>현재 6,655.31로 오늘 MA5(6,717.79) 대비 <b class="dn">−0.93%</b>. 그 아래 MA20(6,456.00)까지 <b class="k">장중에 한 번 내려갔다 왔습니다</b>(저가 6,408.82).
-MA60 7,426.28은 −10.38% 위 — 낙폭과대 리바운드 봉인 해제까지 <b class="k">+11.6%</b> 필요(어제 +11.3%에서 <b class="ye">더 멀어졌습니다</b>)</td></tr>
-<tr><td><b class="k">⑤ KOFIA 3영업일째 미도착 → 수집기 점검</b></td><td><b class="gr">✅ 도착</b></td>
-<td><b class="k">8/21분 도착</b>. 수집기 고장 아니었습니다 — 아래 §2③에서 처음 봅니다.
-<span class="small dim">⬜ 단 8/24분은 아직 안 왔습니다 → 어제 −3.12%의 신용 충격은 <b class="ye">여전히 판정불가</b></span></td></tr>
-<tr><td><b class="k">⑥ 순환매 이틀째인가</b></td><td><b class="dn">❌ 대상 교체</b></td>
-<td>이어지지 않았습니다. <b class="k">돈이 또 옮겨탔습니다</b> — 어제 2차전지·소재·제약 → 오늘 <b class="k">원전·건설·조선·금융</b>.
-KODEX 2차전지산업레버리지 <b class="dn">−3.67%</b> · 에코프로 <b class="dn">−3.64%</b>.
-어제 "하루로 끝나면 삼성 회피성 임시 대피였다"고 썼는데, <b class="k">하루로 끝났습니다</b></td></tr>
-<tr><td><b class="k">⑦ 카카오 자동판정일</b></td><td><span class="dim">진행 중</span></td>
-<td>36,000원(+0.56%), 저가 34,200. 8/21 등록된 신규 관찰(−5%↓·거래량 2x)의 2거래일 후 판정 — 종가로 채점</td></tr>
-</table>
+<p class="small">오늘 원전 밸류체인이 통째로 움직인 것이 그 증거입니다 —
+<b class="up">한전기술 +20.27% · 현대건설 +14.87% · 두산에너빌리티 +10.55% · 한국전력 +3.81%</b>.
+한 종목의 재공시로는 이 폭도, 이 범위도 설명되지 않습니다. <b class="k">테마 전체 재료였습니다.</b></p>
 
-<div class="card">
-<p class="small">어제 마감 브리핑의 첫 문장은 <b class="k">"삼성전자 반등을 사지 않습니다"</b>였습니다.
-보통주 기준으로는 <b class="gr">지금까지 맞습니다</b>(−1.36%). 그런데 <b class="k">우선주는 +1.85%로 갈렸습니다.</b>
-"삼성전자"를 한 덩어리로 본 게 오늘 놓친 부분입니다 — <b class="k">§4에서 따로 다룹니다.</b></p>
+<p class="small dim">교훈은 <b class="k">검색 범위</b>입니다. 저는 8/24~8/25 DART 접수 397건을 전수로 열었지만,
+<b class="k">공시에 없는 재료(언론 단독 보도)를 찾는 검색을 하지 않았습니다.</b>
+공시 전수 조회는 뉴스 조회를 대체하지 않습니다 — 오늘의 재료는 공시가 아니라 신문에 있었습니다.
+아침 브리핑의 "현대건설 해명공시는 정기 재공시"라는 분석은 <b>유지</b>하되,
+"원인 미상"이라는 결론은 <b class="k">오늘 자로 폐기</b>합니다.</p>
 </div>
 
 <h2>⏸ 오늘 판정</h2>
 
 <div class="card">
-<div class="verdict">⏸ 관망 — 3거래일째 같은 판정입니다. 이유는 또 바뀌었습니다.</div>
-<p class="lead" style="margin-top:12px">
-8/24는 <b class="k">"발표된 재료가 시간외에서 이미 마이너스로 채점됐다"</b>였습니다.
-오늘은 <b class="k">"바닥을 확인했을 수도 있는데, 확인시켜 줄 이벤트가 전부 이틀 뒤에 몰려 있다"</b>입니다.</p>
-<p>계산되는 것부터 적습니다 —</p>
-<ul>
-<li><b class="k">① 코스피 장중 저가 6,408.82 = −4.30%</b> — <b class="up">「지수 −4% 추천금지」 규칙의 발동 조건을 장중에 충족했습니다.</b>
-현재 −0.62%로 해제 구간이지만, 오늘 한 번 그 선을 넘었다는 사실은 남습니다. 어제 −3.12%로 −0.88%p 차이였던 게 오늘 넘었습니다</li>
-<li><b class="k">② 두 지수 모두 MA20을 장중에 잃었다가 되찾았습니다</b> — 코스피 6,408.82 &lt; MA20 6,456.00 / 코스닥 781.89 &lt; MA20 793.95.
-꼬리가 길게 달린 하루입니다. 이건 <b class="k">계산되는 사실</b>이고, "그래서 바닥이다"는 <b class="ye">계산되지 않는 해석</b>입니다</li>
-<li><b class="k">③ 외국인은 되돌림에 참여하지 않았습니다</b> — 코스피 <b class="dn">−2조6,708억</b>, 프로그램 비차익 <b class="dn">−1조8,826억</b>.
-3거래일 합계 <b class="dn">−9조8,000억</b>(8/19 −3.47 · 8/24 −3.67 · 오늘 −2.67조). 받아낸 건 개인(+8,557억)·기타법인(+1.1조)·기관(+7,324억)입니다</li>
-<li><b class="k">④ 미 30년물이 5.276% → 5.23%로 물러섰습니다</b> — 8/19 코스피 −5.80%의 방아쇠였던 변수가 <b class="gr">처음으로 뒤로 갔습니다.</b>
-어제 이 자리에서 "되돌린 게 아니라 신고가를 다시 썼다"고 썼던 항목입니다</li>
-<li><b class="k">⑤ 확인 이벤트가 전부 8/26~28입니다</b> — 엔비디아 실적(8/27 새벽 05:20) · 한은 금통위(8/27) · 잭슨홀 워시 의장 기조연설(8/28).
-<b class="k">오늘과 내일은 그 앞자리입니다</b></li>
-</ul>
-<p>①③은 아래쪽, ②④는 위쪽, ⑤는 <b class="k">양쪽 다 아닌 "모른다"</b>입니다.
-2:2:1이면 관망입니다 — 어느 쪽으로도 <b class="k">숫자가 기울지 않았습니다.</b></p>
-<p class="small dim">3상태 판정 규율대로 적자면 오늘은 <b class="k">🔴 매도자리도 🟢 매수자리도 아닌 ⏸</b>입니다.
-그리고 「지수 −4% 추천금지」가 장중에 발동됐으므로 <b class="k">개별 종목 진입 추천은 어차피 하지 않습니다.</b></p>
-</div>
-
-<h2>📉 §1. 오늘 장중에 실제로 일어난 일</h2>
-
-<div class="grid">
-<div class="kpi"><div class="l">KOSPI (13:16)</div><div class="v dn">6,655.31</div><div class="d dn">−41.65p (−0.62%)</div></div>
-<div class="kpi"><div class="l">장중 저가</div><div class="v dn">6,408.82</div><div class="d dn">−4.30% ← 규칙 임계</div></div>
-<div class="kpi"><div class="l">KOSDAQ</div><div class="v gr">815.96</div><div class="d gr">+2.63p (+0.32%)</div></div>
-<div class="kpi"><div class="l">코스닥 저가</div><div class="v dn">781.89</div><div class="d dn">−3.87%</div></div>
-<div class="kpi"><div class="l">코스피 거래대금</div><div class="v">15.44조</div><div class="d dim">13:10 누적 (어제 종일 26.16조)</div></div>
-<div class="kpi"><div class="l">원/달러</div><div class="v gr">1,383.6</div><div class="d gr">−0.03% · 20일 최고 1,466.3</div></div>
-</div>
-
-<div class="card hot">
-<h3 style="margin-top:0">시가 → 저가 → 현재: 하루에 두 번 방향이 바뀌었습니다</h3>
-<table>
-<tr><th>지수</th><th class="n">시가</th><th class="n">저가</th><th class="n">고가</th><th class="n">현재(13:16)</th><th class="n">저가→현재</th></tr>
-<tr><td><b class="k">KOSPI</b></td><td class="n">6,535.93<br><span class="small dn">−2.40%</span></td>
-<td class="n dn"><b>6,408.82</b><br><span class="small dn">−4.30%</span></td><td class="n">6,670.42</td>
-<td class="n"><b>6,655.31</b><br><span class="small dn">−0.62%</span></td><td class="n gr"><b>+3.85%</b></td></tr>
-<tr><td><b class="k">KOSDAQ</b></td><td class="n">806.93<br><span class="small dn">−0.79%</span></td>
-<td class="n dn"><b>781.89</b><br><span class="small dn">−3.87%</span></td><td class="n">816.46</td>
-<td class="n"><b>815.96</b><br><span class="small gr">+0.32%</span></td><td class="n gr"><b>+4.36%</b></td></tr>
-</table>
-<p class="small">코스피는 저점에서 <b class="gr">246포인트(+3.85%)</b>를 되돌렸습니다. 코스닥은 <b class="gr">+4.36%</b>.
-연합뉴스TV가 12:01에 <b class="k">「4% 급락 뒤 낙폭 축소」</b>로, 뉴스1이 <b class="k">「'개인 매수세' 삼전닉스 낙폭 축소」</b>로 같은 장면을 썼습니다.</p>
-</div>
-
-<div class="card gr">
-<h3 style="margin-top:0">시장폭 — 이틀째 "지수는 빠지는데 오르는 종목이 더 많다"</h3>
-<table>
-<tr><th>시장</th><th class="n">상한</th><th class="n">상승</th><th class="n">보합</th><th class="n">하락</th><th class="n">상승÷(상승+하락)</th></tr>
-<tr><td>코스피</td><td class="n">2</td><td class="n up"><b>524</b></td><td class="n">40</td><td class="n dn">341</td><td class="n gr"><b>60.6%</b></td></tr>
-<tr><td>코스닥</td><td class="n">4</td><td class="n up"><b>888</b></td><td class="n">81</td><td class="n dn">757</td><td class="n gr"><b>54.0%</b></td></tr>
-</table>
-<p>어제(8/24) 코스피가 −3.12%일 때도 <b class="k">579:286</b>이었습니다. 오늘도 <b class="k">524:341</b>.
-<b class="k">이틀 연속으로 지수와 시장이 따로 놉니다.</b></p>
-<p>이유는 집중도입니다 — 13:15 KRX 기준 <b class="k">삼성전자 3.61조 + SK하이닉스 4.32조 = 7.93조</b>가
-코스피 전체 거래대금 15.44조의 <b class="up">51.4%</b>입니다.
-두 종목이 지수를 끌고, 나머지 940종목이 지수와 다른 방향으로 움직입니다.</p>
-<p class="small dim">⚠️ 집중도는 <b class="k">KRX 기준</b>(finance.naver sise_quant)으로만 계산했습니다.
-m.stock 당일 봉으로 계산하면 83.8%가 나오는데, 이건 시간외/NXT 물량이 분자에만 들어간 불가능값입니다
-— 8/21·8/24에 두 번 발견된 같은 함정이고, 오늘도 재현됐습니다(삼전 m.stock 23.85M vs KRX 14.44M).
-<b class="k">완료된 과거 봉은 두 소스가 일치합니다</b>(8/24 삼전 32,451,940주 = data.go.kr 확정시세와 동일). 어긋나는 건 <b class="k">당일 진행 중인 봉뿐</b>입니다.</p>
-</div>
-
-<h2>🔻 §2. 왜 −4.3%까지 밀렸나 — 3중 타격</h2>
-
-<div class="card hot">
-<h3 style="margin-top:0">① 미국 반도체가 먼저 무너졌습니다 (8/24 확정)</h3>
-<table>
-<tr><th>지수·종목</th><th class="n">8/24 종가</th><th class="n">등락</th><th>메모</th></tr>
-<tr><td><b class="k">SOX (필라델피아 반도체)</b></td><td class="n">11,423.17</td><td class="n dn"><b>−2.70%</b></td><td>어제 이 자리에서 "8/21에 SOX만 −0.51%로 역행했다"고 썼습니다 — <b class="k">이틀 연속입니다</b></td></tr>
-<tr><td>마이크론 (MU)</td><td class="n">910.43</td><td class="n dn"><b>−5.83%</b></td><td>애플의 중국 CXMT/YMTC 메모리 조달 검토 보도 직격</td></tr>
-<tr><td>AMD</td><td class="n">456.75</td><td class="n dn">−3.49%</td><td></td></tr>
-<tr><td>엔비디아 (NVDA)</td><td class="n">208.48</td><td class="n dn">−2.91%</td><td><b class="k">7거래일 연속 하락</b> — 2022년 9월 이후 최장</td></tr>
-<tr><td>TSMC</td><td class="n">410.12</td><td class="n dn">−2.11%</td><td></td></tr>
-<tr><td class="dim">다우</td><td class="n">53,417.16</td><td class="n gr">+0.26%</td><td class="dim">기술주 → 블루칩 로테이션</td></tr>
-<tr><td class="dim">S&amp;P500 / 나스닥</td><td class="n">7,652.86 / 25,980.19</td><td class="n dn">−0.28% / −0.76%</td><td class="dim"></td></tr>
-</table>
-<p><b class="k">촉발 재료 2개</b> —</p>
-<ul>
-<li><b class="k">엔비디아가 AI 서버 가격을 15% 올린다고 통보</b>했습니다(MS·구글·오라클 등 대형 데이터센터 대상, 내년 초 출하 베라루빈·그레이스블랙웰부터).
-<b class="k">이유가 메모리 품귀·가격 급등입니다.</b> 구조가 얄궂습니다 — 메모리가 비싸서 좋은 게 삼전·하이닉스인데,
-그게 <b class="k">AI 자본지출 부담</b>으로 읽히는 순간 밸류체인 전체가 같이 맞습니다. 어제 미국이 그렇게 읽었습니다 <span class="small dim">(한국경제 8/23)</span></li>
-<li><b class="k">애플이 중국 CXMT·YMTC 메모리 조달을 검토</b>한다는 보도. 마이크론·샌디스크가 직격탄
-<span class="small dim">(Yahoo Finance 8/24)</span>. 배경엔 미 상원의 초당적 CXMT·YMTC 배제 요구가 있습니다
-— <b class="k">[중국 반도체 감시] 항목의 연장선</b>입니다</li>
-</ul>
-</div>
-
-<div class="card warn">
-<h3 style="margin-top:0">② 삼성전자 실망이 하루 더 갔습니다</h3>
-<p>어제 <b class="dn">−8.70%</b>(281,500 → 257,000). 오늘도 장중 <b class="dn">245,000</b>까지.
-발표된 <b class="k">90~110조</b> 중 지금 확정된 건 <b class="k">3분기 정규배당 포함 약 30조 현금배당(10월)</b>뿐이고,
-나머지 <b class="k">60~80조는 2027년 1월 이사회</b>로 넘어갔습니다. 별도로 의결된 자사주 15조는 <b class="k">임직원 보상용이지 소각용이 아닙니다.</b></p>
-<p><b class="k">DS투자증권</b>이 짚은 구조적 제약이 핵심으로 보입니다 —
-삼성생명·삼성화재가 삼성전자 보통주를 약 <b class="k">10% 보유</b>하고 있어서,
-자사주를 더 사면 <b class="k">금융지주회사법 이슈</b>가 걸려 추가 승인이 필요합니다.
-그래서 남은 재원 중 자사주로 갈 수 있는 건 <b class="k">10~20조 정도</b>이고 나머지는 현금배당일 가능성이 높다 —
-"총액은 크지만 <b class="k">주가에 직접 닿는 몫은 작다</b>"는 계산입니다 <span class="small dim">(한국경제 8/24)</span></p>
-<p><b class="k">대조군이 선명합니다.</b> SK하이닉스는 40조를 발표하면서 <b class="k">"기간 내 전량 소각"을 명시</b>했고 이튿날 <b class="gr">+13%</b>였습니다.
-같은 주주환원인데 <b class="k">소각을 적었느냐 안 적었느냐</b>가 갈랐습니다.</p>
-<p class="small dim">반대편도 적습니다 — KB증권은 "그럼에도 밸류 재평가의 변곡점"이라며 2026 영업이익 380조, 2029년까지 누적 600조+ 환원 가능을 봅니다.
-시장에서 거론되는 "황금비율"은 추가배당 40조 + 자사주 매입·소각 40조입니다.</p>
-</div>
-
-<div class="card hot">
-<h3 style="margin-top:0">③ 빚이 쌓여 있었습니다 — 신용 32.42조 · 미수금 1조 돌파 ★</h3>
-<table>
-<tr><th>날짜</th><th class="n">신용융자(조)</th><th class="n">예탁금(조)</th><th class="n">미수금(억)</th><th>그날 지수</th></tr>
-<tr><td>8/13</td><td class="n">30.93</td><td class="n">100.07</td><td class="n">9,131</td><td class="dim"></td></tr>
-<tr><td>8/14</td><td class="n">30.87</td><td class="n">100.71</td><td class="n">8,670</td><td class="dim"></td></tr>
-<tr><td>8/18</td><td class="n">31.10</td><td class="n">104.76</td><td class="n">9,202</td><td class="dim"></td></tr>
-<tr><td>8/19</td><td class="n">31.31</td><td class="n gr"><b>106.58</b></td><td class="n">9,135</td><td class="dn">코스피 −5.80%</td></tr>
-<tr><td>8/20</td><td class="n">31.89</td><td class="n">105.35</td><td class="n up"><b>10,974</b></td><td class="gr">코스피 +5.89%</td></tr>
-<tr><td><b class="k">8/21</b></td><td class="n up"><b>32.42</b></td><td class="n dn"><b>100.75</b></td><td class="n up"><b>10,715</b></td><td class="gr">코스피 +0.88% <span class="small dn">/ 코스닥 −4.63%</span></td></tr>
-</table>
-<p><b class="k">읽는 방법 세 가지.</b></p>
-<ul>
-<li><b class="k">신용은 하락일에도 늘었습니다.</b> 8/13 30.93조 → 8/21 <b class="up">32.42조</b>, 6영업일 <b class="up">+1.49조(+4.8%)</b>.
-지수가 −5.80% 맞은 8/19 다음날도, 코스닥이 −4.63% 맞은 8/21에도 <b class="k">계속 늘었습니다</b>.
-"빠지니까 빚내서 더 산다"는 그림입니다</li>
-<li><b class="k">예탁금은 줄었습니다.</b> 8/19 106.58조 → 8/21 100.75조, <b class="dn">−5.83조</b>.
-<b class="k">현금은 나가는데 빚은 들어옵니다</b> — 레버리지 비율이 분자·분모 양쪽에서 동시에 올라갑니다</li>
-<li><b class="k">미수금이 1조를 넘었습니다.</b> 8/14 8,670억 → 8/20 <b class="up">1조974억</b>(+26.6%). 미수는 <b class="k">D+2에 반대매매</b>로 정리됩니다.
-8/21 미수 1조715억 → <b class="k">D+2가 오늘(8/25)입니다.</b> 오늘 개장 −2.40%, 곧이어 −4.30%까지 밀린 시간대와 겹칩니다</li>
-</ul>
-<p class="small ye">⚠️ 여기까지는 <b class="k">타이밍 일치</b>이지 인과 증명이 아닙니다. 반대매매 실제 체결 규모는 이 데이터에 없습니다.
-그리고 <b class="k">8/24분 KOFIA가 아직 안 왔습니다</b> — 어제 −3.12%가 신용에 얼마를 더 얹었는지는
-<b class="ye">판정불가</b>이고, 그게 오늘 후반전과 내일에 무엇을 남길지도 지금은 모릅니다. 도착 전엔 판정하지 않습니다.</p>
-</div>
-
-<h2>🔺 §3. 왜 되돌렸나</h2>
-
-<div class="card gr">
-<table>
-<tr><th>주체</th><th class="n">코스피 (13:10 누적)</th><th class="n">8/24 확정</th><th>메모</th></tr>
-<tr><td><b class="k">외국인</b></td><td class="n dn"><b>−2조6,708억</b></td><td class="n dn">−3조6,691억</td><td>3거래일 합 <b class="dn">−9조8,000억</b>. <b class="k">되돌림에 참여하지 않았습니다</b></td></tr>
-<tr><td><b class="k">개인</b></td><td class="n up"><b>+8,557억</b></td><td class="n up">+3조3,217억</td><td>뉴스1이 헤드라인으로 뽑은 주체</td></tr>
-<tr><td><b class="k">기관</b></td><td class="n up"><b>+7,324억</b></td><td class="n dn">−1조2,901억</td><td>매도→매수 <b class="gr">전환</b>. 금융투자 +5,472억 · <b class="k">연기금 +2,399억</b></td></tr>
-<tr><td><b class="k">기타법인</b></td><td class="n up"><b>+1조1,000억</b></td><td class="n up">+1조6,375억</td><td><b class="k">4거래일 연속 1조↑</b> (하이닉스 자사주 8/20~11/19)</td></tr>
-<tr><td class="dim">프로그램 비차익</td><td class="n dn">−1조8,826억</td><td class="n dn">−3조582억</td><td class="dim">차익 +1,051억 / 전체 −1조7,775억</td></tr>
-</table>
-<p><b class="k">구조가 어제와 같습니다.</b> 외국인이 팔고, 개인·기타법인·기관이 받습니다.
-다른 점은 <b class="k">기관이 매도에서 매수로 돌았다</b>는 것과 <b class="k">연기금이 +2,399억으로 들어왔다</b>는 것입니다.</p>
-<p>그리고 <b class="k">기타법인 4거래일 연속 1조 이상</b>이 확인되면서, 어제까지 "삼성 계열 일회성일 수 있다"고 유보해 뒀던
-<b class="k">"SK하이닉스 자사주가 11/19까지 매일 바닥을 받친다"</b>는 가설이 한 단계 굳었습니다.
-다만 이건 <b class="k">방향을 만드는 힘이 아니라 바닥을 받치는 힘</b>이라는 점은 어제와 같습니다.</p>
-<p class="small dim">⬜ 여전히 확인 못 한 것: SK하이닉스 자사주 <b class="k">8월 누적 취득 수량</b>. DART 자기주식취득현황 보고서가 아직 없어
-"매일 1조가 정말 하이닉스인가"를 종목 단위로 검증할 수 없습니다. 8/24~8/25 접수 397건 전수 조회에도 관련 공시 0건.</p>
-</div>
-
-<div class="card cool">
-<h3 style="margin-top:0">미 금리가 처음으로 뒤로 갔습니다</h3>
-<table>
-<tr><th>항목</th><th class="n">8/21</th><th class="n">8/24</th><th>메모</th></tr>
-<tr><td><b class="k">미 30년물</b></td><td class="n">5.276%<br><span class="small dim">2007년 이후 최고</span></td><td class="n gr"><b>5.23%</b></td>
-<td>8/19 코스피 −5.80%의 직접 방아쇠였던 변수. 어제 브리핑에서 "되돌린 게 아니라 신고가를 다시 썼다"고 쓴 항목이 <b class="gr">−4.6bp 후퇴</b></td></tr>
-<tr><td>미 10년물</td><td class="n">4.74%</td><td class="n gr">4.70%</td><td>−4bp</td></tr>
-<tr><td>VIX</td><td class="n">15.13</td><td class="n up">15.85</td><td class="dim">+4.76% — 공포는 조금 올랐습니다</td></tr>
-<tr><td>WTI</td><td class="n">87.06</td><td class="n dn">85.01</td><td class="dim">−2.35%</td></tr>
-<tr><td class="dim">국고채 3년 / 10년</td><td colspan="2" class="n dim">3.836% / 4.335% (8/24, ECOS)</td><td class="dim">장단기 +0.499%p · 신용스프레드(BBB−3y) <b class="ye">+6.497%p</b></td></tr>
-</table>
-<p class="small">배경엔 <b class="k">8/19 미 재무부의 장기국채 바이백 확대</b>(회당 20억 → 최소 40억 달러, 9/9~11/4 적용)가 있습니다.
-발표 직후 30년물이 한때 9bp 급락했다가 8/21에 5.276%로 되돌아왔고, 어제 다시 5.23%로 내려왔습니다.
-<b class="k">한 번의 후퇴로 추세가 꺾였다고 보긴 이릅니다</b> — 이건 관찰 항목이지 판정 근거가 아닙니다.</p>
-</div>
-
-<h2>💎 §4. 오늘의 발견 — 삼성전자 보통주와 우선주가 갈라졌습니다</h2>
-
-<div class="card pu">
-<table>
-<tr><th></th><th class="n">8/21</th><th class="n">8/24</th><th class="n">8/25 (13:16)</th></tr>
-<tr><td><b class="k">삼성전자 (005930)</b></td><td class="n">281,500<br><span class="small gr">+3.87%</span></td>
-<td class="n">257,000<br><span class="small dn"><b>−8.70%</b></span></td>
-<td class="n">253,500<br><span class="small dn"><b>−1.36%</b></span> <span class="small dim">저 245,000</span></td></tr>
-<tr><td><b class="k">삼성전자우 (005935)</b></td><td class="n">207,000<br><span class="small gr">+8.26%</span></td>
-<td class="n">189,300<br><span class="small dn">−8.55%</span></td>
-<td class="n">192,800<br><span class="small gr"><b>+1.85%</b></span> <span class="small dim">저 181,700</span></td></tr>
-<tr><td><b class="k">우선주 / 보통주</b></td><td class="n">73.53%</td><td class="n">73.66%</td><td class="n gr"><b>76.06%</b></td></tr>
-</table>
-<p class="lead">8/24에는 <b class="k">둘 다 −8%대로 똑같이 맞았습니다</b>(−8.70% vs −8.55%).
-오늘 <b class="k">처음 갈라졌습니다</b> — 보통주 −1.36%, 우선주 <b class="gr">+1.85%</b>. 하루 만에 <b class="k">3.21%p</b> 차이입니다.</p>
-<p><b class="k">왜 그런지는 발표 구성으로 설명됩니다.</b> 한 단계씩 —</p>
-<ul>
-<li><b class="k">자사주 매입·소각은 보통주에 유리합니다.</b> 회사가 주식을 사서 없애면 남은 주식 한 장이 갖는 회사 지분이 커집니다.
-소각 대상은 보통 보통주고, 의결권 지분율도 같이 올라갑니다</li>
-<li><b class="k">현금배당은 우선주에 더 유리합니다.</b> 우선주는 의결권이 없는 대신 배당을 더 받습니다(삼성전자우는 액면 기준 +1%p).
-게다가 주가가 보통주의 73%밖에 안 되니까 <b class="k">같은 배당금이라도 배당수익률은 1÷0.73 ≈ 1.36배</b>가 됩니다.
-배당이 늘면 <b class="k">싼 쪽이 더 크게 좋아집니다</b></li>
-<li>그런데 <b class="k">지금 확정된 건 현금배당 30조뿐</b>이고, 자사주·소각은 2027년 1월로 넘어갔습니다.
-<b class="k">시장이 그 구성을 가격으로 나누고 있습니다</b> — "확정된 배당"에는 우선주 매수를, "미확정 소각"에는 보통주 매도를</li>
-</ul>
-<p class="small dim">한 줄로: <b class="k">이건 "삼성전자가 반등했다"가 아니라 "삼성전자가 배당주 쪽으로 재분류되는 중"</b>일 수 있습니다.
-표본 하루짜리 해석이라 <b class="ye">가설입니다.</b> 확인 방법은 단순합니다 — <b class="k">우선주/보통주 비율 76.06%</b>가 며칠 더 올라가는지 봅니다.
-어제 제가 "삼성전자 반등을 사지 않습니다"라고 쓴 문장은 <b class="k">보통주에는 여전히 유효</b>하지만,
-<b class="k">"삼성전자"를 한 덩어리로 취급한 건 오늘 데이터로 보면 거칠었습니다.</b></p>
-</div>
-
-<div class="card">
-<h3 style="margin-top:0">📐 삼성전자 레벨판 (data.go.kr KRX 확정시세 200봉 · 최신봉 8/24)</h3>
-<table>
-<tr><th class="n">가격</th><th>무엇</th><th>근거</th><th>오늘 위치</th></tr>
-<tr><td class="n">288,025 / 288,000</td><td>60일선 / 박스 저항</td><td>8회 터치</td><td class="dim">+13.6%</td></tr>
-<tr><td class="n">272,748</td><td>피보 0.5</td><td class="dim">고점 379,796 기준</td><td class="dim">+7.6% — 8/24 고가 272,000이 <b class="k">748원 못 미쳤던</b> 자리</td></tr>
-<tr><td class="n up"><b>254,296</b></td><td><b class="k">120일선</b></td><td></td><td>현재가 253,500이 <b class="ye">−796원 아래</b> — 지금 붙어 있는 선</td></tr>
-<tr><td class="n">247,485</td><td>피보 0.618</td><td>8/19 저가 246,500과 0.40% 차이</td><td class="dn"><b>오늘 장중 관통</b></td></tr>
-<tr><td class="n">246,600</td><td>20일선</td><td></td><td class="dn"><b>오늘 장중 관통 (저가 −1,600원)</b></td></tr>
-<tr><td class="n">228,000</td><td>박스 지지</td><td>5회 터치</td><td class="dim">−10.1%</td></tr>
-</table>
-<p><b class="k">오늘 장중에 20일선·피보0.618·8/19 저점이 한꺼번에 뚫렸다가 회복됐습니다.</b>
-어제 "다음 지지대가 −1.9~−4.4%에 3중으로 겹쳐 있고, 오늘 저가 255,000은 아직 그 위 — 시험이 시작되지도 않았다"고 썼는데,
-<b class="k">오늘 시험이 시작됐고 장중엔 떨어졌다가 지금 재응시 중</b>입니다.</p>
-<p class="small ye">⚠️ 이평선은 확정시세 8/24 기준이라 오늘 봉이 들어가면 아래로 이동합니다. 소수점 단위 판단에 그대로 쓰지 않습니다.
-이 표는 <b class="k">선을 매번 다시 긋지 않기 위한 참조판</b>이지 매매 신호가 아닙니다.</p>
-</div>
-
-<h2>🔄 §5. 순환매 — 반도체에서 원전·건설로 (하루 만에 또 이동)</h2>
+<p class="verdict">⏸ 관망 — 4거래일째입니다. 그런데 오늘 처음으로 <span class="up">위쪽 근거가 더 많아졌습니다.</span></p>
+<p class="small">3상태 판정 규율대로 적으면 오늘은 🔴 매도자리도 🟢 매수자리도 아닌 <b class="k">⏸</b>입니다.
+다만 아침(2:2:1)과 달리 오늘 종가 기준으로는 <b class="k">6:5</b>입니다. 양쪽을 다 적습니다.</p>
 
 <div class="two">
+<div class="card gr" style="margin:6px 0">
+<p class="small"><b class="gr">▲ 위쪽 근거 6</b></p>
+<ul class="small">
+<li><b class="k">저가 −4.30% → 종가 +0.68%.</b> 코스피 CLV 98.7%, 코스닥은 <b class="k">고가가 곧 종가</b>(CLV 100%)</li>
+<li><b class="k">양 지수 MA5 동시 회복</b> — 코스피 6,742.74 &gt; 6,735.28 / 코스닥 827.15 &gt; 821.55</li>
+<li><b class="k">시장폭</b> 코스피 상승비율 74.1%(649:227) · 코스닥 71.9% · <b class="k">79업종 중 60개 상승</b></li>
+<li><b class="k">삼성전자가 20일선·120일선을 종가로 사수</b>. 어제 세운 판정 기준(246,600) 통과</li>
+<li><b class="k">공매도 상위 10종 중 9종 상승</b> (8/24 기준 상위, 오늘 종가). 아침 13:16엔 6/9였습니다</li>
+<li><b class="k">나스닥100 선물 +0.79%</b>(20:17 스냅샷 29,336.75 vs 8/24 29,105.75) · 미 30년물 5.276%→5.23% 후퇴</li>
+</ul>
+</div>
+<div class="card cool" style="margin:6px 0">
+<p class="small"><b class="dn">▼ 아래쪽 근거 5</b></p>
+<ul class="small">
+<li><b class="k">외국인 −3조8,140억</b> — 8/19(−3.47조)·8/24(−3.67조)를 넘는 <b class="k">이번 국면 최대 단일 순매도</b>. 되돌림에 참여하지 않았습니다</li>
+<li><b class="k">프로그램 비차익 −2조7,337억</b> — 차익은 +1,025억으로 중립. 바스켓 매도가 이틀 연속</li>
+<li><b class="k">거래대금 24.09조</b>로 전일 26.16조 대비 <b class="k">−7.9%</b>. 오른 날인데 거래는 줄었습니다</li>
+<li><b class="k">신용 32.42조(8/21)</b>·미수 1조715억·반대매매 실질비중 4.4%. <b class="k">8/24·8/25분은 아직 없습니다</b></li>
+<li><b class="k">확인 이벤트 3건이 여전히 앞에 있습니다</b> — 8/27 엔비디아·금통위, 8/28 잭슨홀</li>
+</ul>
+</div>
+</div>
+
+<p class="small">한 문장으로 붙이면: <b class="k">차트는 바닥을 그렸고, 수급은 아직 아닙니다.</b>
+비교 대상이 있습니다 — 8/20 코스피 +5.89% 반등 때 외국인은 <b class="up">+1조7,100억 순매수</b>로 같이 올라탔습니다.
+오늘 반등에는 <b class="dn">−3조8,140억</b>으로 반대편에 서 있었습니다. 같은 모양의 반등이 아닙니다.</p>
+<p class="small dim">그리고 「지수 −4% 추천금지」 규칙은 <b class="k">장중 저가 −4.30%로 발동 조건을 충족</b>했습니다.
+종가 +0.68%로 해제 구간이지만, 오늘 그 선을 한 번 넘었다는 사실은 남습니다.
+아래 과매수 스캐너도 <b class="k">게이트 통과 0건</b>이라, 이 브리핑에는 진입 추천을 담지 않습니다.
+본문의 종목 언급은 전부 <b class="k">상태 서술</b>이며 매수·매도 지시가 아닙니다.</p>
+</div>
+
+<h2>📋 아침 체크리스트 채점 — §10 지켜볼 선 9항목</h2>
+
+<p class="small">오늘 13:20 모닝 브리핑이 "후반전(13:20~15:30)에 지켜볼 선"으로 적은 항목을 <b class="k">종가 기준</b>으로 판정합니다.
+아침 판정 <b class="k">⏸ 관망</b>은 "신규 진입을 하지 않는다"는 뜻으로는 지켜졌습니다.
+다만 정직하게 병기하면 <b class="k">코스피가 저가에서 +5.21% 되돌려 상승 마감</b>했고, 전면 관망은 그 구간을 통째로 비웠습니다.</p>
+
+<table>
+<tr><th>#</th><th>아침에 정한 선 (13:16 기준)</th><th>종가 실측</th><th class="n">판정</th></tr>
+<tr><td>①</td><td>KOSPI MA5 <b>6,717.79</b> 회복 (+0.94% 필요)</td>
+<td>종가 <b class="k">6,742.74</b>. 오늘 봉 포함 MA5는 6,735.28 — <b class="up">+0.11% 위</b>로 마감</td><td class="n"><span class="gr">⭕ 회복</span></td></tr>
+<tr><td>②</td><td>KOSPI MA20 6,456.00 — <b>종가로 다시 깨면 다른 이야기</b></td>
+<td>오늘 MA20 6,460.37 대비 <b class="up">+4.37% 위</b>. 장중 저가 6,408.82로 한 번 이탈했다가 회복했습니다</td><td class="n"><span class="gr">⭕ 사수</span></td></tr>
+<tr><td>③</td><td>KOSPI MA60 7,426.28 — 낙폭과대 리바운드 봉인 해제까지 +11.6%</td>
+<td>오늘 MA60 7,427.74, 종가는 <b class="dn">−9.22%</b> 아래. 해제까지 <b class="k">+10.16%</b> 필요
+(아침 +11.6% → <b class="k">1.44%p 좁혀짐</b>. 어제는 오히려 멀어졌던 항목입니다)</td><td class="n"><span class="ye">△ 진행</span></td></tr>
+<tr><td>④</td><td>KOSDAQ MA5 819.28 (+0.41% 필요, "손에 닿는 거리")</td>
+<td>종가 <b class="k">827.15</b>, 오늘 MA5 821.55 대비 <b class="up">+0.68% 위</b>. <b class="k">고가 = 종가</b></td><td class="n"><span class="gr">⭕ 회복</span></td></tr>
+<tr><td>⑤</td><td>KOSDAQ MA20 793.95 — 저가 781.89로 이미 한 번 이탈</td>
+<td>오늘 MA20 794.52 대비 <b class="up">+4.11% 위</b>로 마감</td><td class="n"><span class="gr">⭕ 사수</span></td></tr>
+<tr><td>⑥</td><td>삼성전자 120일선 <b>254,296</b> (+0.31% 필요, "지금 붙어 있는 선")</td>
+<td>종가 <b class="k">257,000원</b> — 120일선 <b class="up">+1.06% 위</b>. 저가 245,000에서 <b class="up">+4.90%</b> 되돌림</td><td class="n"><span class="gr">⭕ 회복</span></td></tr>
+<tr><td>⑦</td><td>삼성전자 20일선 <b>246,600</b> — <b>종가로 잃으면 8/19 반등 전체가 되돌려진다</b></td>
+<td>종가 257,000으로 <b class="up">+4.22% 위</b>. 장중 245,000까지 관통했으나 <b class="k">종가로는 지켰습니다</b>.
+어제(8/24) 마감 브리핑이 세운 판정 기준은 오늘 통과입니다</td><td class="n"><span class="gr">⭕ 사수</span></td></tr>
+<tr><td>⑧</td><td>삼성전자우/보통주 76.06% — 더 오르면 "배당주 재분류" 가설 강화</td>
+<td>종가 기준 <b class="k">75.68%</b> (194,500 ÷ 257,000). 13:16의 76.06%보단 소폭 후퇴했지만
+8/21 73.53% · 8/24 73.66% 대비 <b class="up">+2.02%p</b>로 <b class="k">3거래일 연속 상승</b></td><td class="n"><span class="gr">⭕ 유지</span></td></tr>
+<tr><td>⑨</td><td>기타법인 +1조1,000억 — 마감까지 유지되면 4거래일 연속 확정</td>
+<td>코스피 기타법인 <b class="k">+1조5,920억</b>. 8/20 +1.05조 · 8/21 +1.09조 · 8/24 +1.64조 · 오늘 +1.59조 =
+<b class="k">4거래일 연속 1조 이상 확정</b></td><td class="n"><span class="gr">⭕ 확정</span></td></tr>
+</table>
+<p class="small dim">9항목 중 <b class="gr">⭕ 8</b> · <span class="ye">△ 1</span>. 아침에 "필요 변화"로 적은 선을 거의 다 넘겼습니다.
+다만 이건 <b class="k">레벨 예보가 맞았다</b>는 뜻이지 <b class="k">방향 판정이 맞았다</b>는 뜻은 아닙니다 —
+아침 판정은 ⏸ 관망이었고 시장은 올랐습니다.</p>
+
+<h3>§11 판정불가 5항목 — 오늘 어떻게 됐나</h3>
+<table>
+<tr><th>항목</th><th>오늘 결과</th><th class="n">상태</th></tr>
+<tr><td>KOFIA 8/24분 미도착</td>
+<td>여전히 <b class="k">8/21이 최신</b>입니다 — 이제 <b class="k">2거래일치(8/24·8/25)</b>가 비었습니다.
+단 수집기는 오늘 20:10에 정상 실행돼 파일을 갱신했습니다(KOFIA_종합통계 mtime 08-25 20:10).
+<b class="k">고장이 아니라 원본이 안 올라온 것</b>입니다 —
+아침에 세운 "내일도 안 오면 수집기 점검" 트리거는 <b class="k">해제</b>합니다</td>
+<td class="n"><span class="dim">⬜ 판정불가 유지</span></td></tr>
+<tr><td>SK하이닉스 자사주 8월 누적 취득 수량</td>
+<td>8/25 DART 접수 <b class="k">357건 전수 조회 — SK하이닉스 0건</b>. 삼성전자도 0건입니다.
+"기타법인 매일 1조 = 하이닉스"는 <b class="k">4주째 정황 추정</b>이지 검증된 사실이 아닙니다</td>
+<td class="n"><span class="dim">⬜ 미확인 4주째</span></td></tr>
+<tr><td>시총상위50 수집기 (8/21에서 정지)</td>
+<td>brief_extract 기준일이 <b class="k">20260824로 복구</b>됐습니다. 수집 재개 확인</td>
+<td class="n"><span class="gr">⭕ 복구</span></td></tr>
+<tr><td>D램 실측 가격</td>
+<td>여전히 미확보. 엔비디아 "메모리 품귀로 AI 서버 15% 인상"이 8/24 미 반도체를 흔든 재료인데
+<b class="k">현물가 계기판은 3주째 반쪽</b>입니다</td>
+<td class="n"><span class="dim">⬜ 미확보</span></td></tr>
+<tr><td>공휴일 API 403 (fail-open)</td>
+<td>오늘도 조회 불가 → 개장 가정으로 통과. 실제 개장이라 결과는 맞았지만 <b class="k">판정 근거는 오늘도 없었습니다</b>.
+data.go.kr 특일정보 활용신청 미해결</td>
+<td class="n"><span class="dim">⬜ 미해결</span></td></tr>
+</table>
+
+<h2>📈 마감 헤드라인</h2>
+
+<div class="grid">
+<div class="kpi"><div class="l">KOSPI · 8/25 확정</div><div class="v">6,742.74</div>
+<div class="d up">+45.78p (+0.68%)</div>
+<div class="d dim">시 6,535.93(−2.40%) · 고 6,747.16 · 저 <b class="dn">6,408.82(−4.30%)</b><br>
+대금 24.09조 · <b class="k">CLV 98.7%</b> · 저가→종가 <b class="up">+5.21%</b></div></div>
+
+<div class="kpi"><div class="l">KOSDAQ · 8/25 확정</div><div class="v">827.15</div>
+<div class="d up">+13.82p (+1.70%)</div>
+<div class="d dim">시 806.93 · <b class="k">고 827.15 = 종가</b> · 저 781.89(−3.87%)<br>
+대금 4.72조 · <b class="k">CLV 100%</b> · 저가→종가 <b class="up">+5.79%</b></div></div>
+
+<div class="kpi"><div class="l">삼성전자 · 8/25 정규장</div><div class="v">257,000</div>
+<div class="d dim">0원 (0.00%) — <b class="k">정확히 보합</b></div>
+<div class="d dim">시 254,500 · 고 261,000 · 저 <b class="dn">245,000</b><br>
+CLV 75.0% · 저가→종가 <b class="up">+4.90%</b></div></div>
+
+<div class="kpi"><div class="l">SK하이닉스 · 8/25 정규장</div><div class="v">1,678,000</div>
+<div class="d up">+7,000원 (+0.42%)</div>
+<div class="d dim">시 1,653,000 · 고 1,716,000 · 저 1,557,000<br>
+CLV 76.1% · 저가→종가 <b class="up">+7.77%</b></div></div>
+
+<div class="kpi"><div class="l">원/달러 · 주간거래 종가</div><div class="v">1,386.1</div>
+<div class="d up">+3.7원</div>
+<div class="d dim">ECOS 매매기준율 1,380.6 (8/25)<br>5일 전 1,415.2 · 20일 최고 1,466.2</div></div>
+
+<div class="kpi"><div class="l">코스피 등락종목</div><div class="v">649 : 227</div>
+<div class="d gr">상승비율 74.1%</div>
+<div class="d dim">상한 2 · 상승 647 · 보합 34 · 하락 226 · 하한 1<br>
+코스닥 1,190 : 466 (71.9%) · 상한 4</div></div>
+</div>
+
 <div class="card gr">
-<h3 style="margin-top:0">▲ 업종 상승 (13:10 장중)</h3>
+<p class="lead"><b class="k">한 장면으로 요약하면</b> — 코스피는 <b class="dn">−2.40%로 열려 −4.30%까지</b> 밀렸다가
+<b class="up">고가 근처(CLV 98.7%)에서 +0.68%로</b> 마쳤습니다. 코스닥은 아예 <b class="k">고가가 곧 종가</b>였습니다.
+장중 저점에서 코스피 <b class="up">+5.21%</b>, 코스닥 <b class="up">+5.79%</b>를 되돌린 하루입니다.</p>
+<p class="small">아침 브리핑을 13:16에 쓸 때 코스피는 −0.62%였습니다. 그 뒤 2시간 14분 동안 <b class="up">+1.30%p</b>가 더 붙었습니다.
+<b class="k">되돌림은 후반전에 끝난 게 아니라 후반전에 완성됐습니다.</b>
+연합뉴스TV가 12:01에 「4% 급락 뒤 낙폭 축소」로 썼던 장면이, 마감 시점엔 「6,700선 탈환」이 됐습니다.</p>
+</div>
+
+<h2>🚦 리스크 계기판 <span class="dim" style="font-size:13px">기준일 병기 · 🔴2 🟡8 🟢8</span></h2>
+
 <table>
-<tr><td>건설</td><td class="n up"><b>+6.56%</b></td></tr>
-<tr><td>항공화물운송과물류</td><td class="n up">+6.48%</td></tr>
-<tr><td>비철금속</td><td class="n up">+5.12%</td></tr>
-<tr><td>기계</td><td class="n up">+4.37%</td></tr>
-<tr><td>전기유틸리티</td><td class="n up">+3.90%</td></tr>
-<tr><td>화장품</td><td class="n up">+3.66%</td></tr>
-<tr><td>은행</td><td class="n up">+2.62%</td></tr>
-<tr><td>증권</td><td class="n up">+2.48%</td></tr>
+<tr><th>항목</th><th class="n">수치</th><th>판정</th><th>메모 · 기준일</th></tr>
+
+<tr><td>★외국인 코스피</td><td class="n"><b class="dn">−3조 8,140억</b></td><td>🔴 국면 최대</td>
+<td>8/25 확정(네이버 integration · 4주체 합계 0 검증). 코스피 −5.80%를 만든 8/19의 −3.47조,
+어제 −3.67조를 <b class="k">둘 다 넘긴 이번 국면 최대 단일 순매도</b>입니다.
+8/21부터 <b class="k">3거래일 연속 순매도, 합계 −7조6,600억</b>. 8/19 이후 5거래일로는 −9조4,200억.
+전체기간 누적 −44.1조 · 최근 20일 −5.9조.<br>
+⚠️ 마감 시황 보도는 −3조8,152억(디지털데일리)으로 12억 차이 — 대량매매·장외 포함 여부 차이입니다. 본문은 네이버 실측을 씁니다</td></tr>
+
+<tr><td>★프로그램 비차익</td><td class="n"><b class="dn">−2조 7,337억</b></td><td>🔴 이틀 연속</td>
+<td>8/25 확정. 차익 +1,025억으로 중립인데 <b class="k">비차익만 −2.73조</b>입니다.
+어제 −3조582억에 이어 이틀 연속 — 종목 선별이 아니라 <b class="k">지수 노출 축소</b>입니다.
+코스닥 프로그램은 +1,007억으로 반대 방향</td></tr>
+
+<tr><td>★KOFIA 신용·예탁금·미수</td><td class="n">8/21 정지</td><td>🟡 판정불가</td>
+<td>★<b class="k">2영업일째 미도착</b>(8/24·8/25). 신용잔고 32.416조 · 예탁금 100.746조 ·
+미수금 1조715억 · <b class="k">반대매매 실질비중 4.4%</b> — 전부 8/21입니다.
+8/20 1.0% → 8/21 4.4%로 뛰었고, 최근 60영업일 평균 2.95% · 최대 10.5% 대비로는
+<b class="k">높지만 극단은 아닌</b> 수준입니다.
+어제 −3.12%와 오늘 −4.30%가 여기에 무엇을 얹었는지는 <b class="k">오늘도 모릅니다</b>.
+수집기는 20:10 정상 실행 확인 — 미도착은 원본 사정이고, 조치는 하지 않습니다</td></tr>
+
+<tr><td>★거래대금 감소</td><td class="n">24.09조 <span class="dn">−7.9%</span></td><td>🟡 오른 날 감소</td>
+<td>8/25 확정. 전일 26.16조 → 24.09조. 코스닥은 4.49조 → <b class="up">4.72조(+5.2%)</b>로 반대.
+<b class="k">코스피는 올랐는데 돈이 줄었고, 코스닥은 오르면서 돈도 늘었습니다</b></td></tr>
+
+<tr><td>★대형 2종 집중도</td><td class="n">49.5%</td><td>🟡 여전히 절반</td>
+<td>8/25 KRX 기준(sise_quant). SK하이닉스 6.48조 + 삼성전자 5.44조 = <b class="k">11.92조 / 24.09조</b>.
+13:15의 51.4%에서 소폭 낮아졌지만 여전히 <b class="k">두 종목이 코스피 거래의 절반</b>입니다.<br>
+⚠️ m.stock 당일 봉으로 계산하면 시간외·NXT가 분자에만 섞여 과대값이 나옵니다 — 8/21·8/24·8/25 3회 재현된 함정</td></tr>
+
+<tr><td>★삼성전자 보합</td><td class="n">257,000 <b>0.00%</b></td><td>🟡 시험 통과</td>
+<td>8/25 정규장 확정. 저가 245,000에서 <b class="up">+4.90%</b> 되돌려 <b class="k">전일과 정확히 같은 값</b>으로 마쳤습니다.
+20일선(246,600)·120일선(254,296)·피보 0.618(247,485)을 장중에 다 관통했다가 <b class="k">셋 다 종가로 회복</b>.
+외국인은 −5,003,317주로 <b class="k">이틀 연속 대량 매도</b>(비중 46.76% → 46.65%), 개인 +2,784,825주가 받았습니다</td></tr>
+
+<tr><td>★삼성전자우 분리</td><td class="n">194,500 <span class="up">+2.75%</span></td><td>🟢 가설 강화</td>
+<td>8/25 정규장 확정. 우/보통 <b class="k">75.68%</b> — 8/21 73.53% → 8/24 73.66% → 8/25 75.68%로 <b class="k">3거래일 연속 상승</b>.
+CLV 84.2%로 보통주(75.0%)보다 강했습니다. 외국인은 우선주도 −1,682,231주 팔았고 개인 +1,353,549주가 받았습니다.
+"확정된 배당 30조엔 우선주, 미확정 소각엔 보통주 매도"라는 <b class="k">배당주 재분류 가설이 하루 더 버텼습니다</b></td></tr>
+
+<tr><td>★SK하이닉스</td><td class="n">1,678,000 <span class="up">+0.42%</span></td><td>🟢 악재 소화</td>
+<td>8/25 정규장 확정. 어제 임단협 부결(반대 50.08%, 25표 차)이라는 개별 악재를 안고 시작해
+저가 1,557,000(−6.82%)까지 갔다가 <b class="k">플러스로 마감</b>했습니다. CLV 76.1%.
+외국인 −1,234,309주(비중 50.93% → 50.75%)로 매도는 이어졌습니다</td></tr>
+
+<tr><td>★KOSPI MA5 회복</td><td class="n">6,735.28 <span class="up">+0.11%</span></td><td>🟢 회복</td>
+<td>8/25 자체계산(일봉 80봉, 오늘 봉 포함). 어제 이탈한 5일선을 하루 만에 되찾았습니다.
+MA20 6,460.37은 +4.37% 여유 · MA60 7,427.74는 −9.22% 아래.
+52주 최고 9,385.59 대비 <b class="dn">−28.16%</b></td></tr>
+
+<tr><td>★KOSDAQ 고가 마감</td><td class="n">827.15 <span class="up">+1.70%</span></td><td>🟢 CLV 100%</td>
+<td>8/25 자체계산. MA5 821.55 회복(+0.68%) · MA20 794.52 사수(+4.11%) · MA60 864.48은 −4.32% 아래.
+<b class="k">고가에서 그대로 끝난 날</b>이라 장 막판 매도 압력이 없었다는 뜻입니다</td></tr>
+
+<tr><td>★시장폭</td><td class="n">74.1% / 71.9%</td><td>🟢 3일째 우세</td>
+<td>8/25 확정. 코스피 649:227 · 코스닥 1,190:466. <b class="k">79업종 중 60개 상승 · 19개 하락</b>.
+8/24(579:286)·8/25 아침(524:341)에 이어 <b class="k">3거래일 연속으로 오르는 종목이 더 많습니다</b>.
+다른 점은 앞의 이틀은 지수가 빠지는 날이었다는 것입니다</td></tr>
+
+<tr><td>★공매도 상위 반등</td><td class="n">10종 중 9종 ↑</td><td>🟢 관찰</td>
+<td>★<b class="k">8/24 확정 기준</b> 상위 10종의 오늘 종가.
+ISC +7.20% · 원익IPS +5.55% · 한미반도체 +4.07% · 한화오션 +3.84% · KB금융 +2.02% ·
+HD현대중공업 +1.98% · 삼성중공업 +1.74% · 하나금융 +1.63% · 한국항공우주 +0.15% ·
+에코프로만 −3.07%. 아침 13:16엔 6/9였는데 <b class="k">종가엔 9/10</b>이 됐습니다.<br>
+⚠️ 숏커버링으로 읽는 게 자연스럽지만 <b class="k">오늘 공매도 데이터는 내일 나옵니다</b> — 단정하지 않고 관찰 항목으로만 둡니다</td></tr>
+
+<tr><td>★원/달러</td><td class="n">1,386.1 <span class="up">+3.7원</span></td><td>🟡 되돌림</td>
+<td>8/25 주간거래 종가(서울외환시장). 5일 전 1,415.2에서 내려온 흐름은 유지되지만
+<b class="k">주식이 오른 날에 원화가 약해졌습니다</b> — 외국인 −3.81조와 방향이 맞습니다.
+ECOS 매매기준율은 1,380.6 (8/25) · 20일 최고 1,466.2</td></tr>
+
+<tr><td>★한국 금리</td><td class="n">3년 3.83% / 10년 4.32%</td><td>🟡 대기</td>
+<td>ECOS 8/25. 장단기(10y−3y) <b class="k">+0.490%p</b> · 신용스프레드(BBB−3y) <b class="k">+6.498%p</b>.
+기준금리 2.75%(7/16 인상). <b class="k">8/27 금통위</b>에서 전망이 정면으로 갈립니다 —
+채권시장 종사자 79% 동결 vs 한국투자증권 "25bp 만장일치 인상"</td></tr>
+
+<tr><td>★미 30년물</td><td class="n">5.23%</td><td>🟢 이틀째 후퇴</td>
+<td>8/24 확정. 8/19 코스피 −5.80%의 직접 방아쇠였던 변수가 5.276%(2007년 이후 최고)에서 −4.6bp 물러섰습니다.
+미 10년물 4.70%(−4bp). <b class="k">한 번의 후퇴로 추세가 꺾였다고 보긴 이릅니다</b> —
+방향은 <b class="k">8/28 잭슨홀 워시 의장 기조연설</b>에서 잡힙니다</td></tr>
+
+<tr><td>★미 반도체</td><td class="n">SOX 11,423.17 <span class="dn">−2.70%</span></td><td>🟡 관찰</td>
+<td>★<b class="k">8/24 확정</b>(오늘 밤 22:30 개장 전). 엔비디아 208.48(−2.91%, 7거래일 연속 하락) ·
+마이크론 910.43(−5.83%) · AMD 456.75(−3.49%) · TSMC 410.12(−2.11%).
+나스닥 25,980.19(−0.76%) · S&amp;P500 7,652.86(−0.28%) · VIX 15.82.
+<b class="k">오늘 밤 SOX가 3거래일 연속 역행하는지</b>가 내일 국장 반도체의 선행 지표입니다</td></tr>
+
+<tr><td>★나스닥100 선물</td><td class="n">29,336.75 <span class="up">+0.79%</span></td><td>🟢 야간 우호</td>
+<td>20:17 스냅샷(8/24 29,105.75 대비). 로이터/야후는 다우·S&amp;P 선물 +0.3%, 나스닥100 선물 +0.7%로 보도.
+<b class="k">스냅샷이지 확정치가 아닙니다</b> — 22:30 개장까지 2시간 남았습니다</td></tr>
+
+<tr><td>★지정학 (신규)</td><td class="n">이란 제재 확대</td><td>🟡 신규 등재</td>
+<td>8/25(미 현지). 베센트 미 재무장관이 <b class="k">이란 제재를 확대</b>했고 이란이 보복을 예고했습니다.
+걸프 에너지 병목 리스크 — WTI 86.48(8/18, FRED)·85.01(8/24) 흐름에 상방 압력.
+오늘 국장 <b class="k">에너지장비및서비스 +4.41%</b>가 이와 무관하지 않아 보이나, 원전 테마와 섞여 <b class="k">분리되지 않습니다</b></td></tr>
+
+<tr><td>★뉴스심리</td><td class="n">106.15 <span class="dn">5일 연속 하락</span></td><td>🟡 하락</td>
+<td>ECOS 8/23. 최근 5개: 114.05 → 112.43 → 108.36 → 107.62 → 106.15.
+<b class="k">기준선 100 위지만 5일 연속 내려왔습니다</b>. 소비자심리 104.5(2026년 8월) · 기업심리 98.5(7월)</td></tr>
+
+<tr><td>★레버리지 괴리율</td><td class="n">최대 +1.62%</td><td>🟢 임계 미달</td>
+<td>★<b class="k">8/24 확정</b>(D+1~2 지연 — 오늘 값이 아닙니다). 아래 표 참조.
+<b class="k">|괴리| 2% 이상 없음</b>. 토스 계좌 ★보유 레버리지/인버스 상품은 <b class="k">0종</b>입니다</td></tr>
 </table>
-</div>
-<div class="card cool">
-<h3 style="margin-top:0">▼ 업종 하락</h3>
+
+<h2>💰 수급 판정 — 외국인이 이번 국면 최대치를 팔았는데 지수는 올랐습니다</h2>
+
 <table>
-<tr><td>생물공학</td><td class="n dn"><b>−3.09%</b></td></tr>
-<tr><td>전기제품</td><td class="n dn">−2.20%</td></tr>
-<tr><td>건강관리기술</td><td class="n dn">−1.51%</td></tr>
-<tr><td>사무용전자제품</td><td class="n dn">−1.46%</td></tr>
-<tr><td><b class="k">화학</b></td><td class="n dn">−1.39%</td></tr>
-<tr><td><b class="k">반도체와반도체장비</b></td><td class="n dn">−1.34%</td></tr>
-<tr><td>무선통신서비스</td><td class="n dn">−1.34%</td></tr>
-<tr><td>방송과엔터테인먼트</td><td class="n dn">−1.10%</td></tr>
+<tr><th>주체</th><th class="n">코스피 8/25 (잠정)</th><th class="n">8/24 확정</th><th>메모</th></tr>
+<tr><td><b class="k">외국인</b></td><td class="n"><b class="dn">−3조 8,140억</b></td><td class="n">−3조 6,691억</td>
+<td>8/21 −1,800억 · 8/24 −3조6,691억 · 8/25 −3조8,140억 = <b class="k">3거래일 연속, 합계 −7조6,600억</b>.
+매도 규모가 <b class="k">매일 커지고 있습니다</b></td></tr>
+<tr><td><b class="k">개인</b></td><td class="n"><b class="up">+1조 509억</b></td><td class="n">+3조 3,217억</td>
+<td>어제의 3분의 1입니다. <b class="k">개인이 덜 받은 날에 지수가 올랐습니다</b></td></tr>
+<tr><td><b class="k">기관</b></td><td class="n"><b class="up">+1조 1,711억</b></td><td class="n">−1조 2,901억</td>
+<td><b class="k">매도 → 매수 전환</b>. 어제 13:10 시점 +7,324억에서 마감까지 더 늘렸습니다.
+두산에너빌리티 +1,254,602주 · 현대건설 +548,280주 등 <b class="k">원전주를 산 주체가 기관</b>입니다</td></tr>
+<tr><td><b class="k">기타법인</b></td><td class="n"><b class="up">+1조 5,920억</b></td><td class="n">+1조 6,375억</td>
+<td>4주체 합계 0 역산. <b class="k">4거래일 연속 1조 이상</b>(8/20 +1.05조 · 8/21 +1.09조 · 8/24 +1.64조 · 8/25 +1.59조)</td></tr>
+<tr><td>프로그램</td><td class="n"><b class="dn">−2조 6,312억</b></td><td class="n">−1조 7,775억</td>
+<td>차익 +1,025억 / 비차익 −2조7,337억</td></tr>
 </table>
-</div>
-</div>
 
 <div class="card">
-<p><b class="k">어제 오른 게 오늘 오른 게 아닙니다.</b> 8/24 상위는 비철금속 +7.84% · 전기제품 +6.54% · <b class="k">화학 +5.28%</b> · 제약 +3.63%였습니다.
-오늘 화학은 <b class="dn">−1.39%</b>, 전기제품은 <b class="dn">−2.20%</b>, 생물공학은 <b class="dn">−3.09%</b>입니다.
-<b class="k">비철금속만 이틀 연속</b>(+7.84% → +5.12%)입니다.</p>
-<p>어제 마감 브리핑에 "이어지면 자금 이동, 하루로 끝나면 삼성 회피성 임시 대피"라고 판정 기준을 적어 뒀습니다.
-<b class="k">하루로 끝났습니다.</b> 정확히는 <b class="k">임시 대피처가 하루마다 바뀌고 있습니다</b> —
-"새 주도주가 섰다"보다 <b class="k">"머물 곳을 못 찾은 돈이 매일 옮겨 다닌다"</b>에 가까운 그림입니다.</p>
+<p><b class="k">손바뀜의 질 — 누가 팔고 누가 받았나</b></p>
+<p class="small">구조는 어제와 같습니다. <b class="k">외국인이 팔고, 기관·기타법인·개인이 받습니다.</b>
+다른 점은 셋입니다 —</p>
+<ul class="small">
+<li><b class="k">기관이 어제 −1.29조에서 오늘 +1.17조로 뒤집혔습니다.</b> 그리고 그 돈의 행선지가 보입니다 —
+두산에너빌리티 +992억(기관 순매수, 한국경제 보도) · 현대건설 +54.8만주. <b class="k">원전 테마를 산 건 기관</b>입니다</li>
+<li><b class="k">개인은 오히려 줄였습니다</b>(3.32조 → 1.05조). 개인만 받은 날이 아니라는 뜻이라
+「데드캣 경계」 신호는 오늘 켜지지 않습니다</li>
+<li><b class="k">코스닥에서는 외국인이 샀습니다</b> — +1,327억(개인 −1,375억 · 기관 +156억).
+어제도 +2,416억이었습니다. <b class="k">외국인은 코스피를 팔고 코스닥을 사고 있습니다</b>.
+다만 규모가 코스피 매도의 3.5%라 <b class="k">"이동"이라 부르기엔 너무 작습니다</b> — 나머지는 시장을 떠났습니다</li>
+</ul>
+<p class="small dim">⚠️ 당일 수급은 <b class="k">잠정치</b>입니다. 확정치는 내일 공표됩니다.
+기타법인은 4주체 합계 0 역산값이며, 종목 단위 분해는 오늘도 불가능합니다 —
+"기타법인 = SK하이닉스 자사주"는 여전히 <b class="k">정황 추정</b>입니다.
+삼성전자의 임직원 보상용 자사주 15조 집행분도 같은 칸에 잡힙니다</p>
 </div>
 
+<h2>🏭 특징 업종 · 종목</h2>
+
+<h3>업종 — 79업종 중 60개 상승, 원전·건설이 끌었습니다</h3>
 <div class="two">
-<div class="card gr">
-<h3 style="margin-top:0">시총 60위 중 상승 상위</h3>
-<table>
-<tr><th>종목</th><th class="n">현재가</th><th class="n">등락</th></tr>
-<tr><td><b class="k">현대건설</b></td><td class="n">120,900</td><td class="n up"><b>+14.49%</b></td></tr>
-<tr><td>현대글로비스</td><td class="n">214,000</td><td class="n up">+7.65%</td></tr>
-<tr><td>두산에너빌리티</td><td class="n">78,300</td><td class="n up">+7.26%</td></tr>
-<tr><td>에이피알</td><td class="n">439,000</td><td class="n up">+7.20%</td></tr>
-<tr><td>고려아연</td><td class="n">1,423,000</td><td class="n up">+5.88%</td></tr>
-<tr><td>신한지주</td><td class="n">107,400</td><td class="n up">+3.97%</td></tr>
-<tr><td>메리츠금융지주</td><td class="n">119,800</td><td class="n up">+3.81%</td></tr>
-<tr><td>하나금융지주</td><td class="n">132,300</td><td class="n up">+2.80%</td></tr>
-<tr><td>한국전력</td><td class="n">32,300</td><td class="n up">+2.54%</td></tr>
-<tr><td>우리금융지주</td><td class="n">32,750</td><td class="n up">+2.50%</td></tr>
+<div class="card gr" style="margin:6px 0">
+<p class="small"><b class="gr">▲ 상승 상위 10 (8/25 확정)</b></p>
+<table style="margin:4px 0">
+<tr><td>건설</td><td class="n up">+7.16%</td><td>전기유틸리티</td><td class="n up">+6.42%</td></tr>
+<tr><td>항공화물운송과물류</td><td class="n up">+6.30%</td><td>비철금속</td><td class="n up">+5.60%</td></tr>
+<tr><td>기계</td><td class="n up">+5.59%</td><td>에너지장비및서비스</td><td class="n up">+4.41%</td></tr>
+<tr><td>인터넷과카탈로그소매</td><td class="n up">+4.36%</td><td>화장품</td><td class="n up">+3.89%</td></tr>
+<tr><td>전자장비와기기</td><td class="n up">+3.82%</td><td>핸드셋</td><td class="n up">+3.30%</td></tr>
 </table>
 </div>
-<div class="card cool">
-<h3 style="margin-top:0">시총 60위 중 하락 하위</h3>
-<table>
-<tr><th>종목</th><th class="n">현재가</th><th class="n">등락</th></tr>
-<tr><td>SK스퀘어</td><td class="n">1,032,000</td><td class="n dn"><b>−4.09%</b></td></tr>
-<tr><td>LG에너지솔루션</td><td class="n">348,500</td><td class="n dn">−3.73%</td></tr>
-<tr><td>LG화학</td><td class="n">263,500</td><td class="n dn">−3.48%</td></tr>
-<tr><td>LIG디펜스앤에어로</td><td class="n">699,000</td><td class="n dn">−2.51%</td></tr>
-<tr><td><b class="k">SK하이닉스</b></td><td class="n">1,630,000</td><td class="n dn">−2.45%</td></tr>
-<tr><td>포스코퓨처엠</td><td class="n">166,900</td><td class="n dn">−2.34%</td></tr>
-<tr><td>효성중공업</td><td class="n">2,727,000</td><td class="n dn">−2.33%</td></tr>
-<tr><td>삼성에스디에스</td><td class="n">223,500</td><td class="n dn">−1.97%</td></tr>
-<tr><td>SK텔레콤</td><td class="n">100,400</td><td class="n dn">−1.86%</td></tr>
-<tr><td>NAVER</td><td class="n">220,000</td><td class="n dn">−1.57%</td></tr>
+<div class="card cool" style="margin:6px 0">
+<p class="small"><b class="dn">▼ 하락 하위 10 (8/25 확정)</b></p>
+<table style="margin:4px 0">
+<tr><td>무선통신서비스</td><td class="n dn">−2.49%</td><td>생물공학</td><td class="n dn">−1.88%</td></tr>
+<tr><td>전기제품</td><td class="n dn">−1.74%</td><td>생명과학도구및서비스</td><td class="n dn">−1.14%</td></tr>
+<tr><td>제약</td><td class="n dn">−1.11%</td><td>사무용전자제품</td><td class="n dn">−1.09%</td></tr>
+<tr><td>화학</td><td class="n dn">−1.06%</td><td>방송과엔터테인먼트</td><td class="n dn">−0.73%</td></tr>
+<tr><td>소프트웨어</td><td class="n dn">−0.62%</td><td>해운사 / 양방향미디어</td><td class="n dn">−0.52%</td></tr>
 </table>
 </div>
+</div>
+
+<p class="small"><b class="k">순환매 판정 — 오늘은 "하루짜리"가 아니었습니다.</b>
+아침에 저는 "임시 대피처가 하루마다 바뀐다"고 썼는데, 오늘 오른 쪽은
+<b class="k">재료가 있는 쪽</b>이었습니다. 건설 +7.16% · 전기유틸리티 +6.42% · 기계 +5.59% ·
+에너지장비및서비스 +4.41% — 넷 다 <b class="k">웨스팅하우스 원전 밸류체인</b> 한 줄에 꿰입니다.
+어제 오른 2차전지·제약은 오늘 <b class="k">전기제품 −1.74% · 제약 −1.11% · 생물공학 −1.88%</b>로 반납했습니다.
+<b class="k">비철금속만 3거래일 연속</b>(+7.84% → +5.12% → +5.60%)입니다.</p>
+<p class="small dim">판정 기준을 세워 둡니다 — <b class="k">원전 테마가 내일도 이어지면 재료 기반 자금 이동, 하루로 끝나면 뉴스 반짝</b>입니다.
+확인 포인트는 한국전력의 공식 입장 표명 여부(현재 "제안 받아 검토 중" 단계)와 원전주 거래대금 유지 여부입니다.</p>
+
+<h3>시총 60위 · 오늘의 양극단</h3>
+<div class="two">
+<div class="card" style="margin:6px 0">
+<p class="small"><b class="up">▲ 상승 상위</b></p>
+<table style="margin:4px 0">
+<tr><td>현대건설</td><td class="n">121,300</td><td class="n up">+14.87%</td></tr>
+<tr><td>두산에너빌리티</td><td class="n">80,700</td><td class="n up">+10.55%</td></tr>
+<tr><td>에이피알</td><td class="n">440,500</td><td class="n up">+7.57%</td></tr>
+<tr><td>현대글로비스</td><td class="n">213,500</td><td class="n up">+7.39%</td></tr>
+<tr><td>고려아연</td><td class="n">1,427,000</td><td class="n up">+6.18%</td></tr>
+<tr><td>LG이노텍</td><td class="n">602,000</td><td class="n up">+5.61%</td></tr>
+<tr><td>메리츠금융지주</td><td class="n">120,800</td><td class="n up">+4.68%</td></tr>
+<tr><td>한미반도체</td><td class="n">217,500</td><td class="n up">+4.07%</td></tr>
+<tr><td>한화오션</td><td class="n">86,600</td><td class="n up">+3.84%</td></tr>
+<tr><td>한국전력</td><td class="n">32,700</td><td class="n up">+3.81%</td></tr>
+</table>
+<p class="small dim">시총 60위 밖이지만 <b class="up">한전기술 +20.27%</b>(108,600원)가 원전 테마 대장이었습니다</p>
+</div>
+<div class="card" style="margin:6px 0">
+<p class="small"><b class="dn">▼ 하락 하위</b></p>
+<table style="margin:4px 0">
+<tr><td>SK이노베이션</td><td class="n">125,000</td><td class="n dn">−3.92%</td></tr>
+<tr><td>LG화학</td><td class="n">263,000</td><td class="n dn">−3.66%</td></tr>
+<tr><td>LG에너지솔루션</td><td class="n">349,500</td><td class="n dn">−3.45%</td></tr>
+<tr><td>SK텔레콤</td><td class="n">98,900</td><td class="n dn">−3.32%</td></tr>
+<tr><td>셀트리온</td><td class="n">189,600</td><td class="n dn">−2.27%</td></tr>
+<tr><td>포스코퓨처엠</td><td class="n">167,800</td><td class="n dn">−1.81%</td></tr>
+<tr><td>SK스퀘어</td><td class="n">1,060,000</td><td class="n dn">−1.49%</td></tr>
+<tr><td>NAVER</td><td class="n">220,500</td><td class="n dn">−1.34%</td></tr>
+<tr><td>효성중공업</td><td class="n">2,755,000</td><td class="n dn">−1.33%</td></tr>
+<tr><td>S-Oil</td><td class="n">139,900</td><td class="n dn">−0.92%</td></tr>
+</table>
+<p class="small dim">코스닥에서는 <b class="dn">알테오젠 −4.68%</b>(305,500원) ·
+<b class="dn">에코프로비엠 −3.85%</b> · <b class="dn">에코프로 −3.07%</b></p>
+</div>
+</div>
+
+<h3>삼성 계열은 어제의 붕괴를 절반 되돌렸습니다</h3>
+<table>
+<tr><th>종목</th><th class="n">8/21</th><th class="n">8/24</th><th class="n">8/25 종가</th><th>메모</th></tr>
+<tr><td><b class="k">삼성전자</b></td><td class="n">281,500 <span class="up">+3.87%</span></td>
+<td class="n">257,000 <span class="dn">−8.70%</span></td><td class="n">257,000 <b>0.00%</b></td>
+<td>저 245,000 → 종가 257,000. <b class="k">3중 지지대를 다 뚫었다가 다 회복</b></td></tr>
+<tr><td><b class="k">삼성전자우</b></td><td class="n">207,000 <span class="up">+8.26%</span></td>
+<td class="n">189,300 <span class="dn">−8.55%</span></td><td class="n">194,500 <span class="up">+2.75%</span></td>
+<td>우/보통 <b class="k">75.68%</b> (73.53 → 73.66 → 75.68)</td></tr>
+<tr><td>삼성생명</td><td class="n">— <span class="up">+10.61%</span></td>
+<td class="n">285,500 <span class="dn">−13.09%</span></td><td class="n">285,000 <span class="dn">−0.18%</span></td>
+<td>어제 −13% 뒤 오늘은 보합권. <b class="k">되돌림 없음</b></td></tr>
+<tr><td>삼성화재</td><td class="n">—</td><td class="n">— <span class="dn">−3.78%</span></td>
+<td class="n">648,000 <span class="up">+1.89%</span></td><td>일부 회복</td></tr>
+<tr><td>삼성물산</td><td class="n">—</td><td class="n">— <span class="dn">−7.84%</span></td>
+<td class="n">367,000 <span class="up">+0.69%</span></td><td>거의 안 돌아왔습니다</td></tr>
+<tr><td>SK스퀘어</td><td class="n">—</td><td class="n">— <span class="dn">−4.19%</span></td>
+<td class="n">1,060,000 <span class="dn">−1.49%</span></td><td><b class="k">이틀 연속 하락</b></td></tr>
+</table>
+<p class="small">어제 코스피 시총 100 최하위 5종이 전부 삼성·SK 계열이었는데, <b class="k">오늘 그 되돌림은 균일하지 않았습니다</b> —
+삼성전자우(+2.75%)·삼성화재(+1.89%)는 돌아왔고, 삼성생명(−0.18%)·삼성물산(+0.69%)·SK스퀘어(−1.49%)는 거의 그대로입니다.
+<b class="k">배당이 늘어 좋아지는 쪽만 골라서 되돌아왔다</b>는 그림이고, 이건 §위 우선주 가설과 같은 방향입니다.</p>
+
+<h2>🧾 마감 후 공시 점검 — 8/25 접수 357건 전수</h2>
+
+<table>
+<tr><th>종목</th><th>공시</th><th class="n">오늘 종가</th><th>읽는 법</th></tr>
+<tr><td><b class="k">SK이노베이션<br>SK아이이테크놀로지</b></td>
+<td><b class="k">주요사항보고서(회사합병결정)</b> — SK이노베이션이 분리막 자회사 SKIET를 <b class="k">흡수합병</b>.
+SKIET는 매매거래정지 공시 동반</td>
+<td class="n">125,000 <span class="dn">−3.92%</span><br>15,360 <span class="up">+0.33%</span></td>
+<td>합병비율 <b class="k">1 : 0.1174540</b>. 존속(SK이노)은 소규모합병, 소멸(SKIET)은 일반합병.
+11/24 이사회·주주총회 승인 → <b class="k">2027-01-01 합병기일</b>.
+2019년 물적분할 7년 만의 되돌림입니다.
+<b class="k">모회사가 −3.92%로 반응</b>했다는 건 시장이 신주 발행에 따른 희석을 먼저 셌다는 뜻입니다</td></tr>
+<tr><td>셀트리온</td><td>풍문또는보도에대한해명(<b class="k">미확정</b>)</td>
+<td class="n">189,600 <span class="dn">−2.27%</span></td>
+<td>⚠️ <b class="k">해명 대상 보도와 회사 답변을 확인하지 못했습니다</b> — DART 뷰어가 프레임 구조라 본문 추출 실패.
+"미확정"은 재공시 의무가 남았다는 뜻입니다. <a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260825800463">원문 링크</a> ·
+내일 브리핑에서 재확인합니다</td></tr>
+<tr><td>하이브</td><td>주요사항보고서(자기주식처분결정)</td>
+<td class="n">172,200 <span class="dn">−1.37%</span></td>
+<td>자기주식 <b class="k">처분</b>(매각)은 매입·소각과 방향이 반대 — 유통주식이 늘어납니다</td></tr>
+<tr><td>아모레퍼시픽</td><td>자기주식처분결과보고서</td><td class="n">—</td>
+<td>처분 완료 보고. 같은 논리</td></tr>
+<tr><td>삼륭물산</td><td><b class="ye">불성실공시법인 지정예고</b>(공시불이행)</td><td class="n">—</td>
+<td>지정 확정 시 벌점·매매거래정지 가능</td></tr>
+<tr><td><b class="k">SK하이닉스<br>삼성전자</b></td><td><b class="k">접수 0건</b></td><td class="n">—</td>
+<td>⬜ <b class="k">자기주식취득 진행상황 보고서가 4주째 나오지 않습니다.</b>
+"기타법인 매일 1조 = 하이닉스 40조 자사주"를 종목 단위로 검증할 방법이 오늘도 없었습니다</td></tr>
+</table>
+<p class="small dim">그 밖에 자기주식취득 결정 3건(진양화학·세진티에스 등) · 주식소각 결정 1건(MH에탄올) ·
+단일판매·공급계약 신규 4건(예스티·아스플로·노타·우원개발) · 최대주주 소유주식 변동신고 다수.
+<b class="k">DART list.json은 접수 시각을 제공하지 않아 "장 마감 후"와 "장중"을 분리할 수 없습니다</b> — 8/25 접수분 전체를 훑은 결과입니다</p>
+
+<h2>🔥 과매수(단기과열) 스캐너 — 게이트 통과 0건</h2>
+
+<div class="card warn">
+<p class="small">★ <b class="k">데이터 기준일 경고</b> — <code>진입정보/2026-08-25/진입후보_데이터.json</code>은
+파일 생성이 8/25 14:48이지만 <b class="k">데이터 asof는 8/24</b>입니다.
+아래 점수·계획가는 <b class="k">어제 종가 기준</b>이며 오늘 값이 아닙니다.</p>
+<p class="small">스캔 2,775종 → 과열 <b class="k">53종</b> → 정밀분석 20종 → <b class="k">게이트 통과 0종</b>(verified 0).
+상위 3종도 전부 <code>pass: false</code>입니다.</p>
+<table>
+<tr><th>종목</th><th class="n">점수</th><th class="n">8/24 기준가</th><th class="n">8/25 종가</th><th class="n">RR</th><th>왜 올랐나</th></tr>
+<tr><td>GS (078930)</td><td class="n">8.35</td><td class="n">114,600</td><td class="n">121,800 <span class="up">+6.28%</span></td><td class="n">1.24</td>
+<td>지주·에너지. 오늘 <b class="k">에너지장비및서비스 +4.41%</b> 및 이란 제재발 유가 상방과 같은 방향.
+개별 공시·뉴스는 <b class="k">미확인(수급성 추정)</b></td></tr>
+<tr><td>한국콜마 (161890)</td><td class="n">8.30</td><td class="n">143,300</td><td class="n">150,000 <span class="up">+4.68%</span></td><td class="n">1.60</td>
+<td>오늘 <b class="k">화장품 업종 +3.89%</b>. 8/25 최대주주등소유주식변동신고서 접수(재료성 아님).
+업종 동반 상승분 외 개별 재료 <b class="k">미확인</b></td></tr>
+<tr><td>현대해상 (001450)</td><td class="n">7.70</td><td class="n">50,600</td><td class="n">50,800 <span class="up">+0.40%</span></td><td class="n">1.77</td>
+<td>손해보험. 8/24 보험 업종 −7.51% 뒤 오늘은 제자리. <b class="k">재료 미확인</b></td></tr>
+</table>
+<p class="small dim"><b class="k">추격 금지 사유</b> — ① 게이트 통과 0건이라 스캐너 자체가 "없음"으로 답했습니다
+② 데이터가 하루 늦어 계획가(buy0/stop/target)가 <b class="k">오늘 가격과 어긋납니다</b> —
+GS는 buy0 111,000인데 오늘 종가가 121,800으로 이미 <b class="k">+9.7% 위</b>입니다
+③ 「지수 −4% 추천금지」가 장중 발동 조건을 충족했습니다.
+<b class="k">세 사유 중 하나만 있어도 진입 후보로 올리지 않습니다.</b></p>
+</div>
+
+<h2>📐 레버리지 괴리율 <span class="dim" style="font-size:13px">★8/24 확정 — 오늘 값 아님</span></h2>
+
+<p class="small">토스 계좌 <b class="k">★보유 레버리지/인버스 상품은 0종</b>입니다. |괴리| 상위 3개만 싣습니다.</p>
+<table>
+<tr><th>종목</th><th>유형</th><th class="n">종가</th><th class="n">NAV/지표가치</th><th class="n">괴리</th></tr>
+<tr><td>TIGER 삼성전자단일종목레버리지</td><td>ETF</td><td class="n">10,660</td><td class="n">10,490.55</td><td class="n ye">+1.62%</td></tr>
+<tr><td>1Q 삼성전자선물단일종목레버리지</td><td>ETF</td><td class="n">11,080</td><td class="n">10,908.55</td><td class="n ye">+1.57%</td></tr>
+<tr><td>KODEX 삼성전자단일종목레버리지</td><td>ETF</td><td class="n">11,705</td><td class="n">11,527.79</td><td class="n ye">+1.54%</td></tr>
+</table>
+<p class="small"><b class="k">|괴리| 2% 이상은 없습니다</b> — 경고 임계 미달입니다.
+다만 같은 기초자산(삼성전자 레버리지)인데 운용사별로 <b class="k">ACE +0.53% vs TIGER +1.62%로 1.09%p</b> 벌어져 있습니다.
+같은 걸 사는데 한쪽은 프리미엄을 1.6% 더 내고 시작한다는 뜻이라,
+<b class="k">고를 수 있으면 괴리가 낮은 쪽이 유리합니다</b>. 인버스 쪽은 PLUS 삼성전자선물 인버스2X −0.92%로 오히려 할인 상태입니다.</p>
+<p class="small dim">★ 이 표는 <b class="k">8/24 확정치</b>입니다. 오늘 삼성전자가 저가 −4.7%에서 보합으로 되돌린 하루였으므로
+당일 괴리는 이보다 벌어져 있을 가능성이 있습니다 — 확정치는 내일 나옵니다</p>
+
+<h2>👛 계좌 실측 <span class="dim" style="font-size:13px">20:20 토스 API + 네이버 정규장 종가</span></h2>
+
+<div class="grid">
+<div class="kpi"><div class="l">국내 4종 · 정규장 종가 기준</div><div class="v dn">−47,590원</div>
+<div class="d dn">−1.97%</div>
+<div class="d dim">매입 2,415,590 / 평가 2,368,000</div></div>
+<div class="kpi"><div class="l">국내 당일 손익</div><div class="v up">+14,000원</div>
+<div class="d up">코스피 +0.68%인 날</div>
+<div class="d dim">국내 4종 중 3종 플러스</div></div>
+<div class="kpi"><div class="l">보유</div><div class="v">11종</div>
+<div class="d dim">국내 4 · 미국 7</div>
+<div class="d dim">아침 13:10엔 11종(국내 7·미국 4)</div></div>
 </div>
 
 <div class="card warn">
-<h3 style="margin-top:0">⚠️ 현대건설 +14.49% — 공시 원문을 열어 보니 새 재료가 아닙니다</h3>
-<p>어제(8/24) DART에 <b class="k">현대건설 「풍문 또는 보도에 대한 해명(미확정)」</b>이 접수됐고, 오늘 원전 밸류체인이 같이 올랐습니다
-(두산에너빌리티 +7.26% · 한국전력 +2.54%). 그래서 <b class="k">원문을 직접 열었습니다.</b></p>
-<p>내용은 이렇습니다 — <span class="dim">"2025년 10월 27일 서울경제 「현대건설, 국내 첫 미국 대형 원전건설 참여…60조 잭팟 터트리나」 보도에 대한 해명.
-당사는 2025년 10월 24일 FERMI America와 체결한 미국 대형원전 건설 <b class="k">기본설계 역무를 완료</b>하였으며,
-EPC 계약 체결을 목표로 사업성·안전·공기 등 구체적인 내용을 검토 중입니다."</span></p>
-<p><b class="k">이건 6개월 주기 정기 재공시입니다.</b> 재공시예정일이 <b class="k">2027-02-23</b>으로 찍혀 있고,
-관련공시 이력에 2025-10-27 · 2025-11-26 · 2026-02-25가 줄줄이 붙어 있습니다.
-같은 날 <b class="k">LG화학·롯데케미칼·HD현대도 전부 같은 형식의 재공시</b>를 냈고, <b class="k">넷 다 재공시예정일이 2027-02-23</b>입니다
-— <b class="k">거래소가 정한 6개월이 어제 한꺼번에 도래한 것</b>이지 어제 무슨 일이 생긴 게 아닙니다.</p>
-<p class="small">새로운 문구는 <b class="k">"기본설계 역무를 완료"</b> 하나뿐입니다. EPC 계약은 <b class="k">여전히 "검토 중"</b>입니다.
-+14.49%가 그 한 문구를 읽은 결과인지, 원전 테마 전체가 움직인 결과인지는 <b class="k">이 데이터로 구분되지 않습니다.</b>
-다만 <b class="k">"어제 대형 계약 공시가 났다"는 해석은 틀립니다</b> — 원문에 그런 내용이 없습니다.</p>
+<p class="small"><b class="k">⚠️ 미국분은 이 브리핑에서 판정하지 않습니다.</b>
+20:20과 20:45 두 번 조회한 값이 서로 달랐고(매입 $1,566.61 → $1,629.92), 그사이 보유 종목도 6종 → 7종으로 늘었습니다.
+<b class="k">프리마켓 매매가 진행 중</b>이라 스냅샷이 계속 움직입니다 — 정지된 숫자가 아니라서 판정 대상이 아닙니다.
+미국분 채점은 <b class="k">내일 아침 데일리 브리핑</b>(미장 마감 후 총정리)에서 합니다.</p>
+<p class="small"><b class="k">⚠️ 토스 API 통합 손익률은 재현되지 않습니다.</b>
+API가 돌려준 <code>profitLoss.rate</code>는 조회마다 −4.19% → −4.22% → −4.53%로 바뀌는데,
+<code>totalPurchaseAmount</code>의 <code>krw</code>(2,415,590)는 <b class="k">국내분 합계</b>이고
+<code>usd</code>(1,629.92)는 <b class="k">미국분 합계</b>라 둘이 같은 금액의 두 표기가 아닙니다.
+어느 환율로 합산해도 그 rate가 나오지 않아, <b class="k">본문은 통화별로 분리해 적습니다</b>.
+합산 손익률은 <b class="k">판정불가</b>로 두고 조치하지 않습니다</p>
 </div>
 
-<div class="card gr">
-<h3 style="margin-top:0">🔎 반대로, 어제 공시 397건에서 진짜 새것 하나</h3>
-<p><b class="k">HD현대 해명공시 본문 안에 새 사실이 들어 있었습니다</b> —
-<span class="dim">"공정거래위원회는 <b class="k">2026년 8월 20일</b> 해당 기업결합에 대해 <b class="k">조건부 승인</b>하였습니다.
-합병기일은 <b class="k">2026년 9월 1일</b>이며 ... 통합법인의 재무구조 개선을 위하여 주주사에 의한 <b class="k">총 1.2조원 규모의 증자계획</b>이 포함되어
-있으며, 당사는 약 6천억원 규모의 출자에 참여할 예정입니다."</span></p>
-<p>HD현대케미칼(존속) + 롯데대산석화(소멸) 합병이 <b class="k">공정위 문턱을 8/20에 넘었고, 9월 1일에 통합법인이 뜹니다.</b>
-롯데케미칼도 6천억을 냅니다. <b class="k">8/24 화학 업종 +5.28%의 실체가 이것</b>으로 보입니다.</p>
-<p class="small dim">단 오늘 화학은 −1.39%, LG화학 −3.48%입니다. 재료가 하루 만에 소화됐거나,
-1.2조 증자가 <b class="k">주주 입장에서는 비용</b>이라는 쪽으로 읽히기 시작했을 수 있습니다 — 오늘 데이터로는 구분 안 됩니다.
-증자 조건·일정은 <b class="k">이사회 결의 시점에 별도 공시</b> 예정이므로, 그때가 진짜 이벤트입니다.</p>
-</div>
-
-<h2>🔧 §6. SK하이닉스 — 오늘의 개별 악재</h2>
-
-<div class="card hot">
-<h3 style="margin-top:0">임단협 잠정합의안 부결 — 25표 차</h3>
-<div class="grid">
-<div class="kpi"><div class="l">반대</div><div class="v up">50.08%</div><div class="d dim">7,535표</div></div>
-<div class="kpi"><div class="l">찬성</div><div class="v">49.92%</div><div class="d dim">7,510표</div></div>
-<div class="kpi"><div class="l">표차</div><div class="v ye">25표</div><div class="d dim">투표율 93.81% (15,045/16,083)</div></div>
-<div class="kpi"><div class="l">주가 (13:16)</div><div class="v dn">1,630,000</div><div class="d dn">−2.45% · 저 1,557,000</div></div>
-</div>
-<p><b class="k">쟁점이 정확히 자사주였습니다.</b> 회사가 제시한 초과이익분배금(PS) 지급 방식이
-<b class="k">현금 40% + 자사주 60%</b>였고, 조합원들은 <b class="k">"전액 현금"</b>을 요구했습니다. 임금인상률은 6.3%(삼성전자 6.2%)로 합의됐는데
-지급 <b class="k">형태</b>에서 갈렸습니다. 노사 재협상이 예고됐습니다.</p>
-<div class="mind">
-<div class="no">한 번 더 볼 것</div>
-<p style="margin:6px 0 0">회사는 <b class="k">40조를 들여 자사주를 사서 전량 소각하겠다</b>고 했고, 시장은 <b class="gr">+13%</b>로 답했습니다.
-그런데 <b class="k">같은 자사주를 성과급으로 받으라니까 직원들이 거부했습니다.</b></p>
-<p style="margin:6px 0 0">모순은 아닙니다 — <b class="k">소각용 자사주와 지급용 자사주는 방향이 반대</b>입니다.
-소각은 주식 수를 줄여 주당 가치를 올리고, 임직원 지급은 시장에 유통될 주식을 늘립니다.
-게다가 받는 쪽은 <b class="k">주가 변동 위험과 처분 제한</b>을 떠안습니다.
-<b class="k">삼성전자의 "임직원 보상용 자사주 15조"가 시장에서 소각으로 인정받지 못한 이유</b>와 정확히 같은 논리입니다.</p>
-<p class="small dim" style="margin:6px 0 0">→ 지켜볼 것: 재협상에서 현금 비중이 올라가면 회사 현금흐름에 부담이고,
-자사주 비중이 유지되면 <b class="k">유통주식 증가분</b>이 40조 소각 효과를 일부 상쇄합니다. 아직 어느 쪽도 확정 아닙니다.</p>
-</div>
-</div>
-
-<h2>🩳 §7. 공매도 상위 (8/24 확정) — 그리고 오늘</h2>
-
-<div class="card">
+<h3>오늘 국내 매매 — 13건 (전량 13:03 이후)</h3>
 <table>
-<tr><th>종목</th><th class="n">8/24 공매도 비중</th><th class="n">평시 대비</th><th class="n">8/24 주가</th><th class="n">오늘 13:16</th></tr>
-<tr><td><b class="k">ISC</b> <span class="tag">코스닥</span></td><td class="n up"><b>45.63%</b></td><td class="n up"><b>3.51배</b></td><td class="n dim">−0.06%</td><td class="n gr"><b>162,700 (+5.51%)</b></td></tr>
-<tr><td><b class="k">한국항공우주</b></td><td class="n up">41.29%</td><td class="n">1.44배</td><td class="n dim">+0.54%</td><td class="n dn">129,400 (−0.99%)</td></tr>
-<tr><td><b class="k">한미반도체</b></td><td class="n up"><b>35.13%</b></td><td class="n">2.12배</td><td class="n dn">−2.11%</td><td class="n gr"><b>213,500 (+2.15%)</b></td></tr>
-<tr><td>원익IPS <span class="tag">코스닥</span></td><td class="n">26.65%</td><td class="n up">2.60배</td><td class="n dn">−1.39%</td><td class="n gr"><b>110,700 (+4.04%)</b></td></tr>
-<tr><td>하나금융지주</td><td class="n">20.92%</td><td class="n">2.32배</td><td class="n dim">−0.08%</td><td class="n gr">132,300 (+2.80%)</td></tr>
-<tr><td>HD현대중공업</td><td class="n">20.41%</td><td class="n">1.84배</td><td class="n">+0.55%</td><td class="n dim">—</td></tr>
-<tr><td>삼성중공업</td><td class="n">19.52%</td><td class="n up">2.78배</td><td class="n dn">−0.50%</td><td class="n gr">20,300 (+1.00%)</td></tr>
-<tr><td>KB금융</td><td class="n">16.93%</td><td class="n">1.99배</td><td class="n dn">−0.73%</td><td class="n gr">166,200 (+1.90%)</td></tr>
-<tr><td>에코프로 <span class="tag">코스닥</span></td><td class="n">15.39%</td><td class="n">1.82배</td><td class="n gr">+7.59%</td><td class="n dn"><b>84,700 (−3.64%)</b></td></tr>
-</table>
-<p><b class="k">어제 공매도가 집중된 9종 중 6종이 오늘 오르고 있습니다.</b>
-특히 <b class="k">반도체 장비 3종</b>(ISC 3.51배 → +5.51%, 한미반도체 2.12배 → +2.15%, 원익IPS 2.60배 → +4.04%)이
-<b class="k">SK하이닉스가 −2.45%인 날에 같이 오르는 건 흔한 그림이 아닙니다.</b></p>
-<p class="small dim">숏커버링으로 읽는 게 자연스럽지만, <b class="k">오늘 공매도 데이터는 내일 나옵니다</b> — 지금은 확인할 수 없습니다.
-<b class="k">"숏커버다"라고 단정하지 않습니다</b>(JZ 사고 교훈: 호가·수급 추정을 체결로 덮지 않는다). 관찰 항목으로만 둡니다.
-반대로 에코프로는 어제 +7.59% 오른 다음날 −3.64%로 <b class="k">2차전지 순환매의 하루짜리 수명</b>을 그대로 보여 줍니다.</p>
-</div>
-
-<h2>💰 §8. 계좌 (13:10 토스 API 실측)</h2>
-
-<div class="grid">
-<div class="kpi"><div class="l">총 평가손익</div><div class="v dn">−132,640원</div><div class="d dn">−3.69% (비용후 −3.90%)</div></div>
-<div class="kpi"><div class="l">당일 손익</div><div class="v gr">+92,550원</div><div class="d gr">+1.49%</div></div>
-<div class="kpi"><div class="l">매입 / 평가</div><div class="v">561만 / 548만</div><div class="d dim">원</div></div>
-<div class="kpi"><div class="l">보유</div><div class="v">국내 7 · 미국 4</div><div class="d dim">11종</div></div>
-</div>
-
-<table>
-<tr><th>종목</th><th class="n">수량</th><th class="n">현재가</th><th class="n">평단</th><th class="n">손익률</th><th class="n">당일</th></tr>
-<tr><td>삼성E&amp;A</td><td class="n">11</td><td class="n">46,150</td><td class="n">45,386</td><td class="n gr">+1.68%</td><td class="n gr"><b>+2.97%</b></td></tr>
-<tr><td>미래에셋증권</td><td class="n">11</td><td class="n">35,550</td><td class="n">35,300</td><td class="n gr">+0.70%</td><td class="n gr">+2.26%</td></tr>
-<tr><td>HD현대마린솔루션</td><td class="n">5</td><td class="n">208,000</td><td class="n">208,000</td><td class="n dim">0.00%</td><td class="n gr">+0.72%</td></tr>
-<tr><td>에스피지</td><td class="n">5</td><td class="n">95,800</td><td class="n">96,920</td><td class="n dn">−1.15%</td><td class="n gr">+1.85%</td></tr>
-<tr><td>바이오비쥬</td><td class="n">50</td><td class="n">10,780</td><td class="n">11,050</td><td class="n dn">−2.44%</td><td class="n gr">+1.26%</td></tr>
-<tr><td>코리아써키트</td><td class="n">39</td><td class="n">56,900</td><td class="n">59,200</td><td class="n dn">−3.88%</td><td class="n gr"><b>+2.70%</b></td></tr>
-<tr><td><b class="k">알테오젠</b></td><td class="n">1</td><td class="n">303,500</td><td class="n">338,500</td><td class="n dn"><b>−10.33%</b></td><td class="n dn"><b>−5.02%</b></td></tr>
-<tr><td class="dim">램 리서치 (LRCX)</td><td class="n">4</td><td class="n">$314.40</td><td class="n">$321.90</td><td class="n dn">−2.32%</td><td class="n gr">+1.31%</td></tr>
-<tr><td class="dim">넷 파워 (NPWR)</td><td class="n">1</td><td class="n">$1.97</td><td class="n">$2.02</td><td class="n dn">−2.43%</td><td class="n dn">−0.99%</td></tr>
-<tr><td class="dim">자트 애퀴지션 2</td><td class="n">6</td><td class="n">$12.84</td><td class="n">$18.73</td><td class="n dn"><b>−31.45%</b></td><td class="n dn">−0.90%</td></tr>
-<tr><td class="dim">OSPREY 애퀴지션 3</td><td class="n">1</td><td class="n">$9.59</td><td class="n">$20.55</td><td class="n dn"><b>−53.33%</b></td><td class="n dn">−1.55%</td></tr>
+<tr><th>시각</th><th>종목</th><th>매매</th><th class="n">수량 · 단가</th><th class="n">종가</th><th>채점</th></tr>
+<tr><td>13:03</td><td>미래에셋증권</td><td>매수</td><td class="n">11주 @35,300</td><td class="n" rowspan="2">35,800<br><span class="up">+3.02%</span></td>
+<td rowspan="2"><b class="gr">⭕ 회전 +1.27%</b>. 다만 <b class="k">매도가 35,750은 종가보다 50원 낮습니다</b> —
+15:41 시간외에 판 게 정규장 끝까지 든 것보다 미세하게 불리했습니다</td></tr>
+<tr><td>15:41</td><td>미래에셋증권</td><td><b class="dn">매도</b></td><td class="n">11주 @35,750</td></tr>
+<tr><td>13:04</td><td>코리아써키트</td><td>매수</td><td class="n">24주 @56,700</td><td class="n" rowspan="3">57,600<br><span class="up">+4.16%</span></td>
+<td rowspan="3"><b class="gr">⭕⭕ 오늘의 최고 체결</b>. 시간외에 <b class="k">종가보다 +3.30~3.47% 비싸게</b> 전량 정리했습니다.
+매도평균 59,551원 — 정규장 고가 60,900에 <b class="k">−2.2%</b>까지 붙었습니다.
+평단 59,200 기준 실현 <b class="up">+13,700원</b>(근사)</td></tr>
+<tr><td>17:12</td><td>코리아써키트</td><td><b class="dn">매도</b></td><td class="n">20주 @59,600</td></tr>
+<tr><td>17:26</td><td>코리아써키트</td><td><b class="dn">매도</b></td><td class="n">19주 @59,500</td></tr>
+<tr><td>13:09</td><td>삼성E&amp;A</td><td><b class="dn">매도</b></td><td class="n">11주 @46,050</td><td class="n">45,850<br><span class="up">+2.34%</span></td>
+<td><b class="gr">⭕ 종가보다 +200원 유리</b>. 정규장 고가 46,200에 <b class="k">−0.32%</b>.
+평단 45,386 기준 실현 <b class="up">+7,304원</b>(근사)</td></tr>
+<tr><td>13:03</td><td>HD현대마린솔루션</td><td>매수</td><td class="n">5주 @208,000</td><td class="n">208,000<br><span class="up">+0.73%</span></td>
+<td><span class="ye">△ 정확히 종가</span>. 저가 199,100 · 고가 209,000 — <b class="k">고가권 매수</b>였습니다</td></tr>
+<tr><td>13:04</td><td>에스피지</td><td>매수</td><td class="n">4주 @95,300</td><td class="n">96,500<br><span class="up">+2.66%</span></td>
+<td><b class="gr">⭕ 종가 대비 +1.26%</b>. 저가 92,100 · 고가 99,400</td></tr>
 </table>
 
-<div class="card gr">
-<p><b class="k">국내 7종 중 6종이 당일 플러스입니다.</b> 코스피가 −0.62%인 날에 <b class="k">계좌 당일 +1.49%</b>.
-이유는 명확합니다 — <b class="k">보유 종목이 오늘 오른 쪽(건설·기계·증권·조선)에 서 있습니다.</b>
-삼성E&amp;A +2.97% · 미래에셋증권 +2.26%(증권 업종 +2.48%) · 에스피지 +1.85%(기계 +4.37%) · HD현대마린솔루션 +0.72%.</p>
-<p><b class="k">반도체 노출이 사실상 코리아써키트 하나뿐</b>인 게 오늘은 유리하게 작동했습니다(그마저 +2.70%).
-8/24 마감 브리핑에 "국내 5종 당일 −0.65%로 지수 대비 +2.47%p 선방"이라고 적었는데 <b class="k">오늘도 같은 방향입니다.</b></p>
-<p class="small ye">⚠️ 알테오젠 <b class="dn">당일 −5.02% · 누적 −10.33%</b>가 유일한 역방향입니다.
-오늘 <b class="k">생물공학 업종이 −3.09%로 전 업종 최하위</b>인데 알테오젠은 그보다 더 빠지고 있습니다.
-<b class="k">1주 보유</b>라 손절 코칭 대상은 아니지만(정찰 규모), 업종 최하위에서 업종보다 더 빠지는 건 상태로 기록해 둡니다.</p>
-<p class="small dim">미국 4종은 미장 마감(05:00) 후 값이라 <b class="k">8/24 종가 기준</b>입니다. 자트/OSPREY 두 SPAC은 −31%·−53%로
-이미 오래 깨져 있는 자리고, 오늘 새로 생긴 변화는 없습니다.</p>
-</div>
+<p class="small"><b class="k">복기 — 잘한 것과 더 나은 선택</b></p>
+<ul class="small">
+<li><b class="gr">잘한 것 ①</b> — <b class="k">코리아써키트 시간외 매도</b>. 정규장 종가 57,600에 팔았으면 39주 × 57,600 = 224.6만원인데,
+시간외 59,551 평균으로 232.3만원을 받았습니다. <b class="k">차이 +7.6만원</b>.
+시간외 단일가는 종가 ±10% 안에서만 체결되므로, 그 위쪽 가격에 매수 호가가 있었다는 것 자체가 <b class="k">수요가 남아 있었다</b>는 신호입니다</li>
+<li><b class="gr">잘한 것 ②</b> — <b class="k">13:03~13:04 매수 타이밍</b>. 코스피가 저가 6,408.82에서 되돌리는 구간에 담았고,
+4종 전부 매수가 대비 종가가 위입니다(HD현대마린솔루션만 ±0)</li>
+<li><b class="ye">더 나은 선택 ①</b> — <b class="k">미래에셋증권을 15:41 시간외에 판 것</b>. 증권 업종은 오늘 +3.19%였고
+종가 35,800이 시간외 체결가 35,750보다 높았습니다. <b class="k">50원 × 11주 = 550원</b>으로 금액은 작지만,
+"오르는 업종에서 장 끝나자마자 던진다"는 <b class="k">패턴</b>은 코리아써키트(17시대에 팔아 +3.4% 더 받음)와 정반대입니다.
+같은 날 같은 계좌에서 두 방향이 나왔습니다</li>
+<li><b class="ye">더 나은 선택 ②</b> — <b class="k">HD현대마린솔루션 고가권 진입</b>. 13:03 208,000은 당일 저가 199,100 대비 <b class="k">+4.5%</b> 자리였고,
+종가도 정확히 매수가라 <b class="k">하루를 벌지 못했습니다</b>. 「눌림 매수」 원칙과 어긋난 유일한 체결입니다</li>
+<li><b class="dn">역방향 ①</b> — <b class="k">알테오젠 −4.68%</b>(정규장 종가 305,500원 · 저가 298,500).
+오늘 생물공학 업종이 −1.88%로 전 업종 하위권인데 알테오젠은 그보다 <b class="k">2.5배 더</b> 빠졌습니다.
+평단 338,500 대비 누적 <b class="dn">−9.74%</b>. <b class="k">1주 보유라 손절 코칭 대상은 아니지만</b>(정찰 규모),
+업종 하위에서 업종보다 더 빠지는 상태가 어제·오늘 <b class="k">이틀 연속</b>이라는 건 기록해 둡니다.
+지수가 +0.68%인 날 <b class="k">국내 보유 4종 중 유일한 마이너스</b>였습니다</li>
+</ul>
+<p class="small dim">국내 실현손익 근사 합계 <b class="up">약 +25,950원</b>(삼성E&amp;A +7,304 · 미래에셋 +4,950 · 코리아써키트 +13,700).
+<b class="k">평단 기준 근사치이며 세금·수수료 반영 전</b>입니다 —
+토스 orders API는 주문·체결가만 주고 실현손익 필드를 주지 않아 원장 정확값이 아닙니다.<br>
+⚠️ <b class="k">데이터 함정</b>: 토스 <code>holdings()</code>의 국내 <code>lastPrice</code>는 <b class="k">시간외를 반영</b>합니다 —
+알테오젠 토스 307,500 vs 네이버 정규장 종가 <b class="k">305,500</b>. 본문 종가는 전부 네이버 정규장 확정치를 썼습니다.
+미국 6종은 아직 개장 전이라 8/24 종가 기준입니다</p>
 
-<h2>📅 §9. 이번 주 — 확인이 전부 이틀 안에 몰려 있습니다</h2>
+<h2>🌙 오늘 밤 · 내일(수 8/26) 시나리오</h2>
 
 <table>
-<tr><th style="width:20%">시각 (KST)</th><th>이벤트</th><th>보는 법</th></tr>
-<tr><td><b class="k">오늘 22:30</b></td><td>미 정규장 개장 → 8/26 05:00 마감<br><span class="small dim">미 7월 신규주택판매 · 8월 소비자신뢰지수</span></td>
-<td>SOX가 <b class="k">3거래일 연속</b> 역행하는지. 어제 −2.70%, 그제 −0.51%</td></tr>
-<tr><td><b class="k">8/26 (수)</b></td><td><b class="k">현대차 CEO 인베스터데이</b> · 미 7월 PCE</td>
-<td>오늘 이미 <b class="k">코스닥 로봇주가 선반영</b>으로 강세(연합뉴스 09:43). 현대차 +0.97%</td></tr>
-<tr><td><b class="up">8/27 (목) 05:20</b></td><td><b class="up">엔비디아 FY27 2분기 실적</b><br><span class="small dim">공개 05:20 · 컨퍼런스콜 06:00 (현지 8/26 장 마감 후)</span></td>
-<td>회사 가이던스 <b class="k">약 910억 달러</b>(BofA는 940~950억 예상). 관전 포인트는 숫자보다
-<b class="k">"순환금융(circular financing)" 해명</b> — 엔비디아가 고객에 댄 자금이 다시 GPU 구매로 돌아오는 구조.
-<span class="small dim">참고: 최근 8개 분기 중 6번은 발표 후 주가가 <b class="k">하락</b>했습니다</span></td></tr>
-<tr><td><b class="up">8/27 (목)</b></td><td><b class="up">한국은행 금통위 + 수정 경제전망</b><br><span class="small dim">현 기준금리 2.75% (7/16 2.50→2.75 인상)</span></td>
-<td><b class="k">전망이 정면으로 갈립니다</b> — 채권시장 종사자 <b class="k">79%가 동결</b>(머니투데이 8/25) vs
-<b class="k">한국투자증권 "25bp 만장일치 인상"</b>. 키움 김유미는 "8월 동결 후 10월 인상 가능성"</td></tr>
-<tr><td><b class="up">8/28 (금) 오전(현지)</b></td><td><b class="up">잭슨홀 · 케빈 워시 의장 첫 기조연설</b><br><span class="small dim">심포지엄 8/27~29, 주제 "Financial Innovation"</span></td>
-<td>미 30년물 5.23%가 여기서 방향을 잡습니다
-<span class="small ye">⚠️ 개최일이 매체 간 27~29 / 28~29로 갈립니다(캔자스시티 연은 공식 페이지 접근 차단). 연설일 8/28은 교차 확인됨</span></td></tr>
-<tr><td class="dim">8/20~11/19</td><td class="dim">SK하이닉스 자사주 40조 장내매수 — 오늘로 <b class="k">4거래일차</b></td><td class="dim">2,407만주(3.3%) · 1일 한도 240.7만주 · 기간 내 전량 소각 예정</td></tr>
-<tr><td class="dim">9/1</td><td class="dim">HD현대케미칼 + 롯데대산석화 <b class="k">합병기일</b></td><td class="dim">공정위 8/20 조건부 승인 완료 · 1.2조 증자 조건은 별도 공시</td></tr>
-<tr><td class="dim">10월 말 / 2027.1</td><td class="dim">삼성전자 이사회 — 3분기 배당 세부 / 나머지 60~80조 방식 확정</td><td class="dim">보통주·우선주 갈림이 여기서 결론</td></tr>
-<tr><td class="dim">12/17</td><td class="dim">카카오 임시주총 → 2027.1.1 분할 → 1.27 재상장</td><td class="dim"></td></tr>
+<tr><th>시각 (KST)</th><th>이벤트</th><th>보는 법</th></tr>
+<tr><td><b class="k">오늘 22:30</b><br>→ 8/26 05:00</td><td>미 정규장 (8/25 세션)</td>
+<td>20:17 기준 <b class="k">나스닥100 선물 +0.79%</b>. 핵심은 <b class="k">SOX가 3거래일 연속 역행하는지</b>
+(8/21 −0.51% · 8/24 −2.70%). 엔비디아는 <b class="k">7거래일 연속 하락</b> — 2022년 9월 이후 최장 기록이 8거래일로 늘어나는지</td></tr>
+<tr><td>8/26 (수)</td><td>현대차 CEO 인베스터데이</td>
+<td>오늘 현대차 +1.69% · 현대글로비스 +7.39%로 선반영 조짐. <b class="k">로봇·전동화 목표치</b>가 관전 포인트</td></tr>
+<tr><td>8/26 (수) 미 현지</td><td>미 7월 PCE</td><td>미 30년물 5.23%의 방향을 정할 첫 관문</td></tr>
+<tr><td><b class="k">8/27 (목) 05:20</b></td><td><b class="k">엔비디아 FY27 2분기 실적</b> (미 8/26 장 마감 후)</td>
+<td>회사 가이던스 약 <b class="k">910억 달러</b>(BofA 940~950억 예상). 숫자보다 <b class="k">순환금융(circular financing) 해명</b>이 관건.
+참고 — <b class="k">최근 8개 분기 중 6번은 발표 후 주가가 하락</b>했습니다</td></tr>
+<tr><td><b class="k">8/27 (목)</b></td><td><b class="k">한국은행 금통위 + 수정 경제전망</b></td>
+<td>현 2.75%. 전망이 정면으로 갈립니다 — <b class="k">채권시장 종사자 79% 동결</b> vs
+한국투자증권 "25bp 만장일치 인상". 키움은 "8월 동결 후 10월 인상"</td></tr>
+<tr><td><b class="k">8/28 (금)</b></td><td>잭슨홀 · <b class="k">케빈 워시 의장 첫 기조연설</b></td>
+<td>미 30년물 5.23%가 여기서 방향을 잡습니다. 심포지엄 주제 "Financial Innovation"</td></tr>
+<tr><td>8/20~11/19</td><td>SK하이닉스 자사주 40조 장내매수</td>
+<td>오늘로 <b class="k">5거래일차</b>. 1일 한도 240.7만주 · 기간 내 전량 소각 예정.
+<b class="k">DART 진행상황 보고서는 4주째 없음</b></td></tr>
+<tr><td>9/1</td><td>HD현대케미칼 + 롯데대산석화 합병기일</td><td>공정위 8/20 조건부 승인. 1.2조 증자 조건은 별도 공시 예정</td></tr>
+<tr><td>10월 말 / 2027.1</td><td>삼성전자 이사회</td><td>3분기 배당 세부 / 나머지 60~80조 방식 확정. <b class="k">보통주·우선주 갈림이 여기서 결론</b></td></tr>
+<tr><td>11/24 → 2027.1.1</td><td>SK이노베이션 · SKIET 합병</td><td>오늘 결정. 비율 1:0.1174540 · 이사회·주총 승인 11/24</td></tr>
+<tr><td>12/17 → 2027.1.27</td><td>카카오 임시주총 → 분할 → 재상장</td><td>오늘 카카오 36,050원 <span class="up">+0.70%</span></td></tr>
 </table>
 
-<h2>📏 §10. 오늘 후반전(13:20~15:30)에 지켜볼 선</h2>
-
-<div class="card">
+<h3>📏 내일 지켜볼 선 <span class="dim" style="font-size:13px">오늘 종가 기준 재계산</span></h3>
 <table>
-<tr><th>대상</th><th class="n">현재</th><th>선</th><th class="n">필요 변화</th><th>의미</th></tr>
-<tr><td rowspan="3"><b class="k">KOSPI</b></td><td rowspan="3" class="n">6,655.31</td><td>MA5 <b>6,717.79</b></td><td class="n">+0.94%</td><td>회복하면 8/24 하락분 소화</td></tr>
-<tr><td>MA20 <b>6,456.00</b></td><td class="n dn">−2.99%</td><td>오늘 저가 6,408.82로 <b class="k">한 번 깼습니다</b>. 종가로 다시 깨면 다른 이야기</td></tr>
-<tr><td class="dim">MA60 7,426.28</td><td class="n dim">−10.38%</td><td class="dim">낙폭과대 리바운드 봉인 해제까지 <b class="k">+11.6%</b> (어제 +11.3% → 멀어짐)</td></tr>
-<tr><td rowspan="2"><b class="k">KOSDAQ</b></td><td rowspan="2" class="n">815.96</td><td>MA5 <b>819.28</b></td><td class="n">+0.41%</td><td>손에 닿는 거리</td></tr>
-<tr><td>MA20 <b>793.95</b></td><td class="n dn">−2.70%</td><td>오늘 저가 781.89로 <b class="k">이미 한 번 이탈</b> 후 회복</td></tr>
-<tr><td rowspan="2"><b class="k">삼성전자</b></td><td rowspan="2" class="n">253,500</td><td>120일선 <b>254,296</b></td><td class="n">+0.31%</td><td>지금 붙어 있는 선</td></tr>
-<tr><td class="up">20일선 <b>246,600</b></td><td class="n">−2.72%</td><td><b class="up">종가로 잃으면 8/19 반등 전체가 되돌려집니다</b> (어제 세운 판정 기준)</td></tr>
-<tr><td><b class="k">삼성전자우/보통주</b></td><td class="n">76.06%</td><td>73.5~73.7% (8/21·8/24)</td><td class="n">—</td><td>더 오르면 <b class="k">"배당주 재분류" 가설</b> 강화. 되돌아가면 오늘은 하루짜리 노이즈</td></tr>
-<tr><td><b class="k">기타법인</b></td><td class="n">+1조1,000억</td><td>1조</td><td class="n">—</td><td>마감까지 유지되면 <b class="k">4거래일 연속</b> 확정</td></tr>
+<tr><th>대상</th><th class="n">오늘 종가</th><th>선</th><th class="n">필요 변화</th><th>의미</th></tr>
+<tr><td rowspan="3"><b class="k">KOSPI</b></td><td class="n" rowspan="3">6,742.74</td>
+<td>MA5 6,735.28</td><td class="n"><b class="up">+0.11% 위</b></td>
+<td><b class="k">이 위를 지키면 오늘 회복이 유효</b>. 다시 아래로 마감하면 오늘은 하루짜리 반발</td></tr>
+<tr><td>전고 6,912.95 (8/21)</td><td class="n">+2.53%</td><td>여기를 넘으면 8/24 이후 하락분 전부 소화</td></tr>
+<tr><td>MA20 6,460.37</td><td class="n">−4.19%</td><td>오늘 저가로 한 번 깼다가 회복한 자리. <b class="k">여기까지 다시 오면 이야기가 달라집니다</b></td></tr>
+<tr><td rowspan="2"><b class="k">KOSDAQ</b></td><td class="n" rowspan="2">827.15</td>
+<td>MA5 821.55</td><td class="n"><b class="up">+0.68% 위</b></td><td>고가 마감 다음날 갭업 시 <b class="k">추격 금지</b> — 오늘 이미 저가에서 +5.79% 왔습니다</td></tr>
+<tr><td>MA60 864.48</td><td class="n">−4.32%</td><td>코스닥은 코스피보다 60일선이 가깝습니다(코스피 −9.22%)</td></tr>
+<tr><td rowspan="3"><b class="k">삼성전자</b></td><td class="n" rowspan="3">257,000</td>
+<td>120일선 254,296 <span class="dim">(8/24 기준)</span></td><td class="n"><b class="up">+1.06% 위</b></td>
+<td>이틀째 이 선 위. <b class="k">잃으면 오늘 회복이 무효</b></td></tr>
+<tr><td>20일선 246,600 <span class="dim">(8/24 기준)</span></td><td class="n">−4.05%</td>
+<td>오늘 장중에 관통했다 회복한 자리. <b class="k">종가로 잃으면 8/19 반등 전체가 되돌려집니다</b></td></tr>
+<tr><td>피보 0.5 = 272,748</td><td class="n">+6.13%</td><td>8/24 고가 272,000이 748원 못 미쳤던 자리 — <b class="k">아직 한 번도 못 넘었습니다</b></td></tr>
+<tr><td>삼성전자우/보통주</td><td class="n">75.68%</td><td>73.5~73.7% (8/21·8/24)</td><td class="n">—</td>
+<td><b class="k">4일째 오르면 배당주 재분류 가설 확정 단계</b>. 되돌아가면 사흘짜리 노이즈</td></tr>
+<tr><td>기타법인</td><td class="n">+1조5,920억</td><td>1조</td><td class="n">—</td>
+<td><b class="k">5거래일 연속</b>이 되는지</td></tr>
+<tr><td>원전 테마</td><td class="n">한전기술 +20.27%</td><td>이틀째 유지</td><td class="n">—</td>
+<td><b class="k">이어지면 재료 기반 자금 이동, 하루로 끝나면 뉴스 반짝</b>.
+한국전력 공식 입장 표명 여부가 분기점</td></tr>
 </table>
-</div>
+<p class="small dim">⚠️ 삼성전자 이평선은 <b class="k">8/24 확정시세 기준</b>이라 오늘 봉이 들어가면 이동합니다.
+소수점 단위 판단에 그대로 쓰지 않습니다 — 이 표는 <b class="k">선을 매번 다시 긋지 않기 위한 참조판</b>이지 매매 신호가 아닙니다</p>
 
-<h2>⬜ §11. 판정불가 · 미완료 (조치하지 않습니다)</h2>
-
+<h3>⚠️ 내일 유의사항</h3>
 <div class="card warn">
-<ul>
-<li><b class="k">KOFIA 8/24분 미도착</b> — 어제 −3.12%가 신용잔고·미수금에 무엇을 남겼는지 <b class="ye">모릅니다</b>.
-8/21분은 도착했으므로 <b class="k">수집기 고장은 아닙니다</b>(어제 세운 점검 트리거 해제). 도착 전엔 판정하지 않습니다</li>
-<li><b class="k">SK하이닉스 자사주 8월 누적 취득 수량</b> — 3주째 미확인.
-8/24~8/25 DART 접수 397건 전수 조회에도 자기주식취득현황 보고서 <b class="k">0건</b>.
-"기타법인 매일 1조 = 하이닉스"는 <b class="ye">여전히 정황 추정</b>이지 검증된 사실이 아닙니다</li>
-<li><b class="k">시총상위50 수집기</b> — 기준일이 <b class="k">8/21에 멈춰</b> 있습니다(★). 오늘 개별 대형주 값은 전부
-네이버 sise_market_sum 장중 실측으로 우회했습니다. <b class="k">수집기 자체는 점검 대상</b>입니다</li>
-<li><b class="k">D램 실측 가격</b> — 3주째 미확보. 엔비디아의 "메모리 품귀로 서버 가격 15% 인상"이 어제 미 반도체를 흔든 재료인데
-정작 <b class="k">D램 현물가를 못 보고 있습니다</b>. [반도체 가격 앵커] 계기판이 반쪽입니다</li>
-<li><b class="k">공휴일 API 403</b> — 국장휴장.py가 "조회 불가 → 개장 가정(fail-open)"으로 통과했습니다. 오늘은 실제 개장이라 문제 없었지만
-<b class="k">판정 근거는 없었습니다</b>. data.go.kr 특일정보 활용신청이 미해결 상태입니다</li>
-<li><b class="k">오늘 브리핑 발행 지연</b> — 07:00 기한 대비 <b class="k">6시간 20분 지연</b>. 원인 규명 필요</li>
+<ul class="small">
+<li><b class="k">① 갭업 추격 금지가 첫 번째입니다.</b> 코스닥은 <b class="k">고가가 곧 종가</b>였고 코스피 CLV도 98.7%입니다.
+장 막판 매수세가 그대로 남은 채 끝난 날의 다음 아침은 갭으로 열리기 쉽고,
+<b class="k">오늘 이미 저가에서 코스피 +5.21% · 코스닥 +5.79%가 소화됐습니다</b>.
+「눌림 매수」 원칙대로면 내일 살 자리는 갭업 직후가 아니라 그 갭을 메우는 구간입니다</li>
+<li><b class="k">② 반대매매 리스크는 아직 "모름"입니다.</b> 오늘 장중 −4.30%가 신용에 무엇을 얹었는지는
+KOFIA 8/24·8/25분이 안 와서 <b class="k">2거래일치를 못 봅니다</b>.
+8/21 기준으로 신용 32.42조(6영업일 +1.49조) · 미수 1조715억 · 반대매매 실질비중 4.4%가 마지막으로 본 값입니다.
+<b class="k">조회 실패·미도착은 "안전"이 아니라 "모름"입니다 — 아무 조치도 하지 않습니다</b></li>
+<li><b class="k">③ 오늘 밤 미국장이 내일 국장의 절반입니다.</b> 22:30 개장.
+SOX 3연속 역행 여부 + 엔비디아 8거래일 연속 하락 여부.
+선물은 우호적이지만 <b class="k">선물은 스냅샷이지 확정치가 아닙니다</b></li>
+<li><b class="k">④ 외국인이 돌아섰다는 증거는 아직 없습니다.</b> −3조8,140억은 이번 국면 최대치이고,
+3거래일 연속 매도 규모가 <b class="k">매일 커지는 중</b>입니다.
+"바닥을 확인했다"는 해석은 <b class="k">계산되는 사실이 아니라 계산되지 않는 해석</b>입니다</li>
+<li><b class="k">⑤ 이벤트 3건이 여전히 앞에 있습니다.</b> 8/27 엔비디아 + 금통위(같은 날), 8/28 잭슨홀.
+<b class="k">내일(8/26)은 그 앞자리의 마지막 하루</b>입니다</li>
 </ul>
 </div>
 
-<hr>
+<h2>📊 8/24(직전 거래일) 대비 변경 수치</h2>
+<table>
+<tr><th>항목</th><th class="n">8/24</th><th class="n">8/25</th><th class="n">변화</th><th>기준일</th></tr>
+<tr><td>KOSPI</td><td class="n">6,696.96</td><td class="n">6,742.74</td><td class="n up">+45.78p (+0.68%)</td><td>확정</td></tr>
+<tr><td>KOSDAQ</td><td class="n">813.33</td><td class="n">827.15</td><td class="n up">+13.82p (+1.70%)</td><td>확정</td></tr>
+<tr><td>코스피 거래대금</td><td class="n">26.16조</td><td class="n">24.09조</td><td class="n dn">−2.07조 (−7.9%)</td><td>확정</td></tr>
+<tr><td>코스닥 거래대금</td><td class="n">4.49조</td><td class="n">4.72조</td><td class="n up">+0.23조 (+5.2%)</td><td>확정</td></tr>
+<tr><td>외국인 (코스피)</td><td class="n">−3조6,691억</td><td class="n">−3조8,140억</td><td class="n dn">−1,449억 더 매도</td><td>8/25 잠정</td></tr>
+<tr><td>개인 (코스피)</td><td class="n">+3조3,217억</td><td class="n">+1조509억</td><td class="n dn">−2조2,708억</td><td>8/25 잠정</td></tr>
+<tr><td>기관 (코스피)</td><td class="n">−1조2,901억</td><td class="n">+1조1,711억</td><td class="n up">+2조4,612억 (매수 전환)</td><td>8/25 잠정</td></tr>
+<tr><td>기타법인 (코스피)</td><td class="n">+1조6,375억</td><td class="n">+1조5,920억</td><td class="n dn">−455억</td><td>역산</td></tr>
+<tr><td>프로그램 비차익</td><td class="n">−3조582억</td><td class="n">−2조7,337억</td><td class="n up">+3,245억</td><td>확정</td></tr>
+<tr><td>삼성전자</td><td class="n">257,000</td><td class="n">257,000</td><td class="n">0원 (0.00%)</td><td>정규장 확정</td></tr>
+<tr><td>삼성전자우</td><td class="n">189,300</td><td class="n">194,500</td><td class="n up">+5,200원 (+2.75%)</td><td>정규장 확정</td></tr>
+<tr><td>우/보통 비율</td><td class="n">73.66%</td><td class="n">75.68%</td><td class="n up">+2.02%p</td><td>정규장 확정</td></tr>
+<tr><td>SK하이닉스</td><td class="n">1,671,000</td><td class="n">1,678,000</td><td class="n up">+7,000원 (+0.42%)</td><td>정규장 확정</td></tr>
+<tr><td>코스피 상승:하락</td><td class="n">579 : 286</td><td class="n">649 : 227</td><td class="n up">상승비율 66.9% → 74.1%</td><td>확정</td></tr>
+<tr><td>상승 업종 수</td><td class="n">—</td><td class="n">60 / 79</td><td class="n">—</td><td>확정</td></tr>
+<tr><td>원/달러 (주간 종가)</td><td class="n">1,382.4</td><td class="n">1,386.1</td><td class="n up">+3.7원</td><td>서울외환</td></tr>
+<tr><td>국고채 3년 / 10년</td><td class="n">3.836 / 4.335</td><td class="n">3.83 / 4.32</td><td class="n dn">−0.6bp / −1.5bp</td><td>ECOS 8/25</td></tr>
+<tr><td>신용융자 잔고</td><td class="n">—</td><td class="n">32.416조</td><td class="n dim">★ 8/21에서 정지</td><td>KOFIA 8/21</td></tr>
+<tr><td>투자자예탁금</td><td class="n">—</td><td class="n">100.746조</td><td class="n dim">★ 8/21에서 정지</td><td>KOFIA 8/21</td></tr>
+<tr><td>대형2종 집중도</td><td class="n">—</td><td class="n">49.5%</td><td class="n dim">13:15 51.4% → 마감 49.5%</td><td>KRX 8/25</td></tr>
+</table>
+
+<h2>🔍 오늘 발견한 데이터 함정</h2>
+<div class="card">
+<ul class="small">
+<li><b class="k">① 토스 국내 lastPrice는 시간외를 반영합니다.</b> 오늘 보유 4종 전부에서 재현됐습니다 —
+알테오젠 307,500 vs 정규장 305,500(+2,000) · 에스피지 97,300 vs 96,500(+800) ·
+HD현대마린솔루션 207,000 vs 208,000(−1,000) · 바이오비쥬만 10,800으로 일치.
+저녁에 계좌를 보면 정규장 종가와 안 맞습니다. 국내 종가 판단은 KRX·data.go.kr·네이버만 씁니다 (기존 규칙 재확인)</li>
+<li><b class="k">①-2 토스 holdings의 totalPurchaseAmount는 통합 금액이 아닙니다.</b>
+<code>krw</code>는 국내분 합계, <code>usd</code>는 미국분 합계 — <b class="k">같은 금액의 두 표기가 아닙니다</b>(2,415,590원 ÷ 1,629.92 = 1,482, 오늘 환율 1,386과 불일치).
+<code>profitLoss.rate</code>는 조회마다 −4.19 → −4.22 → −4.53%로 바뀌고 어느 환율로도 재현되지 않습니다.
+<b class="k">계좌 손익률을 하나의 숫자로 인용하면 안 됩니다</b> — 통화별로 분리해야 합니다. <b class="k">오늘 새로 발견</b></li>
+<li><b class="k">② 네이버 sise_quant는 페이지 간 행이 중복됩니다.</b> page=1과 page=2를 그냥 이어 붙이면
+상위 종목이 두 번 세어져 집중도가 <b class="k">53.8%로 부풀려집니다</b>(실제 49.5%).
+중복 제거 후 산출해야 합니다 — <b class="k">오늘 새로 발견</b></li>
+<li><b class="k">③ 네이버 m.stock 지수 API의 <code>accumulatedTradingValue</code>는 basic에서 null</b>입니다.
+integration의 <code>totalInfos</code>를 봐야 나옵니다(코스피 24,091,208백만)</li>
+<li><b class="k">④ 토스 <code>orders(status=...)</code>는 'DONE'/'ALL'/'FILLED'를 받지 않습니다</b> — <code>'CLOSED'</code>만 유효합니다.
+그리고 <code>limit</code> 상한이 100이라 100건을 넘으면 <b class="k">cursor 페이징</b>이 필요합니다.
+<code>trades(symbol)</code>은 계좌 체결이 아니라 <b class="k">시장 체결 틱</b>을 돌려줍니다 — 이름이 헷갈립니다</li>
+<li><b class="k">⑤ DART list.json은 접수 시각을 주지 않습니다</b>(rcept_dt는 날짜만).
+"장 마감 후 공시"를 시각으로 분리할 수 없어 <b class="k">당일 접수분 전체를 훑는 방식</b>으로 대체했습니다</li>
+</ul>
+</div>
+
+<h2>🎯 한 줄 결론</h2>
+<div class="card gr">
+<p class="verdict">⏸ 관망 — 다만 오늘은 <span class="up">차트가 먼저 돌아섰고 수급이 아직 안 따라온</span> 날입니다.</p>
+<p class="small">코스피는 저가 −4.30%에서 <b class="up">+0.68%</b>로, 코스닥은 <b class="k">고가 그대로</b> 끝냈습니다.
+79업종 중 60개가 올랐고, 삼성전자는 3중 지지대를 다 뚫었다가 다 회복해 <b class="k">전일과 정확히 같은 값</b>으로 마쳤습니다.
+아침에 제가 적어 둔 9개의 선 중 8개를 넘겼습니다.</p>
+<p class="small">그런데 <b class="k">외국인은 −3조8,140억, 이번 국면 최대치를 팔았습니다.</b>
+8/20 +5.89% 반등 때는 외국인이 +1.71조로 같이 올라탔습니다. 오늘은 반대편에 서 있었습니다.
+<b class="k">같은 모양의 반등이 아닙니다.</b></p>
+<p class="small">그래서 판정은 어제와 같은 ⏸이지만, 이유는 또 바뀌었습니다.
+8/24는 "발표된 재료가 이미 마이너스로 채점됐다", 오늘 아침은 "확인시켜 줄 이벤트가 전부 이틀 뒤에 몰려 있다"였고,
+지금은 <b class="k">"아래로 갈 이유가 하나 줄었는데, 그걸 확인해 줄 돈이 아직 안 들어왔다"</b>입니다.
+확인은 <b class="k">8/27 엔비디아 + 금통위, 8/28 잭슨홀</b>에서 나옵니다. 내일은 그 앞자리의 마지막 하루입니다.</p>
+</div>
+
+<h2>📎 출처 · 고지</h2>
+<p class="small">
+<b class="k">1차 데이터</b> — 네이버 금융 m.stock index/stock integration·basic(지수·종목 종가·OHLC·수급·프로그램·등락종목수) ·
+네이버 sise_group(79업종)·sise_market_sum(시총 60위)·sise_quant(KRX 거래대금) ·
+한국은행 ECOS(금리·환율·심리) · FRED(미 지수·금리·VIX) · KOFIA 종합통계(신용·예탁금·미수) ·
+KRX 공매도 상위(8/24) · OpenDART list.json(8/25 접수 357건) · 토스 OpenAPI(계좌·주문) ·
+Yahoo Finance(나스닥100 선물·SOX·개별 미국 종목)
+</p>
+<p class="small"><b class="k">뉴스 교차검증</b> —
+<a href="https://www.businesskorea.co.kr/news/articleView.html?idxno=275490">Businesskorea 「코스피, 6,700선 탈환…반도체주 반등에 원·달러 환율 상승 마감」</a> ·
+<a href="https://www.ddaily.co.kr/page/view/2026082516060328002">디지털데일리 「외인 3.8조 매도 버텼다…코스피, 6400선까지 밀렸다가 반등」</a> ·
+<a href="https://www.hankyung.com/article/2026082516606">한국경제 「코스피, 반등해 6700선 회복…코스닥도 오름세」</a> ·
+<a href="https://www.ytn.co.kr/_ln/0102_202608251612512387">YTN 「코스피, 하락 출발 뒤 상승 마감...삼전닉스 막판 반등」</a> ·
+<a href="https://biz.heraldcorp.com/article/10851796">헤럴드경제 「외인 '4조' 던졌는데도 버텼다…코스피, 4% 급락 뒤 극적 반등」</a><br>
+<a href="https://www.hankyung.com/article/2026082496041">한국경제 단독 「美 "웨스팅하우스 지분 인수"…한국에 제안」</a> ·
+<a href="https://www.hankyung.com/article/2026082496111">한국경제 「웨스팅하우스 투자 땐 지재권 분쟁 해소…K원전 美 진출이 변수」</a> ·
+<a href="https://www.hankyung.com/article/2026082522021">한국경제 「원전주 일제히 강세」</a> ·
+<a href="https://www.imaeil.com/page/view/2026082510313286447">매일신문 「원전株 동반 강세…한전기술 10%·현대건설 9%↑」</a><br>
+<a href="https://www.hankyung.com/article/2026082520961">한국경제 「SK이노, 물적분할 7년 만에 자회사 SKIET 흡수 합병」</a> ·
+<a href="https://www.ddaily.co.kr/page/view/2026082517485306986">디지털데일리 「SK이노베이션-SKIET 합병…분리막 사업 모회사로 재편」</a> ·
+<a href="https://www.etoday.co.kr/news/view/2618040">이투데이 「SK이노, 분리막 사업 자회사 SKIET 흡수합병」</a><br>
+<a href="https://biz.heraldcorp.com/article/10850558">헤럴드경제 「코스피 흔들 세 가지 변수…엔비디아·금통위·잭슨홀」</a> ·
+<a href="https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-25-dow-sp-500-nasdaq-080527092.html">Yahoo Finance 「S&amp;P 500, Nasdaq futures recover in countdown to Nvidia earnings, Fed Jackson Hole summit」</a> ·
+<a href="https://www.benzinga.com/markets/equities/26/08/61401802/stock-market-today-dow-jones-sp-500-futures-advance-as-scott-bessent-expands-sanctions-on-iran-navitas-semiconductor-gorilla-technology-real-brokerage-in-focus">Benzinga 「Dow, S&amp;P 500 Futures Advance as Scott Bessent Expands Sanctions on Iran」</a>
+</p>
 <p class="small dim">
-이 문서의 국장 수치는 <b class="k">전부 8/25 13:05~13:20 장중 실측</b>이며 확정치가 아닙니다.
-확정 채점은 오늘 20:10 마감 브리핑에서 합니다.<br>
-스탬프가 다른 리포트끼리의 숫자 비교는 무효입니다.<br>
-「지수 −4% 추천금지」가 오늘 장중(저가 −4.30%)에 발동 조건을 충족했으므로 <b class="k">개별 종목 진입 추천은 담지 않았습니다.</b>
-본문의 종목 언급은 전부 <b class="k">상태 서술</b>이며 매수·매도 지시가 아닙니다.
+이 문서의 국장 수치는 <b class="k">2026-08-25 정규장 확정치</b>이며, 당일 수급만 잠정입니다(확정은 내일).
+★ 표시 항목(공매도 8/24 · KOFIA 8/21 · 레버리지 괴리 8/24 · 과매수 스캐너 asof 8/24 · 미 지수 8/24)은
+<b class="k">기준일이 오늘이 아닙니다</b> — 본문 해당 위치에 병기했습니다.
+장중 저가·고가는 네이버 integration 실측이며 뉴스(디지털데일리·헤럴드경제) 2곳으로 교차검증했습니다.<br>
+스탬프가 다른 리포트끼리의 숫자 비교는 무효입니다.
+「지수 −4% 추천금지」가 오늘 장중(저가 −4.30%)에 발동 조건을 충족했고, 과매수 스캐너 게이트 통과도 0건이므로
+<b class="k">이 브리핑에는 개별 종목 진입 추천을 담지 않았습니다.</b>
+본문의 종목 언급은 전부 <b class="k">상태 서술</b>이며 매수·매도 지시가 아닙니다.<br><br>
+<b class="k">투자 판단과 책임은 본인에게 있습니다.</b>
 </p>
 
 </div>
